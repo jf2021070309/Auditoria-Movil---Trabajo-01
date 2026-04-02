@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list>
-    <item n1:drawable="@drawable/common_google_signin_btn_text_light_normal_background"/>
-    <item n1:left="-36dp">
-        <bitmap n1:gravity="center" n1:src="@drawable/googleg_standard_color_18"/>
-    </item>
-</layer-list>

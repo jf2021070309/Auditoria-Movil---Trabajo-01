@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_pressed="true" n1:color="#11000000"/>
-    <item n1:color="@android:color/transparent"/>
-</selector>

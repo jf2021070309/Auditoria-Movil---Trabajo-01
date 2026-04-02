@@ -1,7 +1,0 @@
-package com.google.android.gms.internal.ads;
-/* loaded from: classes.dex */
-public final class zzfy extends Exception {
-    public /* synthetic */ zzfy(Throwable th, zzgc zzgcVar) {
-        super("Failed to query underlying media codecs", th);
-    }
-}

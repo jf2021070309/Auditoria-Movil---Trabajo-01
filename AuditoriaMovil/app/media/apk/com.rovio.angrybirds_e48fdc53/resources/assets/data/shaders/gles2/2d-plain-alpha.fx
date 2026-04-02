@@ -1,6 +1,0 @@
-#define DISABLE_DEPTH_TEST
-#define DISABLE_TEXTURE
-#define ENABLE_ALPHA_BLENDING
-#define ENABLE_ALPHA_FACTOR
-
-#include "pp.fx"

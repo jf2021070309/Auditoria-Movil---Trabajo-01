@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="ad_cta_padding_right">15dp</dimen>
-    <dimen name="ad_dialog_width">435dp</dimen>
-    <dimen name="headline_text_size">19sp</dimen>
-    <dimen name="secondary_text_size">15sp</dimen>
-</resources>

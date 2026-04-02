@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/material_list_padding_left" android:layout_width="match_parent" android:layout_height="@dimen/list_item_height">
-        <ImageView android:id="@+id/search_icon" android:padding="3dp" android:layout_width="@dimen/material_list_icon_size" android:layout_height="@dimen/material_list_icon_size" android:layout_marginRight="@dimen/material_list_padding_right" app:srcCompat="@drawable/ic_action_search"/>
-        <EditText android:textSize="@dimen/material_list_text_size" android:id="@+id/search_filter" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginRight="@dimen/material_list_padding_right" android:layout_weight="1" android:imeOptions="actionDone" android:fontFamily="sans-serif-regular"/>
-        <ImageView android:layout_gravity="center" android:id="@+id/cancel_search" android:padding="9dp" android:visibility="gone" android:layout_width="@dimen/material_list_icon_size" android:layout_height="@dimen/material_list_icon_size" android:layout_marginRight="@dimen/material_list_padding_right" app:srcCompat="@drawable/ic_action_cancel"/>
-    </LinearLayout>
-</LinearLayout>

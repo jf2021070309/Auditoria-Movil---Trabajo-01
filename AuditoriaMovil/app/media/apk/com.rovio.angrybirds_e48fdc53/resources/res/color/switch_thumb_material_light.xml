@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_enabled="false" n1:color="@color/switch_thumb_disabled_material_light"/>
-    <item n1:color="@color/switch_thumb_normal_material_light"/>
-</selector>

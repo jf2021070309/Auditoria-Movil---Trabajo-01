@@ -1,5 +1,0 @@
-package com.unity3d.ads.broadcast;
-/* loaded from: classes4.dex */
-public enum BroadcastEvent {
-    ACTION
-}

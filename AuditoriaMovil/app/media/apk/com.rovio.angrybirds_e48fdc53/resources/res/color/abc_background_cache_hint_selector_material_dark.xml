@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:color="@color/background_material_dark" n1:state_accelerated="false"/>
-    <item n1:color="@android:color/transparent"/>
-</selector>

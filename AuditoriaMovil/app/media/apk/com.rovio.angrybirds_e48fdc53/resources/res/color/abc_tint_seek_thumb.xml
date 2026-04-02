@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_enabled="false" n1:color="?attr/colorControlActivated" n1:alpha="?android:attr/disabledAlpha"/>
-    <item n1:color="?attr/colorControlActivated"/>
-</selector>

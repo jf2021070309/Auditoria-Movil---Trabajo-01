@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector>
-    <item n1:state_focused="true" n1:state_enabled="true" n1:color="@color/com_facebook_blue"/>
-    <item n1:color="#fffffffe"/>
-</selector>

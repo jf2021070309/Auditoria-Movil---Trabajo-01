@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="portrait_album_art_padding">15dp</dimen>
-    <dimen name="purchase_ad_item_size">90dp</dimen>
-</resources>

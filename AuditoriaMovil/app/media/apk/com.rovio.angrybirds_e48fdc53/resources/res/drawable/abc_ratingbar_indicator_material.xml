@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list>
-    <item n1:id="@android:id/background" n1:drawable="@drawable/abc_ic_star_black_36dp"/>
-    <item n1:id="@android:id/secondaryProgress" n1:drawable="@drawable/abc_ic_star_half_black_36dp"/>
-    <item n1:id="@android:id/progress">
-        <bitmap n1:src="@drawable/abc_ic_star_black_36dp" n1:tileModeX="repeat"/>
-    </item>
-</layer-list>

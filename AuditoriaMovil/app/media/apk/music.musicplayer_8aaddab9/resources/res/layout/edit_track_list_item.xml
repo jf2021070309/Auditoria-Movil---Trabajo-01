@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="horizontal" android:background="@drawable/playlist_tile" android:layout_width="match_parent" android:layout_height="66dp" android:baselineAligned="false">
-    <ImageView android:id="@+id/dragger" android:layout_width="47dp" android:layout_height="66dp"/>
-    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="66dp" android:ignoreGravity="@+id/icon">
-        <include layout="@layout/track_list_item_common"/>
-    </RelativeLayout>
-</LinearLayout>

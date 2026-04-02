@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="ad_dialog_width">320dp</dimen>
-    <dimen name="dialog_privacy_width">325dp</dimen>
-    <dimen name="headline_text_size">18sp</dimen>
-    <dimen name="secondary_text_size">13sp</dimen>
-</resources>
