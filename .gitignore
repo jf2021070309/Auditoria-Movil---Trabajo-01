@@ -11,6 +11,10 @@
 # Archivos de medios
 **/media/**
 
+# Excluir todo en media excepto media/apk
+**/media/**
+!**/media/apk/**
+
 # Archivos estáticos
 **/static/**
 
