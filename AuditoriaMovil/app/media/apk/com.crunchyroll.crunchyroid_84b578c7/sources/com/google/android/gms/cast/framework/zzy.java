@@ -1,0 +1,79 @@
+package com.google.android.gms.cast.framework;
+
+import com.google.android.gms.cast.ApplicationMetadata;
+import com.google.android.gms.cast.Cast;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: com.google.android.gms:play-services-cast-framework@@21.4.0 */
+/* loaded from: classes2.dex */
+public final class zzy extends Cast.Listener {
+    final /* synthetic */ CastSession zza;
+
+    public /* synthetic */ zzy(CastSession castSession, zzx zzxVar) {
+        this.zza = castSession;
+    }
+
+    @Override // com.google.android.gms.cast.Cast.Listener
+    public final void onActiveInputStateChanged(int i) {
+        Set set;
+        set = this.zza.zzd;
+        Iterator it = new HashSet(set).iterator();
+        while (it.hasNext()) {
+            ((Cast.Listener) it.next()).onActiveInputStateChanged(i);
+        }
+    }
+
+    @Override // com.google.android.gms.cast.Cast.Listener
+    public final void onApplicationDisconnected(int i) {
+        Set set;
+        CastSession.zzh(this.zza, i);
+        this.zza.notifySessionEnded(i);
+        set = this.zza.zzd;
+        Iterator it = new HashSet(set).iterator();
+        while (it.hasNext()) {
+            ((Cast.Listener) it.next()).onApplicationDisconnected(i);
+        }
+    }
+
+    @Override // com.google.android.gms.cast.Cast.Listener
+    public final void onApplicationMetadataChanged(ApplicationMetadata applicationMetadata) {
+        Set set;
+        set = this.zza.zzd;
+        Iterator it = new HashSet(set).iterator();
+        while (it.hasNext()) {
+            ((Cast.Listener) it.next()).onApplicationMetadataChanged(applicationMetadata);
+        }
+    }
+
+    @Override // com.google.android.gms.cast.Cast.Listener
+    public final void onApplicationStatusChanged() {
+        Set set;
+        set = this.zza.zzd;
+        Iterator it = new HashSet(set).iterator();
+        while (it.hasNext()) {
+            ((Cast.Listener) it.next()).onApplicationStatusChanged();
+        }
+    }
+
+    @Override // com.google.android.gms.cast.Cast.Listener
+    public final void onStandbyStateChanged(int i) {
+        Set set;
+        set = this.zza.zzd;
+        Iterator it = new HashSet(set).iterator();
+        while (it.hasNext()) {
+            ((Cast.Listener) it.next()).onStandbyStateChanged(i);
+        }
+    }
+
+    @Override // com.google.android.gms.cast.Cast.Listener
+    public final void onVolumeChanged() {
+        Set set;
+        set = this.zza.zzd;
+        Iterator it = new HashSet(set).iterator();
+        while (it.hasNext()) {
+            ((Cast.Listener) it.next()).onVolumeChanged();
+        }
+    }
+}

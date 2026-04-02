@@ -1,0 +1,7 @@
+name: singular_segment_sdk-v2.0.2-0ef4363.master
+env: release
+git_commit: 0ef4363
+git_branch: master
+version_name: 2.0.2
+version_code:1
+build_date: Tue, 26 Jul 2022 18:20:39 +0530

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <ImageButton n1:id="@+id/goto_btn_id" n1:tag="goto_btn" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="7dp" n1:src="@drawable/rovio_ads_goto_btn_selector" n1:layout_alignParentRight="true" n1:layout_alignParentBottom="true"/>
+    <ImageButton n1:id="@+id/skip_btn_id" n1:tag="skip_btn" n1:background="@null" n1:paddingTop="14dp" n1:paddingRight="14dp" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/rovio_ads_skip_btn_selector" n1:layout_alignParentTop="true" n1:layout_alignParentRight="true"/>
+    <TextView n1:textSize="18dp" n1:gravity="center" n1:tag="skip_timer" n1:background="@drawable/rovio_ads_skip_empty" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="14dp" n1:layout_alignLeft="@+id/skip_btn_id"/>
+    <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:tag="progress_toolbar" n1:visibility="invisible" n1:layout_width="match_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="22dp" n1:layout_toLeftOf="@+id/goto_btn_id" n1:layout_alignParentLeft="true" n1:layout_alignParentBottom="true">
+        <TextView n1:textSize="18dp" n1:gravity="center" n1:tag="progress_timer" n1:background="@drawable/rovio_ads_progressbar_timer_bg" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20dp" n1:layout_marginRight="20dp"/>
+        <ProgressBar n1:tag="progress_bar" n1:layout_width="match_parent" n1:layout_height="wrap_content" n1:layout_marginRight="12dp" n1:maxHeight="9dp" n1:max="100" n1:indeterminate="false" n1:progressDrawable="@drawable/rovio_ads_video_ads_progress_bar" n1:minHeight="9dp" style="@android:style/Widget.ProgressBar.Horizontal"/>
+    </LinearLayout>
+</merge>

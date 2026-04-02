@@ -1,0 +1,616 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "help_url": {
+      "type": "string",
+      "title": "URL for Help WebView",
+      "default": "https://help.crunchyroll.com/",
+      "format": "uri"
+    },
+    "playhead_interval_ms": {
+      "type": "integer",
+      "title": "Value used for periodical saving of continue watching progress",
+      "default": 30000,
+      "minimum": 1
+    },
+    "app_legal_links": {
+      "type": "object",
+      "title": "App legal links",
+      "properties": {
+        "privacy_policy": {
+          "type": "string",
+          "title": "Privacy policy URL",
+          "default": "https://www.crunchyroll.com/privacy?mode=mobile",
+          "format": "uri"
+        },
+        "terms_of_service": {
+          "type": "string",
+          "title": "Terms of service URL",
+          "default": "https://www.crunchyroll.com/tos?mode=mobile",
+          "format": "uri"
+        }
+      }
+    },
+    "terms_of_service": {
+      "type": "object",
+      "title": "Terms of service",
+      "properties": {
+        "last_updated_date": {
+          "type": "string",
+          "title": "The date when terms of service updated",
+          "default": ""
+        }
+      }
+    },
+    "objects_max_ids_per_request_allowed": {
+      "type": "integer",
+      "title": "Max ids count allowed per objects endpoint request",
+      "default": 100,
+      "minimum": 1
+    },
+    "content_api_service": {
+      "type": "object",
+      "title": "Content Service",
+      "properties": {
+        "playheads_upload_batch_size": {
+          "type": "integer",
+          "title": "Maximum amount of playheads to upload at once.",
+          "default": 500
+        },
+        "playheads_get_batch_size": {
+          "type": "integer",
+          "title": "Maximum amount of playheads to download at once.",
+          "default": 350
+        }
+      }
+    },
+    "user_benefits": {
+      "type": "object",
+      "title": "User benefits fetch",
+      "properties": {
+        "fetch_interval_sec": {
+          "type": "integer",
+          "title": "User benefits fetch interval in seconds",
+          "default": 3600,
+          "minimum": 1
+        }
+      }
+    },
+    "in_app_updates": {
+      "type": "object",
+      "title": "In-app updates",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable In-app updates",
+          "default": false
+        },
+        "client_version_staleness_days": {
+          "type": "integer",
+          "title": "Number of days to pass since the update became available on the Play Store",
+          "default": 5,
+          "minimum": 0
+        },
+        "update_reminder_interval_sec": {
+          "type": "integer",
+          "title": "Interval between update reminders in seconds",
+          "default": 2592000,
+          "minimum": 0
+        },
+        "background_install_delay_sec": {
+          "type": "integer",
+          "title": "Time to pass before starting install in background in seconds",
+          "default": 180,
+          "minimum": 0
+        }
+      }
+    },
+    "singular": {
+      "type": "object",
+      "title": "Singular integration",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Singular integration",
+          "default": true
+        }
+      }
+    },
+    "user_interactions_tracking": {
+      "type": "object",
+      "title": "User interactions tracking",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable user interactions tracking",
+          "default": true
+        }
+      }
+    },
+    "in_app_review": {
+      "type": "object",
+      "title": "In-app review",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable in-app review",
+          "default": false
+        },
+        "interval_between_attempts_min": {
+          "type": "integer",
+          "title": "Interval between attempts in minutes",
+          "description": "The time in minutes that should pass between in-app review attempts.",
+          "default": 129600
+        },
+        "app_launches_count_trigger": {
+          "type": "integer",
+          "title": "App launches count trigger",
+          "description": "The amount of app launches that will trigger in-app review flow.",
+          "default": 5
+        },
+        "app_launches_period_trigger_min": {
+          "type": "integer",
+          "title": "App launches period trigger in minutes",
+          "description": "The time in minutes after which the app launches count will be reset.",
+          "default": 10080
+        }
+      }
+    },
+    "app_resume_screens_reload_intervals": {
+      "type": "object",
+      "title": "Screen reload intervals on resume in minutes",
+      "properties": {
+        "short_interval_minutes": {
+          "type": "integer",
+          "title": "Short reload interval",
+          "default": 3
+        },
+        "medium_interval_minutes": {
+          "type": "integer",
+          "title": "Medium reload interval",
+          "default": 20
+        },
+        "long_interval_minutes": {
+          "type": "integer",
+          "title": "Long reload interval",
+          "default": 480
+        }
+      }
+    },
+    "billing_notifications": {
+      "type": "object",
+      "title": "In Grace, Retry and Renew Subscription notification",
+      "properties": {
+        "is_in_grace_home_cta_enabled": {
+          "type": "boolean",
+          "title": "Enable In Grace cta on the Home feed",
+          "default": false
+        },
+        "is_in_grace_notification_enabled": {
+          "type": "boolean",
+          "title": "Enable In Grace notification",
+          "default": false
+        },
+        "is_in_grace_final_notification_enabled": {
+          "type": "boolean",
+          "title": "Enable In Grace Final notification",
+          "default": false
+        },
+        "is_on_hold_notification_enabled": {
+          "type": "boolean",
+          "title": "Enable On Hold notification",
+          "default": false
+        },
+        "is_renew_notification_enabled": {
+          "type": "boolean",
+          "title": "Enable Renew subscription notification",
+          "default": false
+        },
+        "experiment_id": {
+          "type": "string",
+          "title": "Experiment id",
+          "default": ""
+        },
+        "experiment_name": {
+          "type": "string",
+          "title": "Experiment name",
+          "default": ""
+        },
+        "variation_id": {
+          "type": "string",
+          "title": "Variation id",
+          "default": ""
+        },
+        "variation_name": {
+          "type": "string",
+          "title": "Variation name",
+          "default": ""
+        }
+      }
+    },
+    "email_verification_banner": {
+      "type": "object",
+      "title": "Email Verification Banner",
+      "properties": {
+        "occurrence_interval_after_dismiss_minutes": {
+          "type": "integer",
+          "title": "Occurrence interval after dismiss in minutes",
+          "default": 1440
+        },
+        "occurrence_interval_after_confirmation_minutes": {
+          "type": "integer",
+          "title": "Occurrence interval after confirmation in minutes",
+          "default": 15
+        }
+      }
+    },
+    "browse_music": {
+      "type": "object",
+      "title": "Browse Music",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Show Music tab on Browse screen",
+          "default": false
+        }
+      }
+    },
+    "datadog": {
+      "type": "object",
+      "title": "Datadog integration",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Datadog integration",
+          "default": true
+        },
+        "sample_rum_sessions": {
+          "type": "number",
+          "title": "RUM sessions sampling rate: 0 - no events, 100 - all events are sent",
+          "default": 100,
+          "minimum": 0,
+          "maximum": 100
+        },
+        "track_background_rum": {
+          "type": "boolean",
+          "title": "Enable tracking of background RUM events",
+          "default": false
+        }
+      }
+    },
+    "user_account_migration": {
+      "type": "object",
+      "title": "Phase 1 User Migration",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Phase 1 User Migration experience",
+          "default": false
+        },
+        "experiment_id": {
+          "type": "string",
+          "title": "Experiment id",
+          "default": ""
+        },
+        "experiment_name": {
+          "type": "string",
+          "title": "Experiment name",
+          "default": ""
+        },
+        "variation_id": {
+          "type": "string",
+          "title": "Variation id",
+          "default": ""
+        },
+        "variation_name": {
+          "type": "string",
+          "title": "Variation name",
+          "default": ""
+        }
+      }
+    },
+    "otp": {
+      "type": "object",
+      "title": "OTP Registration and Login",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable OTP Registration and Login"
+        },
+        "available_countries": {
+          "type": "string",
+          "title": "Countries where OTP Registration and Login is available",
+          "description": "A comma separated list of country codes where OTP feature is available",
+          "default": "IN"
+        },
+        "sign_in_flow_update": {
+          "type": "boolean",
+          "title": "Show updated Sign In flow",
+          "default": false
+        },
+        "account_screen_update": {
+          "type": "boolean",
+          "title": "Show changes in Account screen",
+          "default": false
+        }
+      }
+    },
+    "downloading": {
+      "type": "object",
+      "title": "Downloading config",
+      "properties": {
+        "auto_retry_streams": {
+          "type": "boolean",
+          "title": "Auto-retry /download request",
+          "description": "Keeps downloads of FAILED /download endpoint for further auto-retry",
+          "default": false
+        }
+      }
+    },
+    "bulk_sync": {
+      "type": "object",
+      "title": "Bulk Sync",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Bulk Sync",
+          "default": true
+        }
+      }
+    },
+    "bento": {
+      "type": "object",
+      "title": "Bento",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Bento",
+          "default": false
+        }
+      }
+    },
+    "membership_card": {
+      "type": "object",
+      "title": "Membership Card",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Show Membership Card in Settings",
+          "default": false
+        }
+      }
+    },
+    "persistent_message_center": {
+      "type": "object",
+      "title": "Persistent Message Center",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Persistent Message Center",
+          "default": false
+        }
+      }
+    },
+    "account_deletion": {
+      "type": "object",
+      "title": "Account Deletion",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Account Deletion",
+          "default": false
+        },
+        "external_url": {
+          "type": "string",
+          "title": "Account Deletion external URL",
+          "default": "https://www.crunchyroll.com/xt8ehz"
+        }
+      }
+    },
+    "cronet_transport": {
+      "type": "object",
+      "title": "Cronet Transport protocol",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Cronet transport protocol",
+          "default": false
+        }
+      }
+    },
+    "player_gestures": {
+      "type": "object",
+      "title": "Player Gestures",
+      "properties": {
+        "pinch_to_zoom": {
+          "type": "boolean",
+          "title": "Enable Pinch to Zoom",
+          "default": false
+        },
+        "double_tap_to_seek": {
+          "type": "boolean",
+          "title": "Enable Double Tap to Seek",
+          "default": false
+        }
+      }
+    },
+    "streams_limits": {
+      "type": "object",
+      "title": "Streams Limits",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Streams Limits",
+          "default": false
+        }
+      }
+    },
+    "disable_username_login": {
+      "type": "object",
+      "title": "Disable Username Login",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Disable login by username",
+          "default": false
+        }
+      }
+    },
+    "simulcast": {
+      "type": "object",
+      "title": "Simulcast config",
+      "properties": {
+        "version": {
+          "type": "string",
+          "title": "Select Simulcast version",
+          "default": "v1",
+          "enum": [
+            "v1",
+            "v2"
+          ]
+        }
+      }
+    },
+    "decoder_fallback": {
+      "type": "object",
+      "title": "Decoder fallback",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable fallback to a non-secure decoder",
+          "default": true
+        }
+      }
+    },
+    "introductory_offer": {
+      "type": "object",
+      "title": "Introductory Offer",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Introductory Offer",
+          "default": false
+        },
+        "experiment_id": {
+          "type": "string",
+          "title": "Experiment id",
+          "default": ""
+        },
+        "experiment_name": {
+          "type": "string",
+          "title": "Experiment name",
+          "default": ""
+        },
+        "variation_id": {
+          "type": "string",
+          "title": "Variation id",
+          "default": ""
+        },
+        "variation_name": {
+          "type": "string",
+          "title": "Variation name",
+          "default": ""
+        }
+      }
+    },
+    "lupin": {
+      "type": "object",
+      "title": "Lupin",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Lupin",
+          "default": false
+        }
+      }
+    },
+    "preselected_tier": {
+      "type": "object",
+      "title": "Preselected tier",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable tier preselection",
+          "default": false
+        },
+        "tier": {
+          "type": "string",
+          "enum": [
+            "FAN",
+            "MEGA_FAN",
+            "ANNUAL_MEGA_FAN",
+            "ULTIMATE_FAN"
+          ],
+          "title": "Preselected tier sku",
+          "default": "MEGA_FAN"
+        }
+      }
+    },
+    "whatsapp_support": {
+      "type": "object",
+      "title": "WhatsApp Support",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable WhatsApp Support",
+          "default": false
+        },
+        "whatsapp_url": {
+          "type": "string",
+          "title": "WhatsApp universal link",
+          "default": "https://api.whatsapp.com/send/?phone=14156874157&text=Ol%C3%A1%21+Eu+preciso+de+ajuda+com+a+minha+conta+Crunchyroll.&type=phone_number&app_absent=0",
+          "format": "uri"
+        }
+      }
+    },
+    "store_navigation": {
+      "type": "object",
+      "title": "Store Navigation",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Store Navigation",
+          "default": false
+        },
+        "store_url": {
+          "type": "string",
+          "title": "Store Link",
+          "default": "https://store.crunchyroll.com/?utm_source=android",
+          "format": "uri"
+        },
+        "experiment_id": {
+          "type": "string",
+          "title": "Experiment id",
+          "default": ""
+        },
+        "experiment_name": {
+          "type": "string",
+          "title": "Experiment name",
+          "default": ""
+        },
+        "variation_id": {
+          "type": "string",
+          "title": "Variation id",
+          "default": ""
+        },
+        "variation_name": {
+          "type": "string",
+          "title": "Variation name",
+          "default": ""
+        }
+      }
+    },
+    "release_calendar_carousel": {
+      "type": "object",
+      "title": "Release Calendar Carousel",
+      "properties": {
+        "is_enabled": {
+          "type": "boolean",
+          "title": "Enable Release Calendar Carousel",
+          "default": false
+        }
+      }
+    }
+  }
+}

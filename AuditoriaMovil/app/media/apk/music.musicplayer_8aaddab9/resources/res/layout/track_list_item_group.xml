@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64dp">
+    <ImageView android:id="@+id/group_indicator" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:layout_marginRight="7dp" app:srcCompat="@drawable/ic_arrow_down"/>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="64dp" android:ignoreGravity="@+id/icon">
+        <include layout="@layout/track_list_item_common"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/ia_fullscreen_background" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="IAInterstitialView">
+    <FrameLayout android:id="@+id/ia_ad_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="top|right" android:id="@+id/ia_ll_close_button" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@+id/ia_tv_close_button" android:background="@drawable/ia_round_overlay_bg_with_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ia_overlay_control_margin"/>
+    </FrameLayout>
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top|left" android:id="@+id/ia_iv_additional_close_button" android:background="@drawable/ia_round_overlay_bg_with_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ia_overlay_control_margin" android:layout_marginTop="@dimen/ia_overlay_control_margin"/>
+</FrameLayout>

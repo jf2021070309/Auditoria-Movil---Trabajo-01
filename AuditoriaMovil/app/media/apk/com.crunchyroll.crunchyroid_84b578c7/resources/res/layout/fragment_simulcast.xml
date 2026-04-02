@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/simulcast_screen_title" style="@style/ToolbarStyle"/>
+    <com.crunchyroll.emailverification.banner.EmailVerificationBannerLayout android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/simulcast_picker_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="48dp">
+                <androidx.fragment.app.FragmentContainerView android:name="com.ellation.crunchyroll.presentation.content.seasons.SimulcastSeasonPicker" android:id="@+id/simulcast_picker" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="snap|enterAlways|scroll"/>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/simulcast_list" android:paddingTop="@dimen/simulcast_season_list_padding_top" android:paddingBottom="11dp" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/browse_all_content_horizontal_padding" android:paddingEnd="@dimen/browse_all_content_horizontal_padding" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            <com.ellation.crunchyroll.presentation.simulcast.EmptySimulcastCardsRecyclerView android:id="@+id/simulcast_empty_cards_recycler_view" android:paddingTop="@dimen/simulcast_season_list_padding_top" android:paddingBottom="11dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/browse_all_content_horizontal_padding" android:paddingEnd="@dimen/browse_all_content_horizontal_padding" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            <TextView android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_results_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/simulcast_empty_state_text" android:paddingStart="16dp" android:paddingEnd="16dp" style="@style/Subheader2LatoSemibold"/>
+            <include android:id="@+id/overlay_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/overlay_progress_layout"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,766 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.os.RemoteException;
+import android.view.View;
+import com.facebook.internal.AnalyticsEvents;
+import com.google.ads.mediation.admob.AdMobAdapter;
+import com.google.android.gms.ads.AdFormat;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.formats.NativeCustomTemplateAd;
+import com.google.android.gms.ads.mediation.Adapter;
+import com.google.android.gms.ads.mediation.MediationAdapter;
+import com.google.android.gms.ads.mediation.MediationBannerAdConfiguration;
+import com.google.android.gms.ads.mediation.MediationBannerAdapter;
+import com.google.android.gms.ads.mediation.MediationConfiguration;
+import com.google.android.gms.ads.mediation.MediationInterscrollerAd;
+import com.google.android.gms.ads.mediation.MediationInterstitialAd;
+import com.google.android.gms.ads.mediation.MediationInterstitialAdConfiguration;
+import com.google.android.gms.ads.mediation.MediationInterstitialAdapter;
+import com.google.android.gms.ads.mediation.MediationNativeAdConfiguration;
+import com.google.android.gms.ads.mediation.MediationNativeAdapter;
+import com.google.android.gms.ads.mediation.MediationRewardedAd;
+import com.google.android.gms.ads.mediation.MediationRewardedAdConfiguration;
+import com.google.android.gms.ads.mediation.OnContextChangedListener;
+import com.google.android.gms.ads.mediation.OnImmersiveModeUpdatedListener;
+import com.google.android.gms.ads.mediation.UnifiedNativeAdMapper;
+import com.google.android.gms.dynamic.IObjectWrapper;
+import com.google.android.gms.dynamic.ObjectWrapper;
+import com.ironsource.mediationsdk.utils.IronSourceConstants;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import org.json.JSONException;
+import org.json.JSONObject;
+/* compiled from: com.google.android.gms:play-services-ads-lite@@20.5.0 */
+/* loaded from: classes2.dex */
+public final class zzbwf extends zzbvi {
+    private final Object zza;
+    private zzbwh zzb;
+    private zzcck zzc;
+    private IObjectWrapper zzd;
+    private View zze;
+    private MediationInterstitialAd zzf;
+    private UnifiedNativeAdMapper zzg;
+    private MediationRewardedAd zzh;
+    private MediationInterscrollerAd zzi;
+    private final String zzj = "";
+
+    public zzbwf(Adapter adapter) {
+        this.zza = adapter;
+    }
+
+    private final Bundle zzR(String str, zzbdg zzbdgVar, String str2) throws RemoteException {
+        String valueOf = String.valueOf(str);
+        zzcgt.zzd(valueOf.length() != 0 ? "Server parameters: ".concat(valueOf) : new String("Server parameters: "));
+        try {
+            Bundle bundle = new Bundle();
+            if (str != null) {
+                JSONObject jSONObject = new JSONObject(str);
+                Bundle bundle2 = new Bundle();
+                Iterator<String> keys = jSONObject.keys();
+                while (keys.hasNext()) {
+                    String next = keys.next();
+                    bundle2.putString(next, jSONObject.getString(next));
+                }
+                bundle = bundle2;
+            }
+            if (this.zza instanceof AdMobAdapter) {
+                bundle.putString("adJson", str2);
+                if (zzbdgVar != null) {
+                    bundle.putInt("tagForChildDirectedTreatment", zzbdgVar.zzg);
+                }
+            }
+            bundle.remove("max_ad_content_rating");
+            return bundle;
+        } catch (Throwable th) {
+            zzcgt.zzg("", th);
+            throw new RemoteException();
+        }
+    }
+
+    private final Bundle zzS(zzbdg zzbdgVar) {
+        Bundle bundle;
+        Bundle bundle2 = zzbdgVar.zzm;
+        return (bundle2 == null || (bundle = bundle2.getBundle(this.zza.getClass().getName())) == null) ? new Bundle() : bundle;
+    }
+
+    private static final boolean zzT(zzbdg zzbdgVar) {
+        if (zzbdgVar.zzf) {
+            return true;
+        }
+        zzber.zza();
+        return zzcgm.zzm();
+    }
+
+    private static final String zzU(String str, zzbdg zzbdgVar) {
+        String str2 = zzbdgVar.zzu;
+        try {
+            return new JSONObject(str).getString("max_ad_content_rating");
+        } catch (JSONException unused) {
+            return str2;
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzA(boolean z) throws RemoteException {
+        Object obj = this.zza;
+        if (obj instanceof OnImmersiveModeUpdatedListener) {
+            try {
+                ((OnImmersiveModeUpdatedListener) obj).onImmersiveModeUpdated(z);
+                return;
+            } catch (Throwable th) {
+                zzcgt.zzg("", th);
+                return;
+            }
+        }
+        String canonicalName = OnImmersiveModeUpdatedListener.class.getCanonicalName();
+        String canonicalName2 = this.zza.getClass().getCanonicalName();
+        StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+        sb.append(canonicalName);
+        sb.append(" #009 Class mismatch: ");
+        sb.append(canonicalName2);
+        zzcgt.zzd(sb.toString());
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final zzbhc zzB() {
+        Object obj = this.zza;
+        if (obj instanceof com.google.android.gms.ads.mediation.zzb) {
+            try {
+                return ((com.google.android.gms.ads.mediation.zzb) obj).getVideoController();
+            } catch (Throwable th) {
+                zzcgt.zzg("", th);
+            }
+        }
+        return null;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final zzbvv zzC() {
+        UnifiedNativeAdMapper unifiedNativeAdMapper;
+        UnifiedNativeAdMapper zzd;
+        Object obj = this.zza;
+        if (!(obj instanceof MediationNativeAdapter)) {
+            if (!(obj instanceof Adapter) || (unifiedNativeAdMapper = this.zzg) == null) {
+                return null;
+            }
+            return new zzbwy(unifiedNativeAdMapper);
+        }
+        zzbwh zzbwhVar = this.zzb;
+        if (zzbwhVar == null || (zzd = zzbwhVar.zzd()) == null) {
+            return null;
+        }
+        return new zzbwy(zzd);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzD(IObjectWrapper iObjectWrapper, zzbdg zzbdgVar, String str, zzbvm zzbvmVar) throws RemoteException {
+        if (!(this.zza instanceof Adapter)) {
+            String canonicalName = Adapter.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+        zzcgt.zzd("Requesting rewarded ad from adapter.");
+        try {
+            ((Adapter) this.zza).loadRewardedAd(new MediationRewardedAdConfiguration((Context) ObjectWrapper.unwrap(iObjectWrapper), "", zzR(str, zzbdgVar, null), zzS(zzbdgVar), zzT(zzbdgVar), zzbdgVar.zzk, zzbdgVar.zzg, zzbdgVar.zzt, zzU(str, zzbdgVar), ""), new zzbwe(this, zzbvmVar));
+        } catch (Exception e) {
+            zzcgt.zzg("", e);
+            throw new RemoteException();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzE(IObjectWrapper iObjectWrapper) throws RemoteException {
+        if (!(this.zza instanceof Adapter)) {
+            String canonicalName = Adapter.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+        zzcgt.zzd("Show rewarded ad from adapter.");
+        MediationRewardedAd mediationRewardedAd = this.zzh;
+        if (mediationRewardedAd != null) {
+            mediationRewardedAd.showAd((Context) ObjectWrapper.unwrap(iObjectWrapper));
+        } else {
+            zzcgt.zzf("Can not show null mediation rewarded ad.");
+            throw new RemoteException();
+        }
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzF(IObjectWrapper iObjectWrapper, zzbrp zzbrpVar, List<zzbrv> list) throws RemoteException {
+        char c;
+        AdFormat adFormat;
+        if (!(this.zza instanceof Adapter)) {
+            throw new RemoteException();
+        }
+        zzbwa zzbwaVar = new zzbwa(this, zzbrpVar);
+        ArrayList arrayList = new ArrayList();
+        for (zzbrv zzbrvVar : list) {
+            String str = zzbrvVar.zza;
+            switch (str.hashCode()) {
+                case -1396342996:
+                    if (str.equals("banner")) {
+                        c = 0;
+                        break;
+                    }
+                    c = 65535;
+                    break;
+                case -1052618729:
+                    if (str.equals(AnalyticsEvents.PARAMETER_SHARE_DIALOG_SHOW_NATIVE)) {
+                        c = 4;
+                        break;
+                    }
+                    c = 65535;
+                    break;
+                case -239580146:
+                    if (str.equals("rewarded")) {
+                        c = 2;
+                        break;
+                    }
+                    c = 65535;
+                    break;
+                case 604727084:
+                    if (str.equals(IronSourceConstants.AD_UNIT_IS_MEDIATION_STATE)) {
+                        c = 1;
+                        break;
+                    }
+                    c = 65535;
+                    break;
+                case 1911491517:
+                    if (str.equals("rewarded_interstitial")) {
+                        c = 3;
+                        break;
+                    }
+                    c = 65535;
+                    break;
+                default:
+                    c = 65535;
+                    break;
+            }
+            if (c == 0) {
+                adFormat = AdFormat.BANNER;
+            } else if (c == 1) {
+                adFormat = AdFormat.INTERSTITIAL;
+            } else if (c == 2) {
+                adFormat = AdFormat.REWARDED;
+            } else if (c != 3) {
+                adFormat = c != 4 ? null : AdFormat.NATIVE;
+            } else {
+                adFormat = AdFormat.REWARDED_INTERSTITIAL;
+            }
+            if (adFormat != null) {
+                arrayList.add(new MediationConfiguration(adFormat, zzbrvVar.zzb));
+            }
+        }
+        ((Adapter) this.zza).initialize((Context) ObjectWrapper.unwrap(iObjectWrapper), zzbwaVar, arrayList);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzG(IObjectWrapper iObjectWrapper, zzbdg zzbdgVar, String str, zzbvm zzbvmVar) throws RemoteException {
+        if (!(this.zza instanceof Adapter)) {
+            String canonicalName = Adapter.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+        zzcgt.zzd("Requesting rewarded interstitial ad from adapter.");
+        try {
+            ((Adapter) this.zza).loadRewardedInterstitialAd(new MediationRewardedAdConfiguration((Context) ObjectWrapper.unwrap(iObjectWrapper), "", zzR(str, zzbdgVar, null), zzS(zzbdgVar), zzT(zzbdgVar), zzbdgVar.zzk, zzbdgVar.zzg, zzbdgVar.zzt, zzU(str, zzbdgVar), ""), new zzbwe(this, zzbvmVar));
+        } catch (Exception e) {
+            zzcgt.zzg("", e);
+            throw new RemoteException();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final zzbya zzH() {
+        Object obj = this.zza;
+        if (obj instanceof Adapter) {
+            return zzbya.zza(((Adapter) obj).getVersionInfo());
+        }
+        return null;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final zzbya zzI() {
+        Object obj = this.zza;
+        if (obj instanceof Adapter) {
+            return zzbya.zza(((Adapter) obj).getSDKVersionInfo());
+        }
+        return null;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzJ(IObjectWrapper iObjectWrapper, zzbdl zzbdlVar, zzbdg zzbdgVar, String str, String str2, zzbvm zzbvmVar) throws RemoteException {
+        if (!(this.zza instanceof Adapter)) {
+            String canonicalName = Adapter.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+        zzcgt.zzd("Requesting interscroller ad from adapter.");
+        try {
+            Adapter adapter = (Adapter) this.zza;
+            adapter.loadInterscrollerAd(new MediationBannerAdConfiguration((Context) ObjectWrapper.unwrap(iObjectWrapper), "", zzR(str, zzbdgVar, str2), zzS(zzbdgVar), zzT(zzbdgVar), zzbdgVar.zzk, zzbdgVar.zzg, zzbdgVar.zzt, zzU(str, zzbdgVar), com.google.android.gms.ads.zza.zzc(zzbdlVar.zze, zzbdlVar.zzb), ""), new zzbvz(this, zzbvmVar, adapter));
+        } catch (Exception e) {
+            zzcgt.zzg("", e);
+            throw new RemoteException();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final zzbvp zzK() {
+        MediationInterscrollerAd mediationInterscrollerAd = this.zzi;
+        if (mediationInterscrollerAd != null) {
+            return new zzbwg(mediationInterscrollerAd);
+        }
+        return null;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzL(IObjectWrapper iObjectWrapper) throws RemoteException {
+        Object obj = this.zza;
+        if ((obj instanceof Adapter) || (obj instanceof MediationInterstitialAdapter)) {
+            if (obj instanceof MediationInterstitialAdapter) {
+                zzh();
+                return;
+            }
+            zzcgt.zzd("Show interstitial ad from adapter.");
+            MediationInterstitialAd mediationInterstitialAd = this.zzf;
+            if (mediationInterstitialAd != null) {
+                mediationInterstitialAd.showAd((Context) ObjectWrapper.unwrap(iObjectWrapper));
+                return;
+            } else {
+                zzcgt.zzf("Can not show null mediation interstitial ad.");
+                throw new RemoteException();
+            }
+        }
+        String canonicalName = MediationInterstitialAdapter.class.getCanonicalName();
+        String canonicalName2 = Adapter.class.getCanonicalName();
+        String canonicalName3 = this.zza.getClass().getCanonicalName();
+        int length = String.valueOf(canonicalName).length();
+        StringBuilder sb = new StringBuilder(length + 26 + String.valueOf(canonicalName2).length() + String.valueOf(canonicalName3).length());
+        sb.append(canonicalName);
+        sb.append(" or ");
+        sb.append(canonicalName2);
+        sb.append(" #009 Class mismatch: ");
+        sb.append(canonicalName3);
+        zzcgt.zzi(sb.toString());
+        throw new RemoteException();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final zzbvr zzM() {
+        return null;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final zzbvs zzN() {
+        return null;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zze(IObjectWrapper iObjectWrapper, zzbdl zzbdlVar, zzbdg zzbdgVar, String str, zzbvm zzbvmVar) throws RemoteException {
+        zzj(iObjectWrapper, zzbdlVar, zzbdgVar, str, null, zzbvmVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final IObjectWrapper zzf() throws RemoteException {
+        Object obj = this.zza;
+        if (obj instanceof MediationBannerAdapter) {
+            try {
+                return ObjectWrapper.wrap(((MediationBannerAdapter) obj).getBannerView());
+            } catch (Throwable th) {
+                zzcgt.zzg("", th);
+                throw new RemoteException();
+            }
+        } else if (obj instanceof Adapter) {
+            return ObjectWrapper.wrap(this.zze);
+        } else {
+            String canonicalName = MediationBannerAdapter.class.getCanonicalName();
+            String canonicalName2 = Adapter.class.getCanonicalName();
+            String canonicalName3 = this.zza.getClass().getCanonicalName();
+            int length = String.valueOf(canonicalName).length();
+            StringBuilder sb = new StringBuilder(length + 26 + String.valueOf(canonicalName2).length() + String.valueOf(canonicalName3).length());
+            sb.append(canonicalName);
+            sb.append(" or ");
+            sb.append(canonicalName2);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName3);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzg(IObjectWrapper iObjectWrapper, zzbdg zzbdgVar, String str, zzbvm zzbvmVar) throws RemoteException {
+        zzk(iObjectWrapper, zzbdgVar, str, null, zzbvmVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzh() throws RemoteException {
+        if (!(this.zza instanceof MediationInterstitialAdapter)) {
+            String canonicalName = MediationInterstitialAdapter.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+        zzcgt.zzd("Showing interstitial from adapter.");
+        try {
+            ((MediationInterstitialAdapter) this.zza).showInterstitial();
+        } catch (Throwable th) {
+            zzcgt.zzg("", th);
+            throw new RemoteException();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzi() throws RemoteException {
+        Object obj = this.zza;
+        if (obj instanceof MediationAdapter) {
+            try {
+                ((MediationAdapter) obj).onDestroy();
+            } catch (Throwable th) {
+                zzcgt.zzg("", th);
+                throw new RemoteException();
+            }
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzj(IObjectWrapper iObjectWrapper, zzbdl zzbdlVar, zzbdg zzbdgVar, String str, String str2, zzbvm zzbvmVar) throws RemoteException {
+        AdSize zza;
+        RemoteException remoteException;
+        Object obj = this.zza;
+        if ((obj instanceof MediationBannerAdapter) || (obj instanceof Adapter)) {
+            zzcgt.zzd("Requesting banner ad from adapter.");
+            if (zzbdlVar.zzn) {
+                zza = com.google.android.gms.ads.zza.zzb(zzbdlVar.zze, zzbdlVar.zzb);
+            } else {
+                zza = com.google.android.gms.ads.zza.zza(zzbdlVar.zze, zzbdlVar.zzb, zzbdlVar.zza);
+            }
+            AdSize adSize = zza;
+            Object obj2 = this.zza;
+            if (obj2 instanceof MediationBannerAdapter) {
+                try {
+                    MediationBannerAdapter mediationBannerAdapter = (MediationBannerAdapter) obj2;
+                    List<String> list = zzbdgVar.zze;
+                    HashSet hashSet = list != null ? new HashSet(list) : null;
+                    long j = zzbdgVar.zzb;
+                    zzbvy zzbvyVar = new zzbvy(j == -1 ? null : new Date(j), zzbdgVar.zzd, hashSet, zzbdgVar.zzk, zzT(zzbdgVar), zzbdgVar.zzg, zzbdgVar.zzr, zzbdgVar.zzt, zzU(str, zzbdgVar));
+                    Bundle bundle = zzbdgVar.zzm;
+                    mediationBannerAdapter.requestBannerAd((Context) ObjectWrapper.unwrap(iObjectWrapper), new zzbwh(zzbvmVar), zzR(str, zzbdgVar, str2), adSize, zzbvyVar, bundle != null ? bundle.getBundle(mediationBannerAdapter.getClass().getName()) : null);
+                    return;
+                } finally {
+                }
+            } else if (obj2 instanceof Adapter) {
+                try {
+                    ((Adapter) obj2).loadBannerAd(new MediationBannerAdConfiguration((Context) ObjectWrapper.unwrap(iObjectWrapper), "", zzR(str, zzbdgVar, str2), zzS(zzbdgVar), zzT(zzbdgVar), zzbdgVar.zzk, zzbdgVar.zzg, zzbdgVar.zzt, zzU(str, zzbdgVar), adSize, this.zzj), new zzbwb(this, zzbvmVar));
+                    return;
+                } finally {
+                }
+            } else {
+                return;
+            }
+        }
+        String canonicalName = MediationBannerAdapter.class.getCanonicalName();
+        String canonicalName2 = Adapter.class.getCanonicalName();
+        String canonicalName3 = this.zza.getClass().getCanonicalName();
+        StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 26 + String.valueOf(canonicalName2).length() + String.valueOf(canonicalName3).length());
+        sb.append(canonicalName);
+        sb.append(" or ");
+        sb.append(canonicalName2);
+        sb.append(" #009 Class mismatch: ");
+        sb.append(canonicalName3);
+        zzcgt.zzi(sb.toString());
+        throw new RemoteException();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzk(IObjectWrapper iObjectWrapper, zzbdg zzbdgVar, String str, String str2, zzbvm zzbvmVar) throws RemoteException {
+        RemoteException remoteException;
+        Object obj = this.zza;
+        if ((obj instanceof MediationInterstitialAdapter) || (obj instanceof Adapter)) {
+            zzcgt.zzd("Requesting interstitial ad from adapter.");
+            Object obj2 = this.zza;
+            if (obj2 instanceof MediationInterstitialAdapter) {
+                try {
+                    MediationInterstitialAdapter mediationInterstitialAdapter = (MediationInterstitialAdapter) obj2;
+                    List<String> list = zzbdgVar.zze;
+                    HashSet hashSet = list != null ? new HashSet(list) : null;
+                    long j = zzbdgVar.zzb;
+                    zzbvy zzbvyVar = new zzbvy(j == -1 ? null : new Date(j), zzbdgVar.zzd, hashSet, zzbdgVar.zzk, zzT(zzbdgVar), zzbdgVar.zzg, zzbdgVar.zzr, zzbdgVar.zzt, zzU(str, zzbdgVar));
+                    Bundle bundle = zzbdgVar.zzm;
+                    mediationInterstitialAdapter.requestInterstitialAd((Context) ObjectWrapper.unwrap(iObjectWrapper), new zzbwh(zzbvmVar), zzR(str, zzbdgVar, str2), zzbvyVar, bundle != null ? bundle.getBundle(mediationInterstitialAdapter.getClass().getName()) : null);
+                    return;
+                } finally {
+                }
+            } else if (obj2 instanceof Adapter) {
+                try {
+                    ((Adapter) obj2).loadInterstitialAd(new MediationInterstitialAdConfiguration((Context) ObjectWrapper.unwrap(iObjectWrapper), "", zzR(str, zzbdgVar, str2), zzS(zzbdgVar), zzT(zzbdgVar), zzbdgVar.zzk, zzbdgVar.zzg, zzbdgVar.zzt, zzU(str, zzbdgVar), this.zzj), new zzbwc(this, zzbvmVar));
+                    return;
+                } finally {
+                }
+            } else {
+                return;
+            }
+        }
+        String canonicalName = MediationInterstitialAdapter.class.getCanonicalName();
+        String canonicalName2 = Adapter.class.getCanonicalName();
+        String canonicalName3 = this.zza.getClass().getCanonicalName();
+        StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 26 + String.valueOf(canonicalName2).length() + String.valueOf(canonicalName3).length());
+        sb.append(canonicalName);
+        sb.append(" or ");
+        sb.append(canonicalName2);
+        sb.append(" #009 Class mismatch: ");
+        sb.append(canonicalName3);
+        zzcgt.zzi(sb.toString());
+        throw new RemoteException();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzl() throws RemoteException {
+        Object obj = this.zza;
+        if (obj instanceof MediationAdapter) {
+            try {
+                ((MediationAdapter) obj).onPause();
+            } catch (Throwable th) {
+                zzcgt.zzg("", th);
+                throw new RemoteException();
+            }
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzm() throws RemoteException {
+        Object obj = this.zza;
+        if (obj instanceof MediationAdapter) {
+            try {
+                ((MediationAdapter) obj).onResume();
+            } catch (Throwable th) {
+                zzcgt.zzg("", th);
+                throw new RemoteException();
+            }
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzn(IObjectWrapper iObjectWrapper, zzbdg zzbdgVar, String str, zzcck zzcckVar, String str2) throws RemoteException {
+        Object obj = this.zza;
+        if (!(obj instanceof Adapter)) {
+            String canonicalName = Adapter.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+        this.zzd = iObjectWrapper;
+        this.zzc = zzcckVar;
+        zzcckVar.zze(ObjectWrapper.wrap(obj));
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzo(zzbdg zzbdgVar, String str) throws RemoteException {
+        zzv(zzbdgVar, str, null);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzp() throws RemoteException {
+        if (!(this.zza instanceof Adapter)) {
+            String canonicalName = Adapter.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+        MediationRewardedAd mediationRewardedAd = this.zzh;
+        if (mediationRewardedAd != null) {
+            mediationRewardedAd.showAd((Context) ObjectWrapper.unwrap(this.zzd));
+        } else {
+            zzcgt.zzf("Can not show null mediated rewarded ad.");
+            throw new RemoteException();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final boolean zzq() throws RemoteException {
+        if (this.zza instanceof Adapter) {
+            return this.zzc != null;
+        }
+        String canonicalName = Adapter.class.getCanonicalName();
+        String canonicalName2 = this.zza.getClass().getCanonicalName();
+        StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+        sb.append(canonicalName);
+        sb.append(" #009 Class mismatch: ");
+        sb.append(canonicalName2);
+        zzcgt.zzi(sb.toString());
+        throw new RemoteException();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzr(IObjectWrapper iObjectWrapper, zzbdg zzbdgVar, String str, String str2, zzbvm zzbvmVar, zzblv zzblvVar, List<String> list) throws RemoteException {
+        RemoteException remoteException;
+        Object obj = this.zza;
+        if ((obj instanceof MediationNativeAdapter) || (obj instanceof Adapter)) {
+            zzcgt.zzd("Requesting native ad from adapter.");
+            Object obj2 = this.zza;
+            if (obj2 instanceof MediationNativeAdapter) {
+                try {
+                    MediationNativeAdapter mediationNativeAdapter = (MediationNativeAdapter) obj2;
+                    List<String> list2 = zzbdgVar.zze;
+                    HashSet hashSet = list2 != null ? new HashSet(list2) : null;
+                    long j = zzbdgVar.zzb;
+                    zzbwj zzbwjVar = new zzbwj(j == -1 ? null : new Date(j), zzbdgVar.zzd, hashSet, zzbdgVar.zzk, zzT(zzbdgVar), zzbdgVar.zzg, zzblvVar, list, zzbdgVar.zzr, zzbdgVar.zzt, zzU(str, zzbdgVar));
+                    Bundle bundle = zzbdgVar.zzm;
+                    Bundle bundle2 = bundle != null ? bundle.getBundle(mediationNativeAdapter.getClass().getName()) : null;
+                    this.zzb = new zzbwh(zzbvmVar);
+                    mediationNativeAdapter.requestNativeAd((Context) ObjectWrapper.unwrap(iObjectWrapper), this.zzb, zzR(str, zzbdgVar, str2), zzbwjVar, bundle2);
+                    return;
+                } finally {
+                }
+            } else if (obj2 instanceof Adapter) {
+                try {
+                    ((Adapter) obj2).loadNativeAd(new MediationNativeAdConfiguration((Context) ObjectWrapper.unwrap(iObjectWrapper), "", zzR(str, zzbdgVar, str2), zzS(zzbdgVar), zzT(zzbdgVar), zzbdgVar.zzk, zzbdgVar.zzg, zzbdgVar.zzt, zzU(str, zzbdgVar), this.zzj, zzblvVar), new zzbwd(this, zzbvmVar));
+                    return;
+                } finally {
+                }
+            } else {
+                return;
+            }
+        }
+        String canonicalName = MediationNativeAdapter.class.getCanonicalName();
+        String canonicalName2 = Adapter.class.getCanonicalName();
+        String canonicalName3 = this.zza.getClass().getCanonicalName();
+        StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 26 + String.valueOf(canonicalName2).length() + String.valueOf(canonicalName3).length());
+        sb.append(canonicalName);
+        sb.append(" or ");
+        sb.append(canonicalName2);
+        sb.append(" #009 Class mismatch: ");
+        sb.append(canonicalName3);
+        zzcgt.zzi(sb.toString());
+        throw new RemoteException();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final Bundle zzs() {
+        Object obj = this.zza;
+        if (!(obj instanceof zzcoh)) {
+            String canonicalName = zzcoh.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            return new Bundle();
+        }
+        return ((zzcoh) obj).zza();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final Bundle zzt() {
+        Object obj = this.zza;
+        if (!(obj instanceof zzcoi)) {
+            String canonicalName = zzcoi.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            return new Bundle();
+        }
+        return ((zzcoi) obj).getInterstitialAdapterInfo();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final Bundle zzu() {
+        return new Bundle();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzv(zzbdg zzbdgVar, String str, String str2) throws RemoteException {
+        Object obj = this.zza;
+        if (!(obj instanceof Adapter)) {
+            String canonicalName = Adapter.class.getCanonicalName();
+            String canonicalName2 = this.zza.getClass().getCanonicalName();
+            StringBuilder sb = new StringBuilder(String.valueOf(canonicalName).length() + 22 + String.valueOf(canonicalName2).length());
+            sb.append(canonicalName);
+            sb.append(" #009 Class mismatch: ");
+            sb.append(canonicalName2);
+            zzcgt.zzi(sb.toString());
+            throw new RemoteException();
+        }
+        zzD(this.zzd, zzbdgVar, str, new zzbwi((Adapter) obj, this.zzc));
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzw(IObjectWrapper iObjectWrapper) throws RemoteException {
+        Context context = (Context) ObjectWrapper.unwrap(iObjectWrapper);
+        Object obj = this.zza;
+        if (obj instanceof OnContextChangedListener) {
+            ((OnContextChangedListener) obj).onContextChanged(context);
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final boolean zzx() {
+        return false;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final void zzy(IObjectWrapper iObjectWrapper, zzcck zzcckVar, List<String> list) throws RemoteException {
+        zzcgt.zzi("Could not initialize rewarded video adapter.");
+        throw new RemoteException();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbvj
+    public final zzbnb zzz() {
+        zzbwh zzbwhVar = this.zzb;
+        if (zzbwhVar != null) {
+            NativeCustomTemplateAd zze = zzbwhVar.zze();
+            if (zze instanceof zzbnc) {
+                return ((zzbnc) zze).zza();
+            }
+            return null;
+        }
+        return null;
+    }
+
+    public zzbwf(MediationAdapter mediationAdapter) {
+        this.zza = mediationAdapter;
+    }
+}

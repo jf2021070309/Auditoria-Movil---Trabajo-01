@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cancellation_complete_hime_size">220dp</dimen>
+    <dimen name="downgrade_success_hime_size">220dp</dimen>
+    <dimen name="premium_membership_funimation_hime_size">220dp</dimen>
+</resources>

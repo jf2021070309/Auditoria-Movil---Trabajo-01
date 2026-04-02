@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/buttonbar"/>
+    <RelativeLayout android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.jrt.recyclerview.views.FastScrollRecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" app:fastScrollThumbColor="@color/accent" app:fastScrollThumbInactiveColor="@color/accent"/>
+        <ImageView android:background="@drawable/faded" android:layout_width="match_parent" android:layout_height="20dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <include layout="@layout/nowplaying"/>
+</merge>

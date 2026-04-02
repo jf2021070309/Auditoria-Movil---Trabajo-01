@@ -1,0 +1,73 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Set;
+/* compiled from: com.google.android.gms:play-services-ads@@20.5.0 */
+/* loaded from: classes2.dex */
+public final class zzdht extends zzdgm<zzdhv> implements zzdhv {
+    public zzdht(Set<zzdih<zzdhv>> set) {
+        super(set);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdhv
+    public final void zza(final String str) {
+        zzk(new zzdgl(str) { // from class: com.google.android.gms.internal.ads.zzdho
+            private final String zza;
+
+            /* JADX INFO: Access modifiers changed from: package-private */
+            {
+                this.zza = str;
+            }
+
+            @Override // com.google.android.gms.internal.ads.zzdgl
+            public final void zza(Object obj) {
+                ((zzdhv) obj).zza(this.zza);
+            }
+        });
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdhv
+    public final void zzb(final String str) {
+        zzk(new zzdgl(str) { // from class: com.google.android.gms.internal.ads.zzdhp
+            private final String zza;
+
+            /* JADX INFO: Access modifiers changed from: package-private */
+            {
+                this.zza = str;
+            }
+
+            @Override // com.google.android.gms.internal.ads.zzdgl
+            public final void zza(Object obj) {
+                ((zzdhv) obj).zzb(this.zza);
+            }
+        });
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdhv
+    public final void zzc(final String str, final String str2) {
+        zzk(new zzdgl(str, str2) { // from class: com.google.android.gms.internal.ads.zzdhq
+            private final String zza;
+            private final String zzb;
+
+            /* JADX INFO: Access modifiers changed from: package-private */
+            {
+                this.zza = str;
+                this.zzb = str2;
+            }
+
+            @Override // com.google.android.gms.internal.ads.zzdgl
+            public final void zza(Object obj) {
+                ((zzdhv) obj).zzc(this.zza, this.zzb);
+            }
+        });
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdhv
+    public final void zzd() {
+        zzk(zzdhr.zza);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzdhv
+    public final void zze() {
+        zzk(zzdhs.zza);
+    }
+}

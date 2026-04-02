@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+        <item quantity="other">%d нового сповіщення</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Залишилося %d хв</item>
+        <item quantity="few">Залишилося %d хв</item>
+        <item quantity="many">Залишилось %d хвилин</item>
+        <item quantity="other">Залишилось %d хвилин</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">&quot;%d&quot;&quot; альбом&quot;</item>
+        <item quantity="few">&quot;%d&quot;&quot; альбоми&quot;</item>
+        <item quantity="many">&quot;%d&quot;&quot; альбомів&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; альбому&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">Знайдено %d нову пісню</item>
+        <item quantity="few">Знайдено %d нові пісні</item>
+        <item quantity="many">Знайдено %d нових пісень</item>
+        <item quantity="other">Знайдено %d нових пісень</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; пісня&quot;</item>
+        <item quantity="few">%d пісні</item>
+        <item quantity="many">&quot;%d&quot;&quot; пісень&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; пісні&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; пісня з &quot;&quot;%1$d&quot;</item>
+        <item quantity="few">&quot;%2$d&quot;&quot; пісні з &quot;&quot;%1$d&quot;</item>
+        <item quantity="many">&quot;%2$d&quot;&quot; пісень з &quot;&quot;%1$d&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; пісні з &quot;&quot;%1$d&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">Видалено &quot;&quot;%d&quot;&quot; пісню.</item>
+        <item quantity="few">Видалено &quot;&quot;%d&quot;&quot; пісні.</item>
+        <item quantity="many">Видалено &quot;&quot;%d&quot;&quot; пісень.</item>
+        <item quantity="other">Видалено &quot;&quot;%d&quot;&quot; пісні.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">У список відтворення додано &quot;&quot;%d&quot;&quot; пісню.</item>
+        <item quantity="few">У список відтворення додано &quot;&quot;%d&quot;&quot; пісні.</item>
+        <item quantity="many">У список відтворення додано &quot;&quot;%d&quot;&quot; пісень.</item>
+        <item quantity="other">У список відтворення додано &quot;&quot;%d&quot;&quot; пісні.</item>
+    </plurals>
+</resources>

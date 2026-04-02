@@ -1,0 +1,21 @@
+package com.google.android.gms.ads.nonagon.signalgeneration;
+
+import com.google.android.gms.internal.ads.zzazj;
+import com.google.android.gms.internal.ads.zzgla;
+import com.google.android.gms.internal.ads.zzgli;
+/* compiled from: com.google.android.gms:play-services-ads@@20.5.0 */
+/* loaded from: classes.dex */
+public final class zzaa implements zzgla<zzazj> {
+    private final zzz zza;
+
+    public zzaa(zzz zzzVar) {
+        this.zza = zzzVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgln
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        zzazj zzc = this.zza.zzc();
+        zzgli.zzb(zzc);
+        return zzc;
+    }
+}

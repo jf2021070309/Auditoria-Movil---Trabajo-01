@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/cast_expanded_controller_ic_next_episode" android:id="@+id/menu_item_next_episode" android:visible="false" android:title="@string/cast_skip_next" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_player_settings" android:id="@+id/menu_item_settings" android:title="@string/desc_cast_toolbar_settings" app:showAsAction="always"/>
+    <item android:id="@+id/menu_item_media_route" android:title="@string/cast_button" app:actionProviderClass="com.ellation.crunchyroll.cast.CustomMediaRouteActionProvider" app:showAsAction="always"/>
+</menu>

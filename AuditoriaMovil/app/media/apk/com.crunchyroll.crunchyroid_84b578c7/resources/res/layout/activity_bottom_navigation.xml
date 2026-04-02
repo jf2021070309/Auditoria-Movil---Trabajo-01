@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.ellation.crunchyroll.ui.WindowInsetsFrameLayout android:id="@+id/tab_container_primary" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ellation.crunchyroll.ui.WindowInsetsFrameLayout android:id="@+id/tab_container_secondary" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.ellation.crunchyroll.cast.mini.CastMiniControllerLayout android:layout_gravity="bottom" android:id="@+id/cast_mini_controller_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/layout_errors"/>
+    <com.ellation.crunchyroll.presentation.main.BottomNavigationBarLayout android:id="@+id/bottom_navigation_bar" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BottomNavigationBar"/>
+</LinearLayout>

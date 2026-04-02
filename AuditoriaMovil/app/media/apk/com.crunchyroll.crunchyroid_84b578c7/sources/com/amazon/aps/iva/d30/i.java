@@ -1,0 +1,26 @@
+package com.amazon.aps.iva.d30;
+
+import com.amazon.aps.iva.rs.p;
+/* compiled from: CrPlusSubscriptionProductsViewModel.kt */
+@com.amazon.aps.iva.qb0.e(c = "com.ellation.crunchyroll.presentation.multitiersubscription.subscription.viewmodel.CrPlusSubscriptionProductsViewModelImpl", f = "CrPlusSubscriptionProductsViewModel.kt", l = {192}, m = "verifyPurchase")
+/* loaded from: classes2.dex */
+public final class i extends com.amazon.aps.iva.qb0.c {
+    public p h;
+    public com.amazon.aps.iva.b30.c i;
+    public /* synthetic */ Object j;
+    public final /* synthetic */ e k;
+    public int l;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public i(e eVar, com.amazon.aps.iva.ob0.d<? super i> dVar) {
+        super(dVar);
+        this.k = eVar;
+    }
+
+    @Override // com.amazon.aps.iva.qb0.a
+    public final Object invokeSuspend(Object obj) {
+        this.j = obj;
+        this.l |= Integer.MIN_VALUE;
+        return e.O8(this.k, null, null, this);
+    }
+}

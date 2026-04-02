@@ -1,0 +1,15 @@
+package com.google.android.gms.measurement.internal;
+
+import com.google.android.gms.common.internal.Preconditions;
+/* loaded from: classes.dex */
+public class zze extends zzgo implements zzgq {
+    public zze(zzfv zzfvVar) {
+        super(zzfvVar);
+        Preconditions.checkNotNull(zzfvVar);
+    }
+
+    @Override // com.google.android.gms.measurement.internal.zzgo
+    public final void zzg() {
+        this.zzs.zzaz().zzg();
+    }
+}

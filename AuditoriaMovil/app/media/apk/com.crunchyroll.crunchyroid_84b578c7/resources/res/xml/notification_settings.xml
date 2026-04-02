@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ellation.localization.preference.TranslatableSwitchPreferenceCompat android:layout="@layout/preference_switch" android:title="@string/channel_name_general_updates" android:key="@string/key_general_updates"/>
+    <com.ellation.localization.preference.TranslatableSwitchPreferenceCompat android:layout="@layout/preference_switch" android:title="@string/channel_name_content_updates" android:key="@string/key_content_updates"/>
+    <com.ellation.localization.preference.TranslatableSwitchPreferenceCompat android:layout="@layout/preference_switch" android:title="@string/channel_name_promotional_updates" android:key="@string/key_promotional_updates"/>
+</androidx.preference.PreferenceScreen>

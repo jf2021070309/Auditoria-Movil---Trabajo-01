@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d नयाँ सूचना</item>
+        <item quantity="other">%d नयाँ सूचनाहरू</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d मिनेट बाँकी</item>
+        <item quantity="other">%d मिनेट बाँकी</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d एल्बम</item>
+        <item quantity="other">%d एल्बमहरू</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d नयाँ गीत भेटियो</item>
+        <item quantity="other">%d नयाँ गीतहरू भेटिए</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">%d गीत</item>
+        <item quantity="other">%d गीतहरू</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">%2$d को %1$d गीतहरू</item>
+        <item quantity="other">%2$d को %1$d गीतहरू</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">%d गीत मेटिएको थियो।</item>
+        <item quantity="other">%d गीत मेटियो।</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">%d गीत प्लेलिस्टमा थपियो।</item>
+        <item quantity="other">%d गीतहरू प्लेलिस्टमा थपियो।</item>
+    </plurals>
+</resources>

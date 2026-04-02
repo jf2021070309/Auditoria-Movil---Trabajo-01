@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cancellation_rescue_benefits_horizontal_margin">42dp</dimen>
+    <dimen name="cancellation_rescue_industry_subtitle_padding">0dp</dimen>
+    <dimen name="cancellation_rescue_max_width">540dp</dimen>
+    <dimen name="cancellation_rescue_subtitle_horizontal_margin">0dp</dimen>
+    <dimen name="cancellation_rescue_top_title_padding">0dp</dimen>
+    <dimen name="downgrade_success_hime_size">250dp</dimen>
+    <dimen name="onboarding_button_width">352dp</dimen>
+    <dimen name="premium_membership_funimation_hime_size">250dp</dimen>
+</resources>

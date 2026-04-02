@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d νέα ειδοποίηση</item>
+        <item quantity="other">%d νέες ειδοποιήσεις</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Απομένει %d λεπτό</item>
+        <item quantity="other">Απομένουν %d λεπτά</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">1 άλμπουμ</item>
+        <item quantity="other">&quot;%d&quot;&quot; άλμπουμ&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">Βρέθηκε %d νέο τραγούδι</item>
+        <item quantity="other">%d νέα τραγούδια βρέθηκαν</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; τραγούδι&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; τραγούδια&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; από &quot;&quot;%1$d&quot;&quot; τραγούδι&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; από &quot;&quot;%1$d&quot;&quot; τραγούδια&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">Διαγράφηκε 1 τραγούδι.</item>
+        <item quantity="other">Διαγράφηκαν &quot;&quot;%d&quot;&quot; τραγούδια.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">1 τραγούδι προστέθηκε στο playlist.</item>
+        <item quantity="other">&quot;%d&quot;&quot; τραγούδια προστέθηκαν στο playlist.&quot;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/video_controls_container" android:focusable="false" android:clickable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/controls_background" android:background="@color/video_control_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/controls_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/center_video_controls" layout="@layout/player_controls_center"/>
+        <androidx.compose.ui.platform.ComposeView android:id="@+id/skip_segment_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/skip_segment_button_margin_bottom" android:layout_above="@+id/timeline" android:layout_alignWithParentIfMissing="true" android:layout_alignParentEnd="true"/>
+        <com.crunchyroll.player.presentation.controls.timeline.PlayerTimelineLayout android:id="@+id/timeline" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/seek_bar_margin_bottom" android:layout_alignParentBottom="true"/>
+        <com.crunchyroll.player.presentation.controls.adstimeline.AdsTimelineLayout android:id="@+id/ads_timeline" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ads_seek_bar_margin_bottom" android:layout_alignParentBottom="true"/>
+        <com.crunchyroll.trickscrubbing.TrickScrubbingLayout android:id="@+id/player_trick_scrubbing_layout" android:paddingLeft="@dimen/trick_scrubbing_view_padding_horizontal" android:paddingRight="@dimen/trick_scrubbing_view_padding_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/timeline" app:backgroundColor="@color/placeholder_color"/>
+    </RelativeLayout>
+</RelativeLayout>

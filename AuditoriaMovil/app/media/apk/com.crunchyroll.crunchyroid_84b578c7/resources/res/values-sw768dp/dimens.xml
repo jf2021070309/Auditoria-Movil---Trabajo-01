@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cancellation_complete_hime_size">250dp</dimen>
+    <dimen name="cast_expanded_controller_background_image_height">432dp</dimen>
+    <dimen name="cast_expanded_controller_controls_margin_bottom">64dp</dimen>
+    <dimen name="content_rating_content_max_height">695dp</dimen>
+    <dimen name="feed_item_vertical_spacing">32dp</dimen>
+    <dimen name="hero_item_divider_bottom">32dp</dimen>
+    <dimen name="perks_margin_bottom">36dp</dimen>
+    <dimen name="perks_margin_top">20dp</dimen>
+    <dimen name="rating_dialog_inset_vertical">40dp</dimen>
+    <dimen name="settings_premium_membership_item_padding_horizontal">20dp</dimen>
+    <dimen name="settings_premium_membership_restriction_hime_height">285dp</dimen>
+    <dimen name="sign_up_logo_margin_bottom">60dp</dimen>
+    <dimen name="subgenre_carousel_card_width">160dp</dimen>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/window_frame_container" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.ellation.crunchyroll.ui.toolbarmenu.dialog.ToolbarMenuDialogButton android:id="@+id/dialog_icon_settings" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:scaleType="centerInside"/>
+    <FrameLayout android:id="@+id/dialog_container" android:layout_width="@dimen/toolbar_menu_dialog_width" android:minHeight="@dimen/toolbar_menu_dialog_min_height" android:backgroundTint="@color/toolbar_menu_background" style="@style/ToolbarMenuDialogContentStyle"/>
+</RelativeLayout>

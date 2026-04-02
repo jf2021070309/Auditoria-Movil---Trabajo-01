@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/color_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/feed_item_vertical_spacing" android:text="@string/end_of_feed" android:paddingStart="@dimen/feed_horizontal_padding" android:paddingEnd="@dimen/feed_horizontal_padding" style="@style/Subheader2LatoMedium"/>
+</LinearLayout>

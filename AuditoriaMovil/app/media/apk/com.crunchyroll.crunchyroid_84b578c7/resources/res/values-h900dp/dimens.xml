@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cr_plus_subscription_success_hime_height">360dp</dimen>
+    <dimen name="cr_plus_subscription_success_hime_margin_bottom">32dp</dimen>
+    <dimen name="cr_plus_subscription_success_hime_width">350dp</dimen>
+</resources>

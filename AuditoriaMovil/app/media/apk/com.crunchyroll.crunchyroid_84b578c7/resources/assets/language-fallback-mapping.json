@@ -1,0 +1,10 @@
+{
+    "default": ["en-US"],
+    "ar-ME": ["ar-SA"],
+    "ar-SA": ["ar-ME"],
+    "es-419": ["es-LA", "es-ES"],
+    "es-ES": ["es-419", "es-LA"],
+    "es-LA": ["es-419", "es-ES"],
+    "pt-BR": ["pt-PT"],
+    "pt-PT": ["pt-BR"]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ellation.crunchyroll.presentation.settings.membership.preference.MembershipPlanPreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/switch_profile" android:key="@string/key_switch_profile"/>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_divider"/>
+    <com.crunchyroll.profiles.presentation.customizetooltip.CustomizeProfileTooltipPreference android:layout="@layout/customize_profile_tooltip_preference"/>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_category_user_preferences" android:title="@string/category_preferences" android:key="preferences_category_header">
+        <com.ellation.localization.preference.TranslatableSwitchPreferenceCompat android:layout="@layout/preference_switch" android:title="@string/show_mature_content" android:key="@string/key_show_mature_content" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/maturity_restrictions" android:key="@string/key_maturity_restrictions" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/preferred_audio_language" android:key="@string/key_preferred_audio_language" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/preferred_subtitle_cc_language" android:key="@string/key_preferred_subtitle_cc_language" app:allowDividerBelow="true"/>
+        <com.ellation.localization.preference.TranslatableSwitchPreferenceCompat android:layout="@layout/preference_switch" android:title="@string/show_closed_captions" android:key="@string/key_show_closed_captions" android:defaultValue="false" app:allowDividerBelow="true"/>
+    </com.ellation.localization.preference.TranslatablePreferenceCategory>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_divider"/>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_category_text" android:title="@string/membership">
+        <com.ellation.crunchyroll.presentation.settings.membership.preference.MembershipPlanPreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_membership_plan_layout" android:title="@string/subscription" android:key="@string/key_membership_plan" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/persistent_message_center_notifications" android:key="@string/key_persistent_message_center" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/email" android:key="@string/key_change_email" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/phone" android:key="@string/key_change_phone" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/password" android:key="@string/key_change_password" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/membership_card" android:key="@string/key_membership_card" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:layout="@layout/preference_item_layout" android:title="@string/redeem_promo_code" android:key="@string/key_redeem_promo_code" app:allowDividerBelow="true"/>
+    </com.ellation.localization.preference.TranslatablePreferenceCategory>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_divider"/>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_category_text" android:title="@string/category_app_experience">
+        <com.ellation.localization.preference.TranslatableSwitchPreferenceCompat android:layout="@layout/preference_switch" android:title="@string/stream_over_cellular" android:key="@string/key_switch_stream_over_cellular" android:defaultValue="true" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/label_notification_settings" android:key="@string/key_notifications" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/connected_apps_screen_title" android:key="@string/key_connected_apps" app:allowDividerBelow="true"/>
+    </com.ellation.localization.preference.TranslatablePreferenceCategory>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_divider"/>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_category_text" android:title="@string/category_privacy" android:key="@string/key_category_privacy">
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/do_not_sell_my_personal_information" android:key="@string/key_do_not_sell" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/account_deletion" android:key="@string/key_account_deletion" app:allowDividerBelow="true"/>
+    </com.ellation.localization.preference.TranslatablePreferenceCategory>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_divider"/>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_category_text" android:title="@string/category_offline_viewing" android:key="@string/key_category_offline_viewing">
+        <com.ellation.localization.preference.TranslatableSwitchPreferenceCompat android:layout="@layout/preference_switch" android:title="@string/sync_over_cellular" android:key="@string/key_switch_sync_over_cellular" android:defaultValue="false" app:allowDividerBelow="true"/>
+        <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/preference_item_layout" android:title="@string/sync_quality" android:key="@string/key_sync_quality" app:allowDividerBelow="true"/>
+    </com.ellation.localization.preference.TranslatablePreferenceCategory>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_divider"/>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_category_text" android:title="@string/category_support">
+        <com.ellation.localization.preference.TranslatablePreference android:layout="@layout/preference_item_layout" android:title="@string/help_center" android:key="@string/key_help_center" app:allowDividerBelow="true"/>
+        <com.ellation.localization.preference.TranslatablePreference android:layout="@layout/preference_item_layout" android:title="@string/whatsapp_help" android:key="@string/key_whatsapp_help"/>
+    </com.ellation.localization.preference.TranslatablePreferenceCategory>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_divider"/>
+    <com.ellation.localization.preference.TranslatablePreferenceCategory android:layout="@layout/preference_empty_space"/>
+    <com.ellation.localization.preference.TranslatablePreference android:layout="@layout/preference_item_layout" android:title="@string/sign_out" android:key="@string/key_log_out" app:allowDividerBelow="false"/>
+</androidx.preference.PreferenceScreen>

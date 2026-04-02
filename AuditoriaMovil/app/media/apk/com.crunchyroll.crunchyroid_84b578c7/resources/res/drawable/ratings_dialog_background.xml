@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@color/ratings_dialog_background" android:insetTop="@dimen/rating_dialog_inset_vertical" android:insetBottom="@dimen/rating_dialog_inset_vertical"/>

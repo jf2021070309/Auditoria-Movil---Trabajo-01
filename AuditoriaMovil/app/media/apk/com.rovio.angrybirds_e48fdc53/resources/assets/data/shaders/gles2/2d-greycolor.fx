@@ -1,0 +1,7 @@
+#define DISABLE_DEPTH_TEST
+#define ENABLE_ALPHA_FACTOR
+#define ENABLE_TWOSIDED
+#define ENABLE_VERTEXCOLOR
+#define ENABLE_ALPHA_BLENDING
+
+#include "pp_greycolor.fx"

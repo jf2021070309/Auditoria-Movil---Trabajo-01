@@ -1,0 +1,104 @@
+package com.google.android.gms.internal.ads;
+
+import android.view.ViewGroup;
+import android.view.ViewParent;
+import java.util.concurrent.Executor;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: com.google.android.gms:play-services-ads@@20.5.0 */
+/* loaded from: classes2.dex */
+public final class zzewi implements zzfrz<zzcvh> {
+    final /* synthetic */ zzelx zza;
+    final /* synthetic */ zzcwe zzb;
+    final /* synthetic */ zzewj zzc;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public zzewi(zzewj zzewjVar, zzelx zzelxVar, zzcwe zzcweVar) {
+        this.zzc = zzewjVar;
+        this.zza = zzelxVar;
+        this.zzb = zzcweVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfrz
+    public final void zza(Throwable th) {
+        zzddr zzddrVar;
+        Executor executor;
+        final zzbcz zzh = this.zzb.zzY().zzh(th);
+        synchronized (this.zzc) {
+            zzewj.zzh(this.zzc, null);
+            this.zzb.zzX().zzbD(zzh);
+            if (((Boolean) zzbet.zzc().zzc(zzbjl.zzfO)).booleanValue()) {
+                executor = this.zzc.zzb;
+                executor.execute(new Runnable(this, zzh) { // from class: com.google.android.gms.internal.ads.zzewh
+                    private final zzewi zza;
+                    private final zzbcz zzb;
+
+                    /* JADX INFO: Access modifiers changed from: package-private */
+                    {
+                        this.zza = this;
+                        this.zzb = zzh;
+                    }
+
+                    @Override // java.lang.Runnable
+                    public final void run() {
+                        zzeli zzeliVar;
+                        zzewi zzewiVar = this.zza;
+                        zzbcz zzbczVar = this.zzb;
+                        zzeliVar = zzewiVar.zzc.zzd;
+                        zzeliVar.zzbD(zzbczVar);
+                    }
+                });
+            }
+            zzddrVar = this.zzc.zzh;
+            zzddrVar.zzd(60);
+            zzfbh.zza(zzh.zza, th, "BannerAdLoader.onFailure");
+            this.zza.zza();
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfrz
+    public final /* bridge */ /* synthetic */ void zzb(zzcvh zzcvhVar) {
+        ViewGroup viewGroup;
+        ViewGroup viewGroup2;
+        zzddr zzddrVar;
+        Executor executor;
+        zzeli zzeliVar;
+        zzeli zzeliVar2;
+        zzelm zzelmVar;
+        zzcvh zzcvhVar2 = zzcvhVar;
+        synchronized (this.zzc) {
+            zzewj.zzh(this.zzc, null);
+            viewGroup = this.zzc.zzf;
+            viewGroup.removeAllViews();
+            if (zzcvhVar2.zza() != null) {
+                ViewParent parent = zzcvhVar2.zza().getParent();
+                if (parent instanceof ViewGroup) {
+                    String zze = zzcvhVar2.zzm() != null ? zzcvhVar2.zzm().zze() : "";
+                    StringBuilder sb = new StringBuilder(String.valueOf(zze).length() + 78);
+                    sb.append("Banner view provided from ");
+                    sb.append(zze);
+                    sb.append(" already has a parent view. Removing its old parent.");
+                    com.google.android.gms.ads.internal.util.zze.zzi(sb.toString());
+                    ((ViewGroup) parent).removeView(zzcvhVar2.zza());
+                }
+            }
+            if (((Boolean) zzbet.zzc().zzc(zzbjl.zzfO)).booleanValue()) {
+                zzdfj zzo = zzcvhVar2.zzo();
+                zzeliVar2 = this.zzc.zzd;
+                zzo.zza(zzeliVar2);
+                zzelmVar = this.zzc.zze;
+                zzo.zzb(zzelmVar);
+            }
+            viewGroup2 = this.zzc.zzf;
+            viewGroup2.addView(zzcvhVar2.zza());
+            this.zza.zzb(zzcvhVar2);
+            if (((Boolean) zzbet.zzc().zzc(zzbjl.zzfO)).booleanValue()) {
+                executor = this.zzc.zzb;
+                zzeliVar = this.zzc.zzd;
+                zzeliVar.getClass();
+                executor.execute(zzewg.zza(zzeliVar));
+            }
+            zzddrVar = this.zzc.zzh;
+            zzddrVar.zzd(zzcvhVar2.zzg());
+        }
+    }
+}

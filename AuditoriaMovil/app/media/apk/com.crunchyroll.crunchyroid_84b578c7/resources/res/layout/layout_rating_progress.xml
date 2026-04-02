@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rating_progress_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ellation.crunchyroll.showrating.ratingprogressbar.RatingProgressBar android:id="@+id/rating_progress_bar_5" android:tag="5" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.ellation.crunchyroll.showrating.ratingprogressbar.RatingProgressBar android:id="@+id/rating_progress_bar_4" android:tag="4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    <com.ellation.crunchyroll.showrating.ratingprogressbar.RatingProgressBar android:id="@+id/rating_progress_bar_3" android:tag="3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    <com.ellation.crunchyroll.showrating.ratingprogressbar.RatingProgressBar android:id="@+id/rating_progress_bar_2" android:tag="2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    <com.ellation.crunchyroll.showrating.ratingprogressbar.RatingProgressBar android:id="@+id/rating_progress_bar_1" android:tag="1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+</LinearLayout>

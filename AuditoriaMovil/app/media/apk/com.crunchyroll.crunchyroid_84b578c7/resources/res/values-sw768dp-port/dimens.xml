@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="preference_switch_margin_right">20dp</dimen>
+    <dimen name="profile_activation_container_height">550dp</dimen>
+    <dimen name="watch_music_summary_margin_horizontal">70dp</dimen>
+</resources>

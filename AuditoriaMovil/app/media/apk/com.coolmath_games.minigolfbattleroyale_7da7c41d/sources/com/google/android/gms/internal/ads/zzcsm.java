@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import android.os.Bundle;
+import java.util.Map;
+/* compiled from: com.google.android.gms:play-services-ads@@20.5.0 */
+/* loaded from: classes2.dex */
+public final class zzcsm implements zzcsc {
+    private final Context zza;
+    private final com.google.android.gms.ads.internal.util.zzg zzb = com.google.android.gms.ads.internal.zzt.zzg().zzp();
+
+    public zzcsm(Context context) {
+        this.zza = context;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzcsc
+    public final void zza(Map<String, String> map) {
+        if (map.isEmpty()) {
+            return;
+        }
+        String str = map.get("gad_idless");
+        if (str != null) {
+            boolean parseBoolean = Boolean.parseBoolean(str);
+            map.remove("gad_idless");
+            if (((Boolean) zzbet.zzc().zzc(zzbjl.zzao)).booleanValue()) {
+                this.zzb.zzB(parseBoolean);
+                if (((Boolean) zzbet.zzc().zzc(zzbjl.zzex)).booleanValue() && parseBoolean) {
+                    this.zza.deleteDatabase("OfflineUpload.db");
+                }
+            }
+        }
+        Bundle bundle = new Bundle();
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            bundle.putString(entry.getKey(), entry.getValue());
+        }
+        if (((Boolean) zzbet.zzc().zzc(zzbjl.zzaj)).booleanValue()) {
+            com.google.android.gms.ads.internal.zzt.zzA().zze(bundle);
+        }
+    }
+}

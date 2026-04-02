@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false" n1:color="@color/common_google_signin_btn_text_light_disabled"/>
+    <item n1:state_pressed="true" n1:color="@color/common_google_signin_btn_text_light_pressed"/>
+    <item n1:state_focused="true" n1:color="@color/common_google_signin_btn_text_light_focused"/>
+    <item n1:color="@color/common_google_signin_btn_text_light_default"/>
+</selector>

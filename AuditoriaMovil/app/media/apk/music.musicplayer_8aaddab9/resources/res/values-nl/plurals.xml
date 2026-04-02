@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nieuwe melding</item>
+        <item quantity="other">%d nieuwe meldingen</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d minuut resterend</item>
+        <item quantity="other">%d minuten resterend</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">1 album</item>
+        <item quantity="other">&quot;%d&quot;&quot; albums&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d nieuw nummer gevonden</item>
+        <item quantity="other">%d nieuwe nummers gevonden</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; nummer&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; nummer&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; van &quot;&quot;%1$d&quot;&quot; nummer&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; van &quot;&quot;%1$d&quot;&quot; nummers&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">1 nummer is verwijderd.</item>
+        <item quantity="other">&quot;%d&quot;&quot; nummers zijn verwijderd.&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">1 nummer toegevoegd aan afspeellijst.</item>
+        <item quantity="other">&quot;%d&quot;&quot; nummers toegevoegd aan afspeellijst.&quot;</item>
+    </plurals>
+</resources>

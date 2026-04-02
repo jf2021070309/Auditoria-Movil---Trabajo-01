@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cancellation_downgrade_checkmark_margin_start">80dp</dimen>
+    <dimen name="cancellation_hime_height">300dp</dimen>
+    <dimen name="cancellation_rescue_benefit_top_margin">40dp</dimen>
+    <dimen name="cancellation_rescue_cta_width">360dp</dimen>
+    <dimen name="cancellation_rescue_dialog_margin">24dp</dimen>
+    <dimen name="cancellation_rescue_dialog_title_margin_top">8dp</dimen>
+    <dimen name="cancellation_rescue_downgrade_horizontal_margin">40dp</dimen>
+    <dimen name="cancellation_rescue_industry_image_width">@dimen/wrap_content</dimen>
+    <dimen name="cancellation_rescue_subtitle_horizontal_margin">24dp</dimen>
+    <dimen name="onboarding_button_width">268dp</dimen>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">새 알림 %d개</item>
+        <item quantity="other">새 알림 %d개</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="other">%d 분 남음</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="other">앨범 &quot;&quot;%d&quot;&quot;개</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="other">%d곡의 새로운 곡을 찾았습니다</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="other">&quot;%d&quot;&quot;곡&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="other">&quot;%2$d&quot;&quot;/&quot;&quot;%1$d&quot;&quot;곡&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="other">노래 &quot;&quot;%d&quot;&quot;곡이 삭제되었습니다.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="other">재생목록에 노래 &quot;&quot;%d&quot;&quot;곡이 추가되었습니다.</item>
+    </plurals>
+</resources>

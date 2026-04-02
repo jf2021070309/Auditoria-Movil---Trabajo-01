@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <solid n1:color="@android:color/white"/>
+    <corners n1:topLeftRadius="@dimen/com_facebook_auth_dialog_corner_radius_oversized" n1:topRightRadius="@dimen/com_facebook_auth_dialog_corner_radius_oversized" n1:bottomLeftRadius="@dimen/com_facebook_auth_dialog_corner_radius" n1:bottomRightRadius="@dimen/com_facebook_auth_dialog_corner_radius"/>
+</shape>

@@ -1,0 +1,22 @@
+package com.amazon.aps.iva.lv;
+
+import com.ellation.crunchyroll.api.etp.content.EtpContentService;
+import com.ellation.crunchyroll.api.etp.content.model.customlists.CustomLists;
+/* compiled from: CrunchylistsInteractor.kt */
+/* loaded from: classes2.dex */
+public final class f implements e {
+    public final EtpContentService b;
+
+    public f(EtpContentService etpContentService) {
+        this.b = etpContentService;
+    }
+
+    @Override // com.amazon.aps.iva.wy.j
+    public final void cancelRunningApiCalls() {
+    }
+
+    @Override // com.amazon.aps.iva.lv.e
+    public final Object getCustomLists(com.amazon.aps.iva.ob0.d<? super CustomLists> dVar) {
+        return this.b.getCustomLists(dVar);
+    }
+}

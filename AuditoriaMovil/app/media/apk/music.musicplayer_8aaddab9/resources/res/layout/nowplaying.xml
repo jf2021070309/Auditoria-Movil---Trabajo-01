@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/nowplaying" android:background="#33ffffff" android:paddingLeft="7dp" android:paddingTop="7dp" android:paddingBottom="7dp" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/tab_indicator_text" android:ellipsize="end" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/tab_indicator_text" android:ellipsize="end" android:id="@+id/artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="16dp">
+            <ProgressBar android:layout_gravity="center" android:layout_width="3dp" android:layout_height="3dp" android:indeterminate="true"/>
+            <ImageView android:id="@+id/icon" android:background="@drawable/indicator_ic_mp_playing_large" android:layout_width="40dp" android:layout_height="40dp"/>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/menu_button" android:padding="3dp" android:layout_width="50dp" android:layout_height="50dp" app:srcCompat="@drawable/ic_quick_settings_normal"/>
+    </LinearLayout>
+</LinearLayout>

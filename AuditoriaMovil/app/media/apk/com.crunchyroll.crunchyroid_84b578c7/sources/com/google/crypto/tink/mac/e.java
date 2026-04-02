@@ -1,0 +1,16 @@
+package com.google.crypto.tink.mac;
+
+import com.google.crypto.tink.Parameters;
+import com.google.crypto.tink.internal.ParametersSerializer;
+import com.google.crypto.tink.internal.ProtoParametersSerialization;
+import com.google.crypto.tink.internal.Serialization;
+/* compiled from: R8$$SyntheticClass */
+/* loaded from: classes4.dex */
+public final /* synthetic */ class e implements ParametersSerializer.ParametersSerializationFunction {
+    @Override // com.google.crypto.tink.internal.ParametersSerializer.ParametersSerializationFunction
+    public final Serialization serializeParameters(Parameters parameters) {
+        ProtoParametersSerialization serializeParameters;
+        serializeParameters = HmacProtoSerialization.serializeParameters((HmacParameters) parameters);
+        return serializeParameters;
+    }
+}

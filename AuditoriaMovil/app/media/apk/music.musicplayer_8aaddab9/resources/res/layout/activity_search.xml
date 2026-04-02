@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/blurred_bg_player_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="4">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" app:theme="@style/CustomActionBar"/>
+        <com.jrt.recyclerview.views.FastScrollRecyclerView android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4" android:fadeScrollbars="true" app:fastScrollThumbColor="@color/accent" app:fastScrollThumbInactiveColor="@color/accent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+    </LinearLayout>
+</FrameLayout>

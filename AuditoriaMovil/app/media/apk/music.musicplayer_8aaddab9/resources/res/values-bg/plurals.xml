@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ново известие</item>
+        <item quantity="other">%d нови известия</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Остава %d минута</item>
+        <item quantity="other">Остават %d минути</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d албум</item>
+        <item quantity="other">&quot;%d&quot;&quot; албума&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">Намерена е %d нова песен</item>
+        <item quantity="other">Намерени са %d нови песни</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; песен&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; песни&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; от &quot;&quot;%1$d&quot;&quot; песен&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; от &quot;&quot;%1$d&quot;&quot; песни&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">%d песен бе изтрита.</item>
+        <item quantity="other">&quot;%d&quot;&quot; песни бяха изтрити.&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">%d песен е добавена към плейлиста.</item>
+        <item quantity="other">&quot;%d&quot;&quot; песни са добавени към плейлиста.&quot;</item>
+    </plurals>
+</resources>

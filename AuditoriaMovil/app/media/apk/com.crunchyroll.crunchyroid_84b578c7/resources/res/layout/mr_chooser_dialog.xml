@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/mr_chooser_dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp">
+        <TextView android:textColor="@color/color_white" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:layout_marginBottom="24dp" android:text="@string/connect_to_device" android:includeFontPadding="false" android:layout_weight="1" style="@style/Subheader2LatoSemibold"/>
+    </LinearLayout>
+    <TextView android:id="@+id/mr_chooser_title" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ListView android:id="@+id/mr_chooser_list" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/transparent"/>
+        <LinearLayout android:orientation="vertical" android:id="@android:id/empty" android:paddingLeft="16dp" android:paddingTop="90dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="240dp">
+            <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mr_chooser_searching"/>
+            <ProgressBar android:layout_gravity="center" android:layout_width="150dp" android:layout_height="wrap_content" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal"/>
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/mr_chooser_wifi_warning_container" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp">
+        <TextView android:id="@+id/mr_chooser_wifi_warning_description" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+        <TextView android:id="@+id/mr_chooser_wifi_learn_more" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/mr_chooser_searching" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+    <LinearLayout android:id="@+id/mr_chooser_ok_button_container" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp">
+        <Button android:id="@+id/mr_chooser_ok_button" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/mr_chooser_search_progress_bar" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" android:indeterminate="true"/>
+</LinearLayout>

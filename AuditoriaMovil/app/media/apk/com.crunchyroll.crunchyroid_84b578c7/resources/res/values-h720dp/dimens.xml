@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_alert_dialog_button_bar_height">54dp</dimen>
+    <dimen name="billing_notification_hime_size">220dp</dimen>
+    <dimen name="hime_size">220dp</dimen>
+    <dimen name="in_grace_hime_vertical_bias">0.28</dimen>
+    <dimen name="on_hold_hime_vertical_bias">0.28</dimen>
+    <dimen name="show_title_margin_top">24dp</dimen>
+    <dimen name="tier_image_margin_top">32dp</dimen>
+    <dimen name="tier_image_size">160dp</dimen>
+    <dimen name="tier_title_margin_top">16dp</dimen>
+</resources>

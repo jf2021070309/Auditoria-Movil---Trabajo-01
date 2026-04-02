@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_enabled="false" n1:drawable="@drawable/common_google_signin_btn_icon_disabled"/>
+    <item n1:state_focused="true" n1:drawable="@drawable/common_google_signin_btn_icon_dark_focused"/>
+    <item n1:drawable="@drawable/common_google_signin_btn_icon_dark_normal"/>
+</selector>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:menu="@menu/menu_item_more">
+    <TextView android:id="@+id/fake_toolbar_text_collapsed" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="64dp" android:maxLines="100" android:includeFontPadding="false" android:breakStrategy="simple" style="@style/CollapsibleAppBarTextStyle"/>
+</androidx.appcompat.widget.Toolbar>

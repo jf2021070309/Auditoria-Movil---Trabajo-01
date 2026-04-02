@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_selected="true" n1:drawable="@color/hockeyapp_button_background_selected"/>
+    <item n1:state_pressed="true" n1:drawable="@color/hockeyapp_button_background_pressed"/>
+    <item n1:drawable="@color/hockeyapp_button_background"/>
+</selector>

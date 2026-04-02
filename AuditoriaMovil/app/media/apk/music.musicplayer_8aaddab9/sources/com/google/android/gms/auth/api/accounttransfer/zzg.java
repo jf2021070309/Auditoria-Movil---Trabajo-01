@@ -1,0 +1,20 @@
+package com.google.android.gms.auth.api.accounttransfer;
+
+import android.os.RemoteException;
+import com.google.android.gms.internal.auth.zzaq;
+import com.google.android.gms.internal.auth.zzau;
+/* loaded from: classes.dex */
+public final class zzg extends zzk<DeviceMetaData> {
+    public final /* synthetic */ zzaq zza;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public zzg(AccountTransferClient accountTransferClient, int i2, zzaq zzaqVar) {
+        super(1608, null);
+        this.zza = zzaqVar;
+    }
+
+    @Override // com.google.android.gms.auth.api.accounttransfer.zzk
+    public final void zza(zzau zzauVar) throws RemoteException {
+        zzauVar.zzd(new zzf(this, this), this.zza);
+    }
+}

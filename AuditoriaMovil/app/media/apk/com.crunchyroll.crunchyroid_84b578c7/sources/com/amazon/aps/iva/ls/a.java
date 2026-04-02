@@ -1,0 +1,113 @@
+package com.amazon.aps.iva.ls;
+/* compiled from: SegmentAnalyticsScreen.kt */
+/* loaded from: classes2.dex */
+public enum a {
+    SPLASH_SCREEN("Splash"),
+    ONBOARDING("Onboarding"),
+    REGISTRATION("Registration"),
+    SOFT_REGISTRATION("Soft Registration"),
+    LOGIN("Login"),
+    RENDEZVOUS_LOGIN("Rendezvous Login"),
+    FORGOT_PASSWORD("Forgot Password"),
+    PICK_AVATAR_USERNAME("Pick Avatar And Username"),
+    HOME("Home"),
+    CHANNEL("Channel"),
+    SEASON("Season"),
+    SERIES("Series"),
+    EPISODE("Episode"),
+    MOVIE("Movie"),
+    MEDIA("Media"),
+    CHANNEL_LIST("Channel List"),
+    SETTINGS("Settings"),
+    SEARCH("Search"),
+    SEARCH_RESULTS("Search Results"),
+    CHROMECAST("Chromecast"),
+    ERROR("Error"),
+    SUBSCRIPTION("Subscription"),
+    PRODUCT_UPSELL("Product Upsell"),
+    PRODUCT_UPSELL_FT("Product Upsell FT"),
+    PRODUCT_UPSELL_SUBSCRIPTION("Product Upsell Subscription"),
+    CHECKOUT("Checkout"),
+    CHECKOUT_SUCCESS("Checkout Success"),
+    PAY_WALL("Pay Wall"),
+    MATURE_WALL("Mature Wall"),
+    BROWSE("Browse"),
+    WATCHLIST("WatchList"),
+    PRIVACY("Privacy"),
+    TERMS_OF_USE("Terms of Use"),
+    DOWNLOADS("Downloads"),
+    OFFLINE_MEDIA("Offline Media"),
+    LAUNCH_DOWNLOADS("Launch Downloads"),
+    HISTORY("History"),
+    NEW("New"),
+    ANIME("Anime"),
+    DRAMA("Drama"),
+    SIMULCAST("Simulcast"),
+    STORE("Store"),
+    BROWSE_ALL("Browse All"),
+    GENRE("Genre"),
+    SUBGENRE("Subgenre"),
+    USER_SETTINGS_MEMBERSHIP_PLAN("User Settings Membership Plan"),
+    SUBSCRIPTION_TIER_DETAILS("Subscription Tier Details"),
+    SUBSCRIPTION_TIERS_MENU("Subscription Tiers Menu"),
+    COMMENTS("Comments"),
+    REPLIES("Replies"),
+    PROFILE_ACTIVATION("Profile Activation"),
+    SHUTDOWN_MODAL("Shutdown modal"),
+    RATINGS_DETAILS_MODAL("Ratings Details Modal"),
+    ADD_TO_CRUNCHYLIST_MODAL("Add to Crunchylist Modal"),
+    ALL_CRUNCHYLISTS("All Crunchylists"),
+    SINGLE_CRUNCHYLIST("Single Crunchylist"),
+    CREATE_CRUNCHYLIST_MODAL("Create Crunchylist Modal"),
+    CONTENT_UNAVAILABLE("Content Unavailable"),
+    EMAIL_VERIFICATION_MODAL("Email Verification Modal"),
+    AUTHENTICATION_RESTRICTED_MODAL("Authentication Restricted Modal"),
+    CONNECTED_APPS("Connected Apps"),
+    BILLING_NOTIFICATION("Billing Notification"),
+    MEMBERSHIP_PLAN_IN_GRACE_NOTIFICATION("Membership Plan In Grace notification"),
+    MEMBERSHIP_PLAN_RENEW_NOTIFICATION("Membership Plan Renew notification"),
+    MEMBERSHIP_PLAN_ACCOUNT_HOLD_NOTIFICATION("Membership Plan Account Hold notification"),
+    RENEW_INITIAL_SUBSCRIPTION("Initial Renew Subscription"),
+    RENEW_FINAL_SUBSCRIPTION("Final Renew Subscription"),
+    ACCOUNT_HOLD_NOTIFICATION("Account Hold"),
+    MANAGE_MEMBERSHIP_ACCOUNT("Manage Membership Account"),
+    CANCELLATION_RESCUE("Cancellation Rescue"),
+    CANCELLATION_COMPLETE("Cancellation Complete"),
+    DOWNGRADE_COMPLETE("Downgrade Complete"),
+    ARTIST("Artist"),
+    WATCH_MUSIC_VIDEO("Watch Music Video"),
+    WATCH_CONCERT("Watch Concert"),
+    MUSIC_LANDING("Music Landing"),
+    TERMS_AND_PRIVACY_POLICY("Crunchyroll Terms and Privacy Policy"),
+    DUB_PREMIUM_DIALOG("Dub - Premium Dialog"),
+    MIGRATION_WELCOME("Migration Welcome"),
+    ACCOUNT_OWNERSHIP_VERIFICATION("Account Ownership Verification"),
+    DATA_MIGRATION_CONFIRMATION("Data Migration Confirmation"),
+    EMAIL_ADDRESS_NEEDED("Email Address Needed"),
+    OTP_VALIDATION("OTP Validation"),
+    UPGRADE_MENU("Upgrade Menu"),
+    UPSELL_MODAL("CR Upsell Modal"),
+    ARCADE_CAROUSEL("Arcade carousel"),
+    ARCADE_UPSELL_MODAL("Arcade Upsell Modal"),
+    ARCADE_UPGRADE_MODAL("Arcade Upgrade Modal"),
+    VIDEO_PLAYER_EPISODE("Episode - Video Player"),
+    VIDEO_PLAYER_MOVIE("Movie - Video Player"),
+    UPSELL_DIALOG("Upsell Dialog"),
+    STREAM_LIMIT_REACHED("Stream Limit Reached"),
+    UNKNOWN("Unknown");
+    
+    private final String screen;
+
+    a(String str) {
+        this.screen = str;
+    }
+
+    public final String getScreen() {
+        return this.screen;
+    }
+
+    @Override // java.lang.Enum
+    public String toString() {
+        return this.screen;
+    }
+}

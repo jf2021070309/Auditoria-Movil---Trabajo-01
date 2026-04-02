@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="711" android:versionName="3.46.2" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" package="com.crunchyroll.crunchyroid" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="34"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <permission android:label="credentialsprovider" android:name="com.crunchyroll.crunchyroid.permission.credentialsprovider" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <queries>
+        <package android:name="com.google.android.apps.tv.launcherx"/>
+        <package android:name="com.google.android.tvlauncher"/>
+        <package android:name="com.google.android.tvrecommendations"/>
+        <package android:name="com.google.android.gms.policy_cast_dynamite"/>
+        <intent>
+            <action android:name="com.singular.preinstall.READ_PERMISSION_SINGULAR"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.amazon.aiondec.ALEXA_INTERACTIVE_ADS"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <permission android:name="com.crunchyroll.crunchyroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.crunchyroll.crunchyroid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <application android:theme="@style/CxTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.ellation.crunchyroll.application.CrunchyrollApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/backup_rules" android:localeConfig="@xml/locales_config" android:enableOnBackInvokedCallback="true">
+        <activity android:theme="@style/StartUpCxTheme" android:name="com.ellation.crunchyroll.presentation.startup.StartupActivity" android:exported="true" android:screenOrientation="locked" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="crunchyroll.com"/>
+                <data android:host="www.crunchyroll.com"/>
+                <data android:pathPattern="/watch/..*"/>
+                <data android:pathPattern="/..*/watch/..*"/>
+                <data android:pathPattern="/series/..*"/>
+                <data android:pathPattern="/..*/series/..*"/>
+                <data android:pathPattern="/artist/..*"/>
+                <data android:pathPattern="/..*/artist/..*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="crunchyroll"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="crunchyroll" android:host="open"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.main.home.HomeBottomBarActivity" android:screenOrientation="locked" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.main.lists.MyListsBottomBarActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.main.browse.BrowseBottomBarActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.main.simulcast.SimulcastBottomBarActivity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.main.store.CrStoreBottomBarActivity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/SettingsTheme" android:name="com.ellation.crunchyroll.presentation.main.settings.SettingsBottomBarActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/StartUpCxTheme" android:name="com.ellation.crunchyroll.presentation.update.UpdateAppActivity" android:screenOrientation="locked" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="@string/sign_in_title" android:name="com.ellation.crunchyroll.presentation.signing.signin.SignInActivity" android:screenOrientation="locked" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="@string/create_account" android:name="com.ellation.crunchyroll.presentation.signing.signup.SignUpFlowActivity" android:screenOrientation="locked" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ShowPageTheme" android:label="" android:name="com.ellation.crunchyroll.presentation.showpage.ShowPageActivity" android:screenOrientation="locked" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="@string/forgot_password_title" android:name="com.ellation.crunchyroll.presentation.forgotpassword.ForgotPasswordActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:theme="@style/Theme.CastVideosTheme" android:name="com.ellation.crunchyroll.cast.expanded.CastControllerActivity"/>
+        <activity android:theme="@style/StartUpCxTheme" android:name="com.ellation.crunchyroll.presentation.availability.ServiceUnavailableActivity" android:screenOrientation="locked" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="@string/offline_viewing" android:name="com.ellation.crunchyroll.presentation.downloads.activity.DownloadsActivity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/SearchResultCxTheme" android:name="com.ellation.crunchyroll.presentation.search.result.summary.SearchResultSummaryActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.search.result.detail.SearchResultDetailActivity" android:screenOrientation="locked" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/SortAndFilterTheme" android:name="com.crunchyroll.sortandfilters.screen.SortAndFilterActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="@string/do_not_sell_my_personal_information" android:name="com.ellation.crunchyroll.presentation.settings.donotsell.SettingsDoNotSellActivity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="" android:name="com.ellation.crunchyroll.crunchylists.crunchylist.CrunchylistActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:name="com.ellation.crunchyroll.presentation.download.notification.NotificationDismissReceiver" android:exported="false"/>
+        <service android:name="com.ellation.crunchyroll.presentation.download.notification.NotificationsDismissService" android:exported="false" android:foregroundServiceType="dataSync"/>
+        <meta-data android:name="com.ellation.crunchyroll.ui.images.BestImageSizeGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <service android:name="com.ellation.crunchyroll.downloading.exoplayer.ExoPlayerDownloadService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.crunchyroll.appwidgets.continuewatching.ContinueWatchingWidgetReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_continue_watching_info"/>
+        </receiver>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.profiles.presentation.avatar.AvatarSelectionActivity" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.profiles.presentation.profileactivation.ProfileActivationActivityLegacy" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.profiles.presentation.profileactivation.ProfileActivationActivity" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.profiles.presentation.switchprofile.WhoIsWatchingActivity" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.multitiersubscription.success.SubscriptionSuccessActivity"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.multitiersubscription.success.bento.BentoCheckoutSuccessActivity"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.multitiersubscription.success.downgrade.DowngradeSuccessActivity"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.multitiersubscription.upsellv2.UpsellV2Activity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="@string/manage_membership_title" android:name="com.ellation.crunchyroll.presentation.multitiersubscription.manage.ManageMembershipActivity"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="" android:name="com.ellation.crunchyroll.presentation.multitiersubscription.cancellation.rescue.CancellationRescueActivity"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.ellation.crunchyroll.presentation.multitiersubscription.extendedupgrade.UpgradeActivity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.onboarding.OnboardingV2Activity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.billingnotifications.ingrace.InGraceNotificationActivity"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.billingnotifications.cancelled.CancellationCompleteActivity"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.restrictedstate.UserRestrictedStateActivity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/ContentTheme" android:name="com.crunchyroll.music.watch.screen.WatchMusicActivity" android:screenOrientation="user" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="" android:name="com.crunchyroll.music.artist.ArtistActivity" android:screenOrientation="locked" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.crunchyroll.usermigration.welcome.UserMigrationWelcomeActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="" android:name="com.crunchyroll.usermigration.terms.AcceptTermsAndPrivacyPolicyActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/cr_ownership_verification_title" android:name="com.crunchyroll.usermigration.verification.CrOwnershipVerificationActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/ContentTheme" android:name="com.crunchyroll.watchscreen.screen.WatchScreenActivity" android:screenOrientation="user" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/ContentTheme" android:name="com.crunchyroll.watchscreen.screen.offline.OfflineWatchScreenActivity" android:screenOrientation="user" android:configChanges="smallestScreenSize|screenSize|screenLayout|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="" android:name="com.crunchyroll.auth.screen.OtpActivity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="" android:name="com.crunchyroll.auth.emailmandatory.EmailMandatoryActivity" android:screenOrientation="locked"/>
+        <activity android:theme="@style/TransparentStatusBar" android:label="" android:name="com.crunchyroll.auth.AuthActivity" android:screenOrientation="locked"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.ellation.crunchyroll.cast.CastOptionsProvider"/>
+        <activity android:theme="@style/TransparentStatusBar" android:name="com.crunchyroll.contentunavailable.fullscreen.ContentUnavailableActivity" android:screenOrientation="locked"/>
+        <meta-data android:name="com.crunchyroll.datadog.DatadogGlideModuleWrapper" android:value="GlideModule"/>
+        <provider android:name="com.crunchyroll.credentialsprovider.CredentialsProvider" android:permission="com.crunchyroll.crunchyroid.permission.credentialsprovider" android:protectionLevel="signature" android:enabled="true" android:exported="true" android:authorities="com.crunchyroll.crunchyroid.credentialsprovider" android:grantUriPermissions="true"/>
+        <service android:name="com.ellation.crunchyroll.notifications.util.FirebaseMessagingService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.ellation.crunchyroll.notifications.CustomBrazeReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.braze.push.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="com.braze.push.intent.NOTIFICATION_OPENED"/>
+                <action android:name="com.braze.push.intent.NOTIFICATION_DELETED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:name="androidx.glance.appwidget.action.ActionTrampolineActivity" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline" android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity" android:enabled="true" android:exported="false" android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline" android:launchMode="singleInstance" android:noHistory="true"/>
+        <receiver android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="androidx.glance.appwidget.MyPackageReplacedReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar.Translucent" android:name="com.google.android.tv.ads.controls.FallbackImageActivity" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" android:exported="false"/>
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" android:exported="false"/>
+        <service android:name="com.google.android.gms.cast.tv.internal.CastTvHostService" android:exported="true"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3717018608761149~4590999125"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:name="com.braze.ui.BrazeWebViewActivity" android:exported="false"/>
+        <activity android:name="com.braze.ui.activities.BrazeFeedActivity" android:exported="false"/>
+        <activity android:name="com.braze.ui.activities.ContentCardsActivity" android:exported="false"/>
+        <activity android:theme="@style/Braze.PushTrampoline.Transparent" android:name="com.braze.push.NotificationTrampolineActivity" android:exported="false" android:launchMode="singleInstance"/>
+        <receiver android:name="com.braze.push.BrazePushReceiver" android:exported="false"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.crunchyroll.crunchyroid.firebaseinitprovider" android:initOrder="100" android:directBootAware="true"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.crunchyroll.crunchyroid.mobileadsinitprovider" android:initOrder="100"/>
+        <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.google.android.gms.ads.OutOfContextTestingActivity" android:exported="false" android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.crunchyroll.crunchyroid.androidx-startup">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable.BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy.NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.core.widget.RemoteViewsCompatService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="6.0.1"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.android.billingclient.api.ProxyBillingActivity" android:exported="false" android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <activity android:theme="@style/Theme.PlayCore.Transparent" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:exported="false" android:stateNotNeeded="true"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

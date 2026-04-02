@@ -1,0 +1,31 @@
+package com.google.android.gms.cast.framework.media.widget;
+
+import com.google.android.gms.common.internal.Objects;
+/* compiled from: com.google.android.gms:play-services-cast-framework@@21.4.0 */
+/* loaded from: classes2.dex */
+public final class zze {
+    public int zza;
+    public int zzb;
+    public int zzc;
+    public int zzd;
+    public int zze;
+    public boolean zzf;
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof zze)) {
+            return false;
+        }
+        zze zzeVar = (zze) obj;
+        if (this.zza == zzeVar.zza && this.zzb == zzeVar.zzb && this.zzc == zzeVar.zzc && this.zzd == zzeVar.zzd && this.zze == zzeVar.zze && this.zzf == zzeVar.zzf) {
+            return true;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Objects.hashCode(Integer.valueOf(this.zza), Integer.valueOf(this.zzb), Integer.valueOf(this.zzc), Integer.valueOf(this.zzd), Integer.valueOf(this.zze), Boolean.valueOf(this.zzf));
+    }
+}

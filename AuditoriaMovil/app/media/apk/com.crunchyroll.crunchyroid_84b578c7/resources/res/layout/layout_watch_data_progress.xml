@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/cr_woodsmoke" android:layout_width="@dimen/watch_data_migration_progress_width" android:layout_height="wrap_content" android:minHeight="56dp" android:paddingHorizontal="16dp" android:paddingVertical="10dp">
+    <ProgressBar android:layout_width="24dp" android:layout_height="24dp" style="@style/ProgressBar"/>
+    <TextView android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/migration_in_progress_notification" android:layout_marginStart="16dp" style="@style/BodyLatoSemibold"/>
+</LinearLayout>

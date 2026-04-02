@@ -1,0 +1,39 @@
+package com.fyber.inneractive.sdk.config.enums;
+
+import android.text.TextUtils;
+import java.util.HashMap;
+import java.util.Map;
+/* loaded from: classes.dex */
+public enum Vendor {
+    MOAT("moat");
+    
+    private static final Map<String, Vendor> CONSTANTS = new HashMap();
+    private final String value;
+
+    static {
+        Vendor[] values;
+        for (Vendor vendor : values()) {
+            CONSTANTS.put(vendor.value, vendor);
+        }
+    }
+
+    Vendor(String str) {
+        this.value = str;
+    }
+
+    @Override // java.lang.Enum
+    public final String toString() {
+        return this.value;
+    }
+
+    public final String value() {
+        return this.value;
+    }
+
+    public static Vendor fromValue(String str) {
+        if (TextUtils.isEmpty(str)) {
+            return null;
+        }
+        return CONSTANTS.get(str);
+    }
+}

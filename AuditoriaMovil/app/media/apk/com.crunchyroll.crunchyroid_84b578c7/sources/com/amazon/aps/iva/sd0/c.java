@@ -1,0 +1,24 @@
+package com.amazon.aps.iva.sd0;
+
+import com.amazon.aps.iva.ee0.e0;
+import com.amazon.aps.iva.ee0.m0;
+/* compiled from: constantValues.kt */
+/* loaded from: classes4.dex */
+public final class c extends g<Boolean> {
+    public c(boolean z) {
+        super(Boolean.valueOf(z));
+    }
+
+    @Override // com.amazon.aps.iva.sd0.g
+    public final e0 a(com.amazon.aps.iva.oc0.c0 c0Var) {
+        com.amazon.aps.iva.yb0.j.f(c0Var, "module");
+        com.amazon.aps.iva.lc0.k j = c0Var.j();
+        j.getClass();
+        m0 t = j.t(com.amazon.aps.iva.lc0.l.BOOLEAN);
+        if (t != null) {
+            return t;
+        }
+        com.amazon.aps.iva.lc0.k.a(63);
+        throw null;
+    }
+}

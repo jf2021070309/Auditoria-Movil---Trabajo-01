@@ -1,0 +1,17 @@
+package com.google.android.gms.measurement.internal;
+
+import com.google.android.gms.internal.measurement.zzpn;
+/* compiled from: com.google.android.gms:play-services-measurement-impl@@19.0.0 */
+/* loaded from: classes2.dex */
+final /* synthetic */ class zzdo implements zzdx {
+    static final zzdx zza = new zzdo();
+
+    private zzdo() {
+    }
+
+    @Override // com.google.android.gms.measurement.internal.zzdx
+    public final Object zza() {
+        zzdz<Long> zzdzVar = zzea.zza;
+        return Boolean.valueOf(zzpn.zzc());
+    }
+}

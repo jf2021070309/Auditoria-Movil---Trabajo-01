@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="@dimen/splash_screen_lines_size" android:layout_height="@dimen/splash_screen_lines_size" android:src="@drawable/bg_top_left_lines" android:layout_alignParentLeft="true"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/app_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onboarding_cr_logo" android:layout_centerInParent="true"/>
+    <TextView android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="center" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/service_unavailable_subtitle_margin_top" android:text="@string/not_available_in_your_region" android:layout_below="@+id/app_logo" android:layout_centerHorizontal="true" style="@style/Subheader2LatoSemibold"/>
+    <FrameLayout android:id="@+id/service_availability_progress" android:background="@color/black" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/progress_layout"/>
+    </FrameLayout>
+</RelativeLayout>

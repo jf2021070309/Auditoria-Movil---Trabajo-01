@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ново известување</item>
+        <item quantity="other">%d нови известувања</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Преостанува уште %d минута</item>
+        <item quantity="other">Преостануваат уште %d минути</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d албум</item>
+        <item quantity="other">%d албуми</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">Пронајдена е %d нова песна</item>
+        <item quantity="other">Пронајдени се %d нови песни</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">%d песна</item>
+        <item quantity="other">%d песни</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">%2$d од %1$d песна</item>
+        <item quantity="other">%2$d од %1$d песни</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">%d песна е избришана.</item>
+        <item quantity="other">%d песни се избришани.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">Додадена е %d песна во плејлистата.</item>
+        <item quantity="other">%d песни додадени на списокот со песни.</item>
+    </plurals>
+</resources>

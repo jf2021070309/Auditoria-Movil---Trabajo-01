@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0px;
+      height: 100%;
+    }
+
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    canvas {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+
+  <script src="https://appassets.androidplatform.net/assets/libass-wasm/subtitles-octopus.js"></script>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+
+  <script>
+    var canvas = document.getElementById('canvas');
+    window.addEventListener('resize', resize);
+
+    window.loadSubtitles = function (subUrl, subtitlesScaleDown) {
+      window.subtitlesScaleDown = subtitlesScaleDown;
+      if (SubtitlesOctopus) {
+        var options = {
+          canvas: canvas,
+          subUrl: subUrl,
+          fonts: [
+            'https://appassets.androidplatform.net/assets/libass-fonts/AdobeArabic-Bold.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuLGCSansMono-Bold.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuLGCSansMono-BoldOblique.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuLGCSansMono-Oblique.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuLGCSansMono.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSans-Bold.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSans-BoldOblique.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSans-ExtraLight.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSans-Oblique.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSans.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSansCondensed-Bold.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSansCondensed-BoldOblique.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSansCondensed-Oblique.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSansCondensed.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSansMono-Bold.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSansMono-BoldOblique.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSansMono-Oblique.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/DejaVuSansMono.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/MANGAL.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/MeeraInimai-Regular.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-Black.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-BlackItalic.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-Bold.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-BoldItalic.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-Italic.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-Light.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-LightItalic.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-Medium.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-MediumItalic.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/Rubik-Regular.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/andalemo.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/arial.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/arialbd.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/arialbi.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/ariali.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/arialuni.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/ariblk.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/comic.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/comicbd.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/cour.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/courbd.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/courbi.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/couri.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/default.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/gautami.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/georgia.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/georgiab.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/georgiai.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/georgiaz.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/impact.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/tahoma.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/times.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/timesbd.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/timesbi.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/timesi.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/trebuc.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/trebucbd.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/trebucbi.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/trebucit.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/verdana.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/verdanab.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/verdanai.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/verdanaz.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/vrinda.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/vrindab.woff2',
+            'https://appassets.androidplatform.net/assets/libass-fonts/webdings.woff2'
+          ],
+          onReady: onOctopusReady,
+          onError: onOctopusError,
+          debug: Android.isDebugBuild(),
+          workerUrl: 'https://appassets.androidplatform.net/assets/libass-wasm/subtitles-octopus-worker.js'
+        };
+
+        window.octopusInstance = new SubtitlesOctopus(options);
+        resize();
+
+        // make another call to resize in 100ms, this is inspired by subtitles-octopus.js
+        setTimeout(self.resize, 100);
+      };
+    };
+
+    window.setCurrentTime = function (time) {
+      if (window.octopusInstance) {
+        window.octopusInstance.setCurrentTime(time)
+      }
+    };
+
+    function resize() {
+      if (!window.octopusInstance) {
+        return;
+      }
+
+      let { height, width } = document.body.getBoundingClientRect();
+      if (!width || !height) { // Sometimes during fullscreen switches, height is 0
+        return;
+      }
+
+      const videoRatio = 16 / 9; // the video's aspect ratio
+      const canvasRatio = width / height; // canvas' ratio
+
+      // If the video element is shorter than canvas
+      if (canvasRatio > videoRatio) {
+        width = height * videoRatio;
+      } else {
+        // Otherwise use maximum available height
+        height = width / videoRatio;
+      }
+
+      var dpi = devicePixelRatio || 1;
+      const canvas = document.getElementById('canvas');
+      canvas.style.width = width + "px";
+      canvas.style.height = height + "px";
+
+      if (window.subtitlesScaleDown) {
+        // scale subtitles down to 1920px on high-res devices to improve performance
+        if (width * dpi > 1920) {
+          const originalDpi = dpi
+          dpi = 1920 / width;
+          console.log("Scaling subtitles down to Full HD (from dpi " + originalDpi + " to " + dpi + ")");
+        }
+      }
+      const ctx = canvas.getContext('2d');
+      ctx.scale(dpi, dpi);
+      window.octopusInstance.resize(width * dpi, height * dpi);
+      console.log("resize octopus to " + width * dpi + "x" + height * dpi + " (dpi = " + dpi + ")");
+    }
+
+    function dispose() {
+      if (window.octopusInstance) {
+        document.getElementById('canvas').getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+        window.octopusInstance.freeTrack();
+        window.octopusInstance.dispose();
+        window.octopusInstance = null;
+      }
+    }
+
+    function onOctopusReady() {
+      Android.onOctopusReady();
+    }
+
+    function onOctopusError() {
+      Android.onOctopusError();
+    }
+
+  </script>
+</body>
+
+</html>

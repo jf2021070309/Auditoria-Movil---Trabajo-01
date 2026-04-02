@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+         <string name="rovio_id_sign_up">등록</string>
+	 <string name="rovio_id_one_by_two"> 1/2</string>
+	 <string name="rovio_id_birthday">생일</string>
+	 <string name="rovio_id_agree_by_sign_in">등록함으로써 다음에 동의합니다.</string>
+	 <string name="rovio_id_terms_of_service">서비스 약관</string>
+	 <string name="rovio_id_and"> 및</string>
+	 <string name="rovio_id_privacy_policy"> 개인정보 보호정책</string>
+	 <string name="rovio_id_agree_by_sign_in_ending">.</string>
+	 <string name="rovio_id_continue">계속</string>	 
+	 <string name="rovio_id_two_by_two">2/2</string>
+	 <string name="rovio_id_gender">성별</string>
+	 <string name="rovio_id_male">남성</string>
+	 <string name="rovio_id_female">여성</string>
+	 <string name="rovio_id_wrong_password">잘못된 비밀번호</string>
+	 <string name="rovio_id_password_help_text">비밀번호는 최소한 글자 8개를 포함해야 합니다</string>
+	 <string name="rovio_id_validate_email_invalid">올바른 이메일 주소를 입력하십시오</string>
+	 <string name="rovio_id_message_cannot_create_account_title">죄송합니다!</string>
+	 <string name="rovio_id_message_cannot_create_account">계정을 만들 수 없습니다.</string>
+	 <string name="rovio_id_account_not_confirmed_title">계정을 아직 인증하지 않았습니다!</string>
+	 <string name="rovio_id_verification_mail_resent">인증 메일을 다음 주소로 재발송했습니다:</string>
+	 <string name="rovio_id_account_not_confirmed_message">Rovio가 보낸 이메일에 포함된 인증 링크를 클릭하여 계정을 활성화하십시오.</string>
+	 <string name="rovio_id_sign_up_success_title">등록해주셔서 감사합니다!</string>
+	 <string name="rovio_id_verification_mail_sent">인증 이메일이 다음 주소로 전송됐습니다:</string>
+	 <string name="rovio_id_sign_up_success_message">48시간 내에 Rovio가 보낸 이메일에 포함된 인증 링크를 클릭하여 계정을 활성화하십시오.</string>
+	 <string name="rovio_id_request_new_password">새로운 비밀번호 요청</string>
+	 <string name="rovio_id_forgot_password_message">계정과 연계된 이메일 주소를 입력하십시오.</string>
+	 <string name="rovio_id_send_request">요청 보내기</string>
+	 <string name="rovio_id_reset_password_sent_title">이메일이 전송됐습니다!</string>
+	 <string name="rovio_id_reset_password_message">이메일에서 비밀번호 재설정 정보를 확인하십시오.</string>
+	 <string name="rovio_id_crimson_help_android">다른 안드로이드 기기에서도 같은 캐릭터와 크레딧으로 계속 플레이하세요!</string>
+	 <string name="rovio_id_crimson_help4">다른 기기에서 계속 플레이하세요!</string>
+	 <string name="rovio_id_crimson_help1">온라인으로 점수, 별, 업적을 저장하세요!</string>
+	 <string name="rovio_id_forgot_password">비밀번호를 잊으셨습니까?</string>
+	 <string name="rovio_id_not_have_account_yet">계정이 아직 없으십니까?</string>
+	 <string name="rovio_id_sign_up_now">지금 등록하십시오!</string>
+	 <string name="rovio_id_sign_in">로그인</string>
+	 <string name="rovio_id_validate_email_required">이메일 주소를 입력하십시오</string>
+	 <string name="rovio_id_validate_password_required">비밀번호를 입력하십시오</string>
+	 <string name="rovio_id_wrong_email">이메일 주소를 찾을 수 없습니다</string>
+	 <string name="rovio_id_email_taken">이 이메일 주소는 이미 등록되어 있습니다</string>
+	 <string name="rovio_id_empty_text"></string>
+	 <string name="rovio_id_hint_email">이메일</string>
+	 <string name="rovio_id_hint_password">비밀번호</string>
+	
+	 <string name="rovio_id_day">일</string>
+	 <string name="rovio_id_month">월</string>
+	 <string name="rovio_id_year">년</string>
+	 <string name="rovio_id_month_jan">1월</string>
+	 <string name="rovio_id_month_feb">2월</string>
+	 <string name="rovio_id_month_mar">3월</string>
+	 <string name="rovio_id_month_apr">4월</string>
+	 <string name="rovio_id_month_may">5월</string>
+	 <string name="rovio_id_month_jun">6월</string>
+	 <string name="rovio_id_month_jul">7월</string>
+	 <string name="rovio_id_month_aug">8월</string>
+	 <string name="rovio_id_month_sep">9월</string>
+	 <string name="rovio_id_month_oct">10월</string>
+	 <string name="rovio_id_month_nov">11월</string>
+	 <string name="rovio_id_month_dec">12월</string>
+
+    <string-array name="rovio_id_months_array">
+    	<item>@string/rovio_id_month</item>
+    	<item>@string/rovio_id_month_jan</item>
+        <item>@string/rovio_id_month_feb</item>
+        <item>@string/rovio_id_month_mar</item>
+        <item>@string/rovio_id_month_apr</item>
+        <item>@string/rovio_id_month_may</item>
+        <item>@string/rovio_id_month_jun</item>
+        <item>@string/rovio_id_month_jul</item>
+        <item>@string/rovio_id_month_aug</item>
+        <item>@string/rovio_id_month_sep</item>
+        <item>@string/rovio_id_month_oct</item>
+        <item>@string/rovio_id_month_nov</item>
+        <item>@string/rovio_id_month_dec</item>
+    </string-array>
+</resources>
+

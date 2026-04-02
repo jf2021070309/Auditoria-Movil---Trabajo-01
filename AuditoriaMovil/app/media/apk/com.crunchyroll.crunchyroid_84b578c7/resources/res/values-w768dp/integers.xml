@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="genres_list_number_of_columns">4</integer>
+    <integer name="history_number_of_columns">4</integer>
+    <integer name="panel_card_number_of_columns">5</integer>
+    <integer name="watchlist_columns">2</integer>
+</resources>

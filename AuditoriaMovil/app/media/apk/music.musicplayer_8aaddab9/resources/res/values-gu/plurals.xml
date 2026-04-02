@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d નવું નોટિફિકેશન</item>
+        <item quantity="other">%d નવા નોટિફિકેશન</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d મિનિટ બાકી</item>
+        <item quantity="other">%d મિનિટ બાકી છે</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d આલ્બમ</item>
+        <item quantity="other">%d આલ્બમ્સ</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d નવું ગીત મળ્યું</item>
+        <item quantity="other">%d નવા ગીતો મળ્યાં છે</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">%d ગીત</item>
+        <item quantity="other">%d ગીતો</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">%1$d માંથી %2$d ગીતો</item>
+        <item quantity="other">%1$d માંથી %2$d ગીતો</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">%d ગીત કા .ી નાખ્યું હતું.</item>
+        <item quantity="other">%d ગીતો કા .ી નાખ્યા.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">%d ગીત પ્લેલિસ્ટમાં ઉમેર્યું.</item>
+        <item quantity="other">પ્લેલિસ્ટમાં %d ગીતો ઉમેર્યા છે.</item>
+    </plurals>
+</resources>

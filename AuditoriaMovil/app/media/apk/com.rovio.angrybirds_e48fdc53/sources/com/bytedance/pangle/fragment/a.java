@@ -1,0 +1,58 @@
+package com.bytedance.pangle.fragment;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.util.SimpleArrayMap;
+import java.lang.reflect.Field;
+/* loaded from: classes.dex */
+final class a {
+    public static void a(Class cls) {
+        try {
+            if (Fragment.class.getName().contains("support")) {
+                ((SimpleArrayMap) a(Fragment.class, "sClassMap").get(null)).put(cls.getName(), cls);
+                return;
+            }
+            Field a = a(Fragment.class, "sClassMap");
+            if (a != null) {
+                ((SimpleArrayMap) a.get(null)).put(cls.getName(), cls);
+                return;
+            }
+            Class a2 = a("androidx.fragment.app.FragmentFactory");
+            if (a2 == null) {
+                return;
+            }
+            Field a3 = a(a2, "sClassMap");
+            if (a3 != null) {
+                ((SimpleArrayMap) a3.get(null)).put(cls.getName(), cls);
+                return;
+            }
+            Field a4 = a(a2, "sClassCacheMap");
+            if (a4 != null) {
+                SimpleArrayMap simpleArrayMap = new SimpleArrayMap();
+                simpleArrayMap.put(cls.getName(), cls);
+                ((SimpleArrayMap) a4.get(null)).put(cls.getClassLoader(), simpleArrayMap);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static Field a(Class cls, String str) {
+        try {
+            Field declaredField = cls.getDeclaredField(str);
+            if (declaredField != null) {
+                declaredField.setAccessible(true);
+            }
+            return declaredField;
+        } catch (NoSuchFieldException e) {
+            return null;
+        }
+    }
+
+    private static Class a(String str) {
+        try {
+            return Class.forName(str);
+        } catch (ClassNotFoundException e) {
+            return null;
+        }
+    }
+}

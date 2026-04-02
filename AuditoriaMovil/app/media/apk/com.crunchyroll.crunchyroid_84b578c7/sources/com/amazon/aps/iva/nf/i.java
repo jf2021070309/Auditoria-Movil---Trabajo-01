@@ -1,0 +1,30 @@
+package com.amazon.aps.iva.nf;
+
+import com.amazon.aps.iva.kb0.q;
+import com.amazon.aps.iva.xb0.p;
+import com.amazon.aps.iva.yb0.l;
+/* compiled from: UnrecoverableErrorOverlay.kt */
+/* loaded from: classes.dex */
+public final class i extends l implements p<com.amazon.aps.iva.o0.i, Integer, q> {
+    public final /* synthetic */ com.amazon.aps.iva.a1.f h;
+    public final /* synthetic */ String i;
+    public final /* synthetic */ int j;
+    public final /* synthetic */ int k;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public i(String str, com.amazon.aps.iva.a1.f fVar, int i, int i2) {
+        super(2);
+        this.h = fVar;
+        this.i = str;
+        this.j = i;
+        this.k = i2;
+    }
+
+    @Override // com.amazon.aps.iva.xb0.p
+    public final q invoke(com.amazon.aps.iva.o0.i iVar, Integer num) {
+        num.intValue();
+        int I = com.amazon.aps.iva.ff0.b.I(this.j | 1);
+        j.a(this.i, this.h, iVar, I, this.k);
+        return q.a;
+    }
+}

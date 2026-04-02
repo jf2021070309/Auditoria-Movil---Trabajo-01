@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/blurred_bg_player_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/progressContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ProgressBar android:id="@android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" android:singleLine="true"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/listContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:drawSelectorOnTop="false" android:fastScrollEnabled="true"/>
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:gravity="center" android:id="@android:id/empty" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_tracks_title"/>
+            </FrameLayout>
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:background="#33ffffff" android:layout_width="match_parent" android:layout_height="?android:attr/listPreferredItemHeight">
+            <TextView android:textColor="@color/alert_text" android:gravity="center" android:id="@+id/closeTv" android:layout_width="0dp" android:layout_height="?android:attr/listPreferredItemHeight" android:text="@string/close" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/applyTv" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textColor="@color/accent" android:gravity="center" android:id="@+id/applyTv" android:layout_width="0dp" android:layout_height="?android:attr/listPreferredItemHeight" android:text="@android:string/ok" app:layout_constraintLeft_toRightOf="@+id/closeTv" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.crunchyroll.music.watch.screen.layout.WatchMusicLayout android:id="@+id/watch_music_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:id="@+id/error_overlay_container" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <include android:id="@+id/progress_overlay" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/overlay_progress_music_layout"/>
+        <FrameLayout android:id="@+id/transparent_progress_overlay" android:background="@color/transparent_progress_overlay" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <ProgressBar android:layout_gravity="center" android:layout_width="@dimen/default_progress_bar_size" android:layout_height="@dimen/default_progress_bar_size" style="@style/ProgressBar"/>
+        </FrameLayout>
+    </com.crunchyroll.music.watch.screen.layout.WatchMusicLayout>
+    <FrameLayout android:id="@+id/no_network_error_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ellation.widgets.bottommessage.error.ErrorBottomMessageView android:layout_gravity="bottom" android:id="@+id/no_network_message_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

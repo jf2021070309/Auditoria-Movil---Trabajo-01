@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nové upozornenie</item>
+        <item quantity="few">%d nové upozornenia</item>
+        <item quantity="many">%d new notifications</item>
+        <item quantity="other">%d nových upozornení</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Zostáva %d minúta</item>
+        <item quantity="few">Zostávajú %d minúty</item>
+        <item quantity="many">Zostáva %d minút</item>
+        <item quantity="other">Zostáva %d minút</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">1 album</item>
+        <item quantity="few">&quot;%d&quot;&quot; albumy&quot;</item>
+        <item quantity="many">&quot;%d&quot;&quot; albumu&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; albumov&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">Našla sa %d nová skladba</item>
+        <item quantity="few">Našli sa %d nové skladby</item>
+        <item quantity="many">Nájdených %d nových skladieb</item>
+        <item quantity="other">Nájdených %d nových skladieb</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; skladba&quot;</item>
+        <item quantity="few">&quot;%d&quot;&quot; skladby&quot;</item>
+        <item quantity="many">&quot;%d&quot;&quot; skladby&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; skladieb&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; z &quot;&quot;%1$d&quot;&quot; skladieb&quot;</item>
+        <item quantity="few">&quot;%2$d&quot;&quot; z &quot;&quot;%1$d&quot;&quot; skladieb&quot;</item>
+        <item quantity="many">&quot;%2$d&quot;&quot; z &quot;&quot;%1$d&quot;&quot; skladieb&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; z &quot;&quot;%1$d&quot;&quot; skladieb&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">Bola odstránená 1 skladba.</item>
+        <item quantity="few">Boli odstránené &quot;&quot;%d&quot;&quot; skladby.</item>
+        <item quantity="many">Bolo odstránenej &quot;&quot;%d&quot;&quot; skladby.</item>
+        <item quantity="other">Bolo odstránených &quot;&quot;%d&quot;&quot; skladieb.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">Do zoznamu skladieb bola pridaná 1 skladba.</item>
+        <item quantity="few">Do zoznamu skladieb boli pridané &quot;&quot;%d&quot;&quot; skladby.</item>
+        <item quantity="many">Do zoznamu skladieb bolo pridanej &quot;&quot;%d&quot;&quot; skladby.</item>
+        <item quantity="other">Do zoznamu skladieb bolo pridaných &quot;&quot;%d&quot;&quot; skladieb.</item>
+    </plurals>
+</resources>

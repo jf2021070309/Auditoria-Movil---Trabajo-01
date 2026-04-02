@@ -1,0 +1,12 @@
+package com.unity3d.services.ar;
+/* loaded from: classes2.dex */
+public class ARCheck {
+    public static boolean isFrameworkPresent() {
+        try {
+            Class.forName("com.google.ar.core.Session");
+            return true;
+        } catch (Exception unused) {
+            return false;
+        }
+    }
+}

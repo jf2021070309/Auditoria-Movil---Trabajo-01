@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cancellation_downgrade_checkmark_margin_start">32dp</dimen>
+    <dimen name="cancellation_rescue_benefits_horizontal_margin">0dp</dimen>
+    <dimen name="cancellation_rescue_benefits_text_width">168dp</dimen>
+    <dimen name="cancellation_rescue_benefits_top_margin">48dp</dimen>
+    <dimen name="cancellation_rescue_downgrade_horizontal_margin">56dp</dimen>
+    <dimen name="cancellation_rescue_horizontal_margin">56dp</dimen>
+    <dimen name="cancellation_rescue_max_width">@dimen/match_parent</dimen>
+</resources>

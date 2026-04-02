@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetRight="@dimen/settings_list_item_padding_horizontal">
+    <shape>
+        <solid android:color="@color/settings_divider"/>
+        <size android:height="1dp" android:width="@dimen/match_parent"/>
+    </shape>
+</inset>

@@ -1,0 +1,51 @@
+package com.google.android.gms.cast.framework.media;
+
+import com.google.android.gms.cast.framework.media.MediaQueue;
+import java.util.List;
+/* compiled from: com.google.android.gms:play-services-cast-framework@@21.4.0 */
+/* loaded from: classes2.dex */
+final class zzw extends MediaQueue.Callback {
+    final /* synthetic */ MediaQueueRecyclerViewAdapter zza;
+
+    @Override // com.google.android.gms.cast.framework.media.MediaQueue.Callback
+    public final void itemsInsertedInRange(int i, int i2) {
+        this.zza.notifyItemRangeInserted(i, i2);
+    }
+
+    @Override // com.google.android.gms.cast.framework.media.MediaQueue.Callback
+    public final void itemsReloaded() {
+        this.zza.notifyDataSetChanged();
+    }
+
+    @Override // com.google.android.gms.cast.framework.media.MediaQueue.Callback
+    public final void itemsRemovedAtIndexes(int[] iArr) {
+        int length = iArr.length;
+        if (length <= 1) {
+            for (int i = 0; i < length; i = 1) {
+                this.zza.notifyItemRemoved(iArr[0]);
+            }
+            return;
+        }
+        this.zza.notifyDataSetChanged();
+    }
+
+    @Override // com.google.android.gms.cast.framework.media.MediaQueue.Callback
+    public final void itemsReorderedAtIndexes(List<Integer> list, int i) {
+        this.zza.notifyDataSetChanged();
+    }
+
+    @Override // com.google.android.gms.cast.framework.media.MediaQueue.Callback
+    public final void itemsUpdatedAtIndexes(int[] iArr) {
+        for (int i : iArr) {
+            this.zza.notifyItemChanged(i);
+        }
+    }
+
+    @Override // com.google.android.gms.cast.framework.media.MediaQueue.Callback
+    public final void mediaQueueChanged() {
+    }
+
+    @Override // com.google.android.gms.cast.framework.media.MediaQueue.Callback
+    public final void mediaQueueWillChange() {
+    }
+}

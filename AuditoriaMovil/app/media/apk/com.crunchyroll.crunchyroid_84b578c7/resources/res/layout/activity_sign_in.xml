@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_centralized_text"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/errors_layout" android:layout_below="@+id/centralized_toolbar">
+        <ScrollView android:id="@+id/report_problem_scroll_container" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/sign_in_top_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.85"/>
+                <ImageView android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/cr_logo" android:contentDescription="@string/logo_description"/>
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/login_welcome_title" android:visibility="gone" android:layout_width="@dimen/signing_container_width" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:text="@string/login_welcome_title" style="@style/BodyLatoMedium"/>
+                <include android:id="@+id/sign_in_content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sign_in_sign_up_container_margin_top" layout="@layout/layout_sign_in"/>
+                <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1.15"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <include android:id="@+id/progress_overlay" layout="@layout/progress_layout_solid_background"/>
+    <include android:id="@+id/errors_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/layout_errors"/>
+</RelativeLayout>

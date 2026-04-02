@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/video_controls_container" android:background="@drawable/player_maturity_label_background_gradient" android:focusable="false" android:clickable="false" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/white" android:id="@+id/maturity_content_descriptor_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="12dp" android:maxLines="2" android:layout_toEndOf="@+id/maturity_label" style="@style/SmallLatoSemibold"/>
+    <androidx.compose.ui.platform.ComposeView android:id="@+id/maturity_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="8dp"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d പുതിയ അറിയിപ്പ്</item>
+        <item quantity="other">%d പുതിയ അറിയിപ്പുകൾ</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d മിനിറ്റ് ശേഷിക്കുന്നു</item>
+        <item quantity="other">%d മിനിറ്റ് ശേഷിക്കുന്നു</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d ആൽബം</item>
+        <item quantity="other">%d ആൽബങ്ങൾ</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d പുതിയ ഗാനം കണ്ടെത്തി</item>
+        <item quantity="other">%d പുതിയ ഗാനങ്ങൾ കണ്ടെത്തി</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">%d ഗാനം</item>
+        <item quantity="other">%d ഗാനങ്ങൾ</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">1 ന്റെ 1 ഗാനം</item>
+        <item quantity="other">%$1d ഗാനങ്ങളിൽ %$2d എണ്ണം</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">%d ഗാനം ഇല്ലാതാക്കി.</item>
+        <item quantity="other">%d ഗാനങ്ങൾ ഇല്ലാതാക്കി.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">%d ഗാനം പ്ലേലിസ്റ്റിലേക്ക് ചേർത്തു.</item>
+        <item quantity="other">%d ഗാനങ്ങൾ പ്ലേലിസ്റ്റിലേക്ക് ചേർത്തു.</item>
+    </plurals>
+</resources>

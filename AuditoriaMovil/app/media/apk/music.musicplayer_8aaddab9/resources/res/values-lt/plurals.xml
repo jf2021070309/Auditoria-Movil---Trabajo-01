@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d naujas pranešimas</item>
+        <item quantity="few">%d nauji pranešimai</item>
+        <item quantity="many">%d naujo pranešimo</item>
+        <item quantity="other">%d naujų pranešimų</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Liko %d minutė</item>
+        <item quantity="few">Liko %d minutės</item>
+        <item quantity="many">Liko %d minučių</item>
+        <item quantity="other">Liko %d minučių</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">&quot;%d&quot;&quot; albumas&quot;</item>
+        <item quantity="few">&quot;%d&quot;&quot; albumai&quot;</item>
+        <item quantity="many">&quot;%d&quot;&quot; albumo&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; albumų&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">Rasta %d nauja daina</item>
+        <item quantity="few">Rasta %d naujos dainos</item>
+        <item quantity="many">Rasta %d naujų dainų</item>
+        <item quantity="other">Rasta %d naujų dainų</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; daina&quot;</item>
+        <item quantity="few">&quot;%d&quot;&quot; dainos&quot;</item>
+        <item quantity="many">&quot;%d&quot;&quot; dainos&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; dainų&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; iš &quot;&quot;%1$d&quot;&quot; dainos&quot;</item>
+        <item quantity="few">&quot;%2$d&quot;&quot; iš &quot;&quot;%1$d&quot;&quot; dainų&quot;</item>
+        <item quantity="many">&quot;%2$d&quot;&quot; iš &quot;&quot;%1$d&quot;&quot; dainos&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; iš &quot;&quot;%1$d&quot;&quot; dainų&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">Buvo ištrinta &quot;&quot;%d&quot;&quot; daina.</item>
+        <item quantity="few">Buvo ištrintos &quot;&quot;%d&quot;&quot; dainos.</item>
+        <item quantity="many">Buvo ištrinta &quot;&quot;%d&quot;&quot; dainos.</item>
+        <item quantity="other">Buvo ištrinta &quot;&quot;%d&quot;&quot; dainų.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">Prie grojaraščio pridėta &quot;&quot;%d&quot;&quot; daina.</item>
+        <item quantity="few">Prie grojaraščio pridėtos &quot;&quot;%d&quot;&quot; dainos.</item>
+        <item quantity="many">Prie grojaraščio pridėta &quot;&quot;%d&quot;&quot; dainos.</item>
+        <item quantity="other">Prie grojaraščio pridėta &quot;&quot;%d&quot;&quot; dainų.</item>
+    </plurals>
+</resources>

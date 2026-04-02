@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ny avisering</item>
+        <item quantity="other">%d nya aviseringar</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d minut kvar</item>
+        <item quantity="other">%d minuter kvar</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">album</item>
+        <item quantity="other">&quot;%d&quot;&quot; album&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d ny låt hittades.</item>
+        <item quantity="other">%d nya låtar hittades.</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; låt&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; låtar&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; av &quot;&quot;%1$d&quot;&quot; låt&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; av &quot;&quot;%1$d&quot;&quot; låtar&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">1 låt togs bort.</item>
+        <item quantity="other">&quot;%d&quot;&quot; låtar togs bort.&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">1 låt har lagts till i spellistan.</item>
+        <item quantity="other">&quot;%d&quot;&quot; låtar har lagts till i spellistan.&quot;</item>
+    </plurals>
+</resources>

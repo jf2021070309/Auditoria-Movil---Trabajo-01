@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d 条新通知</item>
+        <item quantity="other">%d 条新通知</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="other">还剩%d分钟</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="other">&quot;%d&quot;&quot; 张专辑&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="other">发现%d首新歌曲</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="other">&quot;%d&quot;&quot; 首歌曲&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="other">&quot;%2$d&quot;&quot; 首歌曲（共 &quot;&quot;%1$d&quot;&quot; 首）&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="other">已删除 &quot;&quot;%d&quot;&quot; 首歌曲。</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="other">已将 &quot;&quot;%d&quot;&quot; 首歌曲添加到播放列表。</item>
+    </plurals>
+</resources>

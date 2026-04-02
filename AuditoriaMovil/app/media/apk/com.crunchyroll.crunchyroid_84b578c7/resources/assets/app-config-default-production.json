@@ -1,0 +1,151 @@
+{
+  "help_url": "https://help.crunchyroll.com/",
+  "playhead_interval_ms": 30000,
+  "app_legal_links": {
+    "privacy_policy": "https://www.crunchyroll.com/privacy?mode=mobile",
+    "terms_of_service": "https://www.crunchyroll.com/tos?mode=mobile"
+  },
+  "terms_of_service": {
+    "last_updated_date": ""
+  },
+  "objects_max_ids_per_request_allowed": 100,
+  "content_api_service": {
+    "playheads_upload_batch_size": 500,
+    "playheads_get_batch_size": 350
+  },
+  "user_benefits": {
+    "fetch_interval_sec": 3600
+  },
+  "new_relic": {
+    "is_enabled": true
+  },
+  "datadog": {
+    "is_enabled": true,
+    "sample_rum_sessions": 100,
+    "track_background_rum": false
+  },
+  "in_app_updates": {
+    "is_enabled": false,
+    "client_version_staleness_days": 5,
+    "update_reminder_interval_sec": 2592000,
+    "background_install_delay_sec": 180
+  },
+  "singular": {
+    "is_enabled": true
+  },
+  "user_interactions_tracking": {
+    "is_enabled": true
+  },
+  "in_app_review": {
+    "is_enabled": false,
+    "interval_between_attempts_min": 129600,
+    "app_launches_count_trigger": 5,
+    "app_launches_period_trigger_min": 10080
+  },
+  "app_resume_screens_reload_intervals": {
+    "short_interval_minutes": 3,
+    "medium_interval_minutes": 20,
+    "long_interval_minutes": 480
+  },
+  "billing_notifications": {
+    "is_in_grace_home_cta_enabled": false,
+    "is_in_grace_notification_enabled": false,
+    "is_in_grace_final_notification_enabled": false,
+    "is_on_hold_notification_enabled": false,
+    "is_renew_notification_enabled": false,
+    "experiment_name": "",
+    "experiment_id": "",
+    "variation_name": "",
+    "variation_id": ""
+  },
+  "email_verification_banner": {
+    "occurrence_interval_after_dismiss_minutes": 1440,
+    "occurrence_interval_after_confirmation_minutes": 15
+  },
+  "browse_music": {
+    "is_enabled": false
+  },
+  "user_account_migration": {
+    "is_enabled": false,
+    "experiment_name": "",
+    "experiment_id": "",
+    "variation_name": "",
+    "variation_id": ""
+  },
+  "otp": {
+    "is_enabled": false,
+    "available_countries": "IN",
+    "sign_in_flow_update": false,
+    "account_screen_update": false
+  },
+  "downloading": {
+    "auto_retry_streams": false
+  },
+  "bulk_sync": {
+    "is_enabled": true
+  },
+  "bento": {
+    "is_enabled": false
+  },
+  "membership_card": {
+    "is_enabled": false
+  },
+  "persistent_message_center": {
+    "is_enabled": false
+  },
+  "account_deletion": {
+    "is_enabled": false,
+    "external_url": "https://www.crunchyroll.com/xt8ehz"
+  },
+  "cronet_transport": {
+    "is_enabled": false
+  },
+  "player_gestures": {
+    "pinch_to_zoom": false,
+    "double_tap_to_seek": false
+  },
+  "streams_limits": {
+    "is_enabled": false
+  },
+  "simulcast": {
+    "version": "v1",
+    "remote_configurable": false
+  },
+  "decoder_fallback": {
+    "is_enabled": true
+  },
+  "introductory_offer": {
+    "is_enabled": false,
+    "experiment_name": "",
+    "experiment_id": "",
+    "variation_name": "",
+    "variation_id": ""
+  },
+  "lupin": {
+    "is_enabled": false,
+    "remote_configurable": false
+  },
+  "disable_username_login": {
+    "is_enabled": false
+  },
+  "preselected_tier": {
+    "is_enabled": false,
+    "tier": "MEGA_FAN"
+  },
+  "whatsapp_support": {
+    "is_enabled": false,
+    "whatsapp_url": "https://api.whatsapp.com/send/?phone=14156874157&text=Ol%C3%A1%21+Eu+preciso+de+ajuda+com+a+minha+conta+Crunchyroll.&type=phone_number&app_absent=0"
+  },
+  "store_navigation": {
+    "is_enabled": false,
+    "store_url": "https://store.crunchyroll.com/?utm_source=android",
+    "experiment_name": "",
+    "experiment_id": "",
+    "variation_name": "",
+    "variation_id": ""
+  },
+  "release_calendar_carousel": {
+    "is_enabled": false,
+    "remote_configurable": false
+  }
+}

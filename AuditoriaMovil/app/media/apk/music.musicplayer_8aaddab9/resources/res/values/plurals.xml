@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d minute left</item>
+        <item quantity="other">%d minutes left</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">1 album</item>
+        <item quantity="other">%d albums</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d new song found</item>
+        <item quantity="other">%d new songs found</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">%d song</item>
+        <item quantity="other">%d songs</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="other">%2$d of %1$d songs</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">1 song was deleted.</item>
+        <item quantity="other">%d songs were deleted.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">1 song added to playlist.</item>
+        <item quantity="other">%d songs added to playlist.</item>
+    </plurals>
+</resources>

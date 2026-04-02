@@ -1,0 +1,7 @@
+#define DISABLE_DEPTH_TEST
+#define ENABLE_PREMULT_ALPHA_BLENDING
+#define ENABLE_TWOSIDED
+#define DISABLE_TEXTURE
+#define ENABLE_VTEXCOORD0
+
+#include "pp_glowingwheel.fx"

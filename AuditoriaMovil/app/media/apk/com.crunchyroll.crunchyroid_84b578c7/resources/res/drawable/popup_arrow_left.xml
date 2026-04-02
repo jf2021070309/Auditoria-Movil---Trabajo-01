@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/popup_arrow_height" android:right="@dimen/popup_arrow_height">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/cr_black_pearl"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/ic_triangle_pointed_left"/>
+</layer-list>

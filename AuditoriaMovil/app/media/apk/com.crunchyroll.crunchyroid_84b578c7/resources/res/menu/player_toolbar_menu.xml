@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_next_episode" android:id="@+id/icon_skip_to_next" android:visible="false" android:title="@string/desc_player_toolbar_skip_episode" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_player_settings" android:id="@+id/icon_settings" android:title="@string/desc_player_toolbar_settings" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_expand" android:id="@+id/toggle_video_expansion" android:title="@string/desc_player_toolbar_toggle_expansion" app:showAsAction="always"/>
+</menu>

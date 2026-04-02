@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d አዲስ ማሳወቂያዎች</item>
+        <item quantity="other">%d አዲስ ማሳወቂያዎች</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d ደቂቃ ቀረ</item>
+        <item quantity="other">%d ደቂቃዎች ቀርተዋል</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">&quot;%d&quot;&quot; አልበሞች&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; አልበሞች&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d አዲስ ዘፈን ተገኝቷል</item>
+        <item quantity="other">%d አዳዲስ ዘፈኖች ተገኝተዋል</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; ዘፈኖች&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; ዘፈኖች&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; ከ&quot;&quot;%1$d&quot;&quot; ዘፈኖች&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; ከ&quot;&quot;%1$d&quot;&quot; ዘፈኖች&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">&quot;%d&quot;&quot; ዘፈኖች ተሰርዘዋል።&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; ዘፈኖች ተሰርዘዋል።&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">&quot;%d&quot;&quot; ዘፈኖች ወደ አጫውት ዝርዝር ታክለዋል።&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; ዘፈኖች ወደ አጫውት ዝርዝር ታክለዋል።&quot;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AddToCrunchylistsList" parent="">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AvatarSelectionUsername" parent="@style/HeaderLato">
+    </style>
+    <style name="BigBrowseAllTitleFontStyle" parent="@style/Subheader1LatoSemibold">
+    </style>
+    <style name="BigFeedContainerCardTitle" parent="@style/Subheader1LatoSemibold">
+    </style>
+    <style name="Braze.ContentCardsDisplay.Recycler" parent="@style/Braze.ContentCardsDisplay">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+    </style>
+    <style name="Braze.InAppMessage.Full" parent="@style/Braze.InAppMessage">
+        <item name="android:background">@color/com_braze_inappmessage_background_light</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_width">450dp</item>
+        <item name="android:layout_height">720dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="CarouselTitleStyle" parent="@style/Subheader1LatoMedium">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="CastExpandedControllerStatusFonts" parent="@style/BodyLatoSemibold">
+    </style>
+    <style name="CastExpandedControllerTitleFonts" parent="@style/HeaderLato">
+    </style>
+    <style name="CrPlusAlternativeFlowSubtitle" parent="@style/Subheader1LatoSemibold">
+    </style>
+    <style name="CrPlusAlternativeFlowTitle" parent="@style/Headline2Lato">
+    </style>
+    <style name="CrPlusSubscriptionSuccessTitle" parent="@style/Headline1Lato">
+    </style>
+    <style name="CrunchylistsDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/crunchylists_dialog_window_background</item>
+    </style>
+    <style name="DownloadsEmptyImageStyle" parent="">
+        <item name="android:layout_width">156dp</item>
+        <item name="android:layout_height">116dp</item>
+    </style>
+    <style name="EmptyLayoutHeaderStyle" parent="@style/HeaderLato">
+    </style>
+    <style name="ManageMembershipCta" parent="">
+        <item name="layout_constraintWidth_max">368dp</item>
+    </style>
+    <style name="MembershipCardDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/membership_card_dialog_window_background</item>
+    </style>
+    <style name="PLayerSettingsSecondaryScreenStyle" parent="">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PlayerSettingsToolbarStyle" parent="">
+        <item name="android:layout_height">56dp</item>
+    </style>
+    <style name="ProfileActivationBackground" parent="">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="ProfileActivationContainer" parent="">
+        <item name="android:background">@color/cr_woodsmoke</item>
+        <item name="android:paddingTop">32dp</item>
+        <item name="android:paddingBottom">32dp</item>
+        <item name="android:layout_width">360dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintHeight_max">@dimen/profile_activation_container_height</item>
+    </style>
+    <style name="RecentSearchChipItemStyle" parent="">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="RecentSearchChipItemTitleStyle" parent="@style/BodyLatoMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:maxWidth">210dp</item>
+    </style>
+    <style name="SeasonsDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/crunchylists_dialog_window_background</item>
+        <item name="android:layout_width">420dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SeekBarStyle" parent="">
+        <item name="android:maxHeight">4dp</item>
+        <item name="android:minHeight">4dp</item>
+    </style>
+    <style name="SettingsDoNotSellLayoutStyle" parent="">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginStart">64dp</item>
+        <item name="android:layout_marginEnd">64dp</item>
+    </style>
+    <style name="SettingsDoNotSellToolbarStyle" parent="@style/ToolbarStyle">
+        <item name="navigationIcon">@drawable/ic_cross</item>
+    </style>
+    <style name="ShowRatingDialog" parent="">
+        <item name="android:layout_width">420dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SnackBarStyle" parent="">
+        <item name="android:maxWidth">360dp</item>
+    </style>
+    <style name="SortAndFilterTheme" parent="@style/TransparentStatusBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="StandAloneSubtitlesSettingsToolbar" parent="@style/ToolbarStyle">
+        <item name="android:elevation">0dp</item>
+    </style>
+    <style name="SubscriptionSuccessTitle" parent="@style/Headline1Lato">
+    </style>
+    <style name="SwitchProfileDialog" parent="">
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="TabBarAppearance" parent="">
+        <item name="android:background">@color/transparent</item>
+        <item name="tabGravity">center</item>
+        <item name="tabMode">scrollable</item>
+    </style>
+    <style name="TabBarItem" parent="">
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_width">96dp</item>
+    </style>
+    <style name="ToolbarMenuDialogContentStyle" parent="">
+        <item name="android:background">@drawable/toolbar_menu_dialog_arrow</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TransparentStatusBarDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/transparent_dialog_window_background</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="UpdateAppMessageStyle" parent="@style/Subheader1LatoSemibold">
+    </style>
+    <style name="UpsellSubscriptionButton" parent="">
+        <item name="layout_constraintWidth_max">368dp</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

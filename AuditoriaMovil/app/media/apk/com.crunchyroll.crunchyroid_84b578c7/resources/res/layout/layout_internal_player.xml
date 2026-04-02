@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/player_controls" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.crunchyroll.octopussubtitlescomponent.renderrer.OctopusSubtitlesView android:id="@+id/subtitles_renderer" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="0dp"/>
+    <com.crunchyroll.player.presentation.playerview.PlayerGesturesLayout android:id="@+id/gestures_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.crunchyroll.player.presentation.controls.PlayerControlsLayout android:id="@+id/controls" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"/>
+    <com.crunchyroll.player.presentation.controls.maturityrestrictionlabel.PlayerMaturityLabelLayout android:layout_gravity="start|top" android:id="@+id/player_maturity_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/truex_ad_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.crunchyroll.player.presentation.buffering.PlayerBufferingLayout android:id="@+id/player_buffering_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.crunchyroll.player.presentation.controls.toolbar.PlayerToolbar android:id="@+id/player_toolbar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.compose.ui.platform.ComposeView android:layout_gravity="end" android:id="@+id/player_up_next_banner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+    <com.crunchyroll.cast.overlay.CastOverlayLayout android:id="@+id/cast_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.compose.ui.platform.ComposeView android:id="@+id/restriction_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

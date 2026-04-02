@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d thông báo mới</item>
+        <item quantity="other">%d thông báo mới</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="other">%d phút còn lại</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="other">&quot;%d&quot;&quot; album&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="other">Đã tìm thấy %d bài hát mới</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="other">&quot;%d&quot;&quot; bài hát&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="other">&quot;%2$d&quot;&quot; trong tổng số &quot;&quot;%1$d&quot;&quot; bài hát&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="other">Đã xóa &quot;&quot;%d&quot;&quot; bài hát.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="other">Đã thêm &quot;&quot;%d&quot;&quot; bài hát vào danh sách phát.</item>
+    </plurals>
+</resources>

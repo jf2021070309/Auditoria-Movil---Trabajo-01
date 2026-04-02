@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/cr_dark_blue" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/color_white" android:gravity="center" android:layout_gravity="start" android:id="@+id/downloads_selected_count" android:layout_width="wrap_content" android:layout_height="@dimen/downloads_manage_container_height" android:layout_marginStart="@dimen/downloads_remove_container_padding" style="@style/BodyLatoMedium"/>
+    <TextView android:enabled="false" android:textColor="@drawable/selector_remove_text_color" android:gravity="center" android:layout_gravity="end" android:id="@+id/downloads_remove_button" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="@dimen/downloads_manage_container_height" android:text="@string/remove" android:textAllCaps="true" android:paddingStart="@dimen/downloads_remove_container_padding" android:paddingEnd="@dimen/downloads_remove_container_padding" style="@style/Button3"/>
+</FrameLayout>

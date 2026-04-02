@@ -1,0 +1,95 @@
+package com.amazon.aps.iva.ke0;
+
+import com.amazon.aps.iva.e4.l1;
+import com.amazon.aps.iva.lb0.m0;
+import java.util.Set;
+/* compiled from: OperatorNameConventions.kt */
+/* loaded from: classes4.dex */
+public final class t {
+    public static final com.amazon.aps.iva.nd0.f a;
+    public static final com.amazon.aps.iva.nd0.f b;
+    public static final com.amazon.aps.iva.nd0.f c;
+    public static final com.amazon.aps.iva.nd0.f d;
+    public static final com.amazon.aps.iva.nd0.f e;
+    public static final com.amazon.aps.iva.nd0.f f;
+    public static final com.amazon.aps.iva.nd0.f g;
+    public static final com.amazon.aps.iva.nd0.f h;
+    public static final com.amazon.aps.iva.nd0.f i;
+    public static final com.amazon.aps.iva.nd0.f j;
+    public static final com.amazon.aps.iva.nd0.f k;
+    public static final com.amazon.aps.iva.nd0.f l;
+    public static final com.amazon.aps.iva.oe0.f m;
+    public static final com.amazon.aps.iva.nd0.f n;
+    public static final com.amazon.aps.iva.nd0.f o;
+    public static final com.amazon.aps.iva.nd0.f p;
+    public static final com.amazon.aps.iva.nd0.f q;
+    public static final Set<com.amazon.aps.iva.nd0.f> r;
+    public static final Set<com.amazon.aps.iva.nd0.f> s;
+    public static final Set<com.amazon.aps.iva.nd0.f> t;
+    public static final Set<com.amazon.aps.iva.nd0.f> u;
+    public static final Set<com.amazon.aps.iva.nd0.f> v;
+    public static final Set<com.amazon.aps.iva.nd0.f> w;
+
+    static {
+        com.amazon.aps.iva.nd0.f h2 = com.amazon.aps.iva.nd0.f.h("getValue");
+        a = h2;
+        com.amazon.aps.iva.nd0.f h3 = com.amazon.aps.iva.nd0.f.h("setValue");
+        b = h3;
+        com.amazon.aps.iva.nd0.f h4 = com.amazon.aps.iva.nd0.f.h("provideDelegate");
+        c = h4;
+        com.amazon.aps.iva.nd0.f h5 = com.amazon.aps.iva.nd0.f.h("equals");
+        d = h5;
+        com.amazon.aps.iva.nd0.f.h("hashCode");
+        com.amazon.aps.iva.nd0.f h6 = com.amazon.aps.iva.nd0.f.h("compareTo");
+        e = h6;
+        com.amazon.aps.iva.nd0.f h7 = com.amazon.aps.iva.nd0.f.h("contains");
+        f = h7;
+        g = com.amazon.aps.iva.nd0.f.h("invoke");
+        h = com.amazon.aps.iva.nd0.f.h("iterator");
+        i = com.amazon.aps.iva.nd0.f.h("get");
+        j = com.amazon.aps.iva.nd0.f.h("set");
+        k = com.amazon.aps.iva.nd0.f.h("next");
+        l = com.amazon.aps.iva.nd0.f.h("hasNext");
+        com.amazon.aps.iva.nd0.f.h("toString");
+        m = new com.amazon.aps.iva.oe0.f("component\\d+");
+        com.amazon.aps.iva.nd0.f h8 = com.amazon.aps.iva.nd0.f.h("and");
+        com.amazon.aps.iva.nd0.f h9 = com.amazon.aps.iva.nd0.f.h("or");
+        com.amazon.aps.iva.nd0.f h10 = com.amazon.aps.iva.nd0.f.h("xor");
+        com.amazon.aps.iva.nd0.f h11 = com.amazon.aps.iva.nd0.f.h("inv");
+        com.amazon.aps.iva.nd0.f h12 = com.amazon.aps.iva.nd0.f.h("shl");
+        com.amazon.aps.iva.nd0.f h13 = com.amazon.aps.iva.nd0.f.h("shr");
+        com.amazon.aps.iva.nd0.f h14 = com.amazon.aps.iva.nd0.f.h("ushr");
+        com.amazon.aps.iva.nd0.f h15 = com.amazon.aps.iva.nd0.f.h("inc");
+        n = h15;
+        com.amazon.aps.iva.nd0.f h16 = com.amazon.aps.iva.nd0.f.h("dec");
+        o = h16;
+        com.amazon.aps.iva.nd0.f h17 = com.amazon.aps.iva.nd0.f.h("plus");
+        com.amazon.aps.iva.nd0.f h18 = com.amazon.aps.iva.nd0.f.h("minus");
+        com.amazon.aps.iva.nd0.f h19 = com.amazon.aps.iva.nd0.f.h("not");
+        com.amazon.aps.iva.nd0.f h20 = com.amazon.aps.iva.nd0.f.h("unaryMinus");
+        com.amazon.aps.iva.nd0.f h21 = com.amazon.aps.iva.nd0.f.h("unaryPlus");
+        com.amazon.aps.iva.nd0.f h22 = com.amazon.aps.iva.nd0.f.h("times");
+        com.amazon.aps.iva.nd0.f h23 = com.amazon.aps.iva.nd0.f.h("div");
+        com.amazon.aps.iva.nd0.f h24 = com.amazon.aps.iva.nd0.f.h("mod");
+        com.amazon.aps.iva.nd0.f h25 = com.amazon.aps.iva.nd0.f.h("rem");
+        com.amazon.aps.iva.nd0.f h26 = com.amazon.aps.iva.nd0.f.h("rangeTo");
+        p = h26;
+        com.amazon.aps.iva.nd0.f h27 = com.amazon.aps.iva.nd0.f.h("rangeUntil");
+        q = h27;
+        com.amazon.aps.iva.nd0.f h28 = com.amazon.aps.iva.nd0.f.h("timesAssign");
+        com.amazon.aps.iva.nd0.f h29 = com.amazon.aps.iva.nd0.f.h("divAssign");
+        com.amazon.aps.iva.nd0.f h30 = com.amazon.aps.iva.nd0.f.h("modAssign");
+        com.amazon.aps.iva.nd0.f h31 = com.amazon.aps.iva.nd0.f.h("remAssign");
+        com.amazon.aps.iva.nd0.f h32 = com.amazon.aps.iva.nd0.f.h("plusAssign");
+        com.amazon.aps.iva.nd0.f h33 = com.amazon.aps.iva.nd0.f.h("minusAssign");
+        r = l1.I(h15, h16, h21, h20, h19, h11);
+        s = l1.I(h21, h20, h19, h11);
+        Set<com.amazon.aps.iva.nd0.f> I = l1.I(h22, h17, h18, h23, h24, h25, h26, h27);
+        t = I;
+        Set<com.amazon.aps.iva.nd0.f> I2 = l1.I(h8, h9, h10, h11, h12, h13, h14);
+        u = I2;
+        m0.Q(m0.Q(I, I2), l1.I(h5, h7, h6));
+        v = l1.I(h28, h29, h30, h31, h32, h33);
+        w = l1.I(h2, h3, h4);
+    }
+}

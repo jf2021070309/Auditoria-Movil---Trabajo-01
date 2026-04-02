@@ -1,0 +1,96 @@
+package com.amazon.aps.iva.ad0;
+
+import com.amazon.aps.iva.ae0.s;
+import com.amazon.aps.iva.de0.l;
+import com.amazon.aps.iva.fd0.t;
+import com.amazon.aps.iva.gd0.r;
+import com.amazon.aps.iva.gd0.y;
+import com.amazon.aps.iva.lc0.m;
+import com.amazon.aps.iva.oc0.c0;
+import com.amazon.aps.iva.oc0.w0;
+import com.amazon.aps.iva.vd0.d;
+import com.amazon.aps.iva.xc0.q;
+import com.amazon.aps.iva.xc0.v;
+import com.amazon.aps.iva.yc0.h;
+import com.amazon.aps.iva.yc0.k;
+/* compiled from: context.kt */
+/* loaded from: classes4.dex */
+public final class c {
+    public final l a;
+    public final q b;
+    public final r c;
+    public final com.amazon.aps.iva.gd0.l d;
+    public final k e;
+    public final s f;
+    public final com.amazon.aps.iva.yc0.h g;
+    public final com.amazon.aps.iva.yc0.g h;
+    public final com.amazon.aps.iva.wd0.a i;
+    public final com.amazon.aps.iva.dd0.b j;
+    public final h k;
+    public final y l;
+    public final w0 m;
+    public final com.amazon.aps.iva.wc0.c n;
+    public final c0 o;
+    public final m p;
+    public final com.amazon.aps.iva.xc0.e q;
+    public final t r;
+    public final com.amazon.aps.iva.xc0.r s;
+    public final d t;
+    public final com.amazon.aps.iva.fe0.l u;
+    public final com.amazon.aps.iva.xc0.y v;
+    public final v w;
+    public final com.amazon.aps.iva.vd0.d x;
+
+    public c(l lVar, q qVar, r rVar, com.amazon.aps.iva.gd0.l lVar2, k kVar, s sVar, com.amazon.aps.iva.yc0.g gVar, com.amazon.aps.iva.wd0.a aVar, com.amazon.aps.iva.dd0.b bVar, h hVar, y yVar, w0 w0Var, com.amazon.aps.iva.wc0.c cVar, c0 c0Var, m mVar, com.amazon.aps.iva.xc0.e eVar, t tVar, com.amazon.aps.iva.xc0.r rVar2, d dVar, com.amazon.aps.iva.fe0.l lVar3, com.amazon.aps.iva.xc0.y yVar2, v vVar) {
+        h.a aVar2 = com.amazon.aps.iva.yc0.h.a;
+        com.amazon.aps.iva.vd0.d.a.getClass();
+        com.amazon.aps.iva.vd0.a aVar3 = d.a.b;
+        com.amazon.aps.iva.yb0.j.f(lVar, "storageManager");
+        com.amazon.aps.iva.yb0.j.f(qVar, "finder");
+        com.amazon.aps.iva.yb0.j.f(rVar, "kotlinClassFinder");
+        com.amazon.aps.iva.yb0.j.f(lVar2, "deserializedDescriptorResolver");
+        com.amazon.aps.iva.yb0.j.f(kVar, "signaturePropagator");
+        com.amazon.aps.iva.yb0.j.f(sVar, "errorReporter");
+        com.amazon.aps.iva.yb0.j.f(gVar, "javaPropertyInitializerEvaluator");
+        com.amazon.aps.iva.yb0.j.f(aVar, "samConversionResolver");
+        com.amazon.aps.iva.yb0.j.f(bVar, "sourceElementFactory");
+        com.amazon.aps.iva.yb0.j.f(hVar, "moduleClassResolver");
+        com.amazon.aps.iva.yb0.j.f(yVar, "packagePartProvider");
+        com.amazon.aps.iva.yb0.j.f(w0Var, "supertypeLoopChecker");
+        com.amazon.aps.iva.yb0.j.f(cVar, "lookupTracker");
+        com.amazon.aps.iva.yb0.j.f(c0Var, "module");
+        com.amazon.aps.iva.yb0.j.f(mVar, "reflectionTypes");
+        com.amazon.aps.iva.yb0.j.f(eVar, "annotationTypeQualifierResolver");
+        com.amazon.aps.iva.yb0.j.f(tVar, "signatureEnhancement");
+        com.amazon.aps.iva.yb0.j.f(rVar2, "javaClassesTracker");
+        com.amazon.aps.iva.yb0.j.f(dVar, "settings");
+        com.amazon.aps.iva.yb0.j.f(lVar3, "kotlinTypeChecker");
+        com.amazon.aps.iva.yb0.j.f(yVar2, "javaTypeEnhancementState");
+        com.amazon.aps.iva.yb0.j.f(vVar, "javaModuleResolver");
+        com.amazon.aps.iva.yb0.j.f(aVar3, "syntheticPartsProvider");
+        this.a = lVar;
+        this.b = qVar;
+        this.c = rVar;
+        this.d = lVar2;
+        this.e = kVar;
+        this.f = sVar;
+        this.g = aVar2;
+        this.h = gVar;
+        this.i = aVar;
+        this.j = bVar;
+        this.k = hVar;
+        this.l = yVar;
+        this.m = w0Var;
+        this.n = cVar;
+        this.o = c0Var;
+        this.p = mVar;
+        this.q = eVar;
+        this.r = tVar;
+        this.s = rVar2;
+        this.t = dVar;
+        this.u = lVar3;
+        this.v = yVar2;
+        this.w = vVar;
+        this.x = aVar3;
+    }
+}

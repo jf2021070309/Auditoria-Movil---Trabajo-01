@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="about_month_ago">
+        <item quantity="other">circa %d mesi fa</item>
+        <item quantity="one">circa %d mese fa</item>
+        <item quantity="many">circa %d mesi fa</item>
+    </plurals>
+    <plurals name="artist_details_concerts_count">
+        <item quantity="other">%d concerti</item>
+        <item quantity="one">%d concerto</item>
+        <item quantity="many">%d concerti</item>
+    </plurals>
+    <plurals name="artist_details_music_videos_count">
+        <item quantity="other">%d video musicali</item>
+        <item quantity="one">%d video musicale</item>
+        <item quantity="many">%d video musicali</item>
+    </plurals>
+    <plurals name="billing_notification_card_days_left">
+        <item quantity="other">i prossimi %d giorni</item>
+        <item quantity="one">domani</item>
+        <item quantity="many">i prossimi %d giorni</item>
+    </plurals>
+    <plurals name="billing_notification_card_days_left_styled">
+        <item quantity="other">%d giorni</item>
+        <item quantity="one">giorno</item>
+        <item quantity="many">%d giorni</item>
+    </plurals>
+    <plurals name="billing_notification_card_hours_left">
+        <item quantity="other">le prossime %d ore</item>
+        <item quantity="one">la prossima ora</item>
+        <item quantity="many">le prossime %d ore</item>
+    </plurals>
+    <plurals name="billing_notification_card_hours_left_styled">
+        <item quantity="other">%d ore</item>
+        <item quantity="one">ora</item>
+        <item quantity="many">%d ore</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_left">
+        <item quantity="other">i prossimi %d mesi</item>
+        <item quantity="one">%d mese</item>
+        <item quantity="many">i prossimi %d mesi</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_left_styled">
+        <item quantity="other">i prossimi %d mesi</item>
+        <item quantity="one">%d mese</item>
+        <item quantity="many">i prossimi %d mesi</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_with_days_left">
+        <item quantity="other">i prossimi %1$d mesi e %2$s</item>
+        <item quantity="one">%1$d mese e %2$s</item>
+        <item quantity="many">i prossimi %1$d mesi e %2$s</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_with_days_left_styled">
+        <item quantity="other">i prossimi %1$d mesi e %2$s</item>
+        <item quantity="one">%1$d mese e %2$s</item>
+        <item quantity="many">i prossimi %1$d mesi e %2$s</item>
+    </plurals>
+    <plurals name="billing_notification_card_x_days_left">
+        <item quantity="other">%d giorni</item>
+        <item quantity="one">%d giorno</item>
+        <item quantity="many">%d giorni</item>
+    </plurals>
+    <plurals name="billing_notification_days_left">
+        <item quantity="other">%d giorni</item>
+        <item quantity="one">giorno</item>
+        <item quantity="many">%d giorni</item>
+    </plurals>
+    <plurals name="billing_notification_hours_left">
+        <item quantity="other">le prossime %d ore</item>
+        <item quantity="one">la prossima ora</item>
+        <item quantity="many">le prossime %d ore</item>
+    </plurals>
+    <plurals name="billing_notification_hours_left_colored">
+        <item quantity="other">%dore</item>
+        <item quantity="one">ora</item>
+        <item quantity="many">%d ore</item>
+    </plurals>
+    <plurals name="commenting_item_comment_replies_button_with_replies_count">
+        <item quantity="other">Mostra %1$d risposte</item>
+        <item quantity="one">Mostra %1$d risposta</item>
+        <item quantity="many">Mostra %1$d risposte</item>
+    </plurals>
+    <plurals name="completed_episodes">
+        <item quantity="other">%d episodi</item>
+        <item quantity="one">%d episodio</item>
+        <item quantity="many">%d episodi</item>
+    </plurals>
+    <plurals name="completed_videos">
+        <item quantity="other">%d video</item>
+        <item quantity="one">%d video</item>
+        <item quantity="many">%d video</item>
+    </plurals>
+    <plurals name="cr_plus_upsell_menu_days_duration">
+        <item quantity="other">Periodo di prova gratuito di %1$d giorni</item>
+        <item quantity="one">Periodo di prova gratuito di %1$d giorno</item>
+        <item quantity="many">Periodo di prova gratuito di %1$d giorni</item>
+    </plurals>
+    <plurals name="cr_plus_upsell_menu_months_duration">
+        <item quantity="other">Periodo di prova gratuito di %1$d mesi</item>
+        <item quantity="one">Periodo di prova gratuito di %1$d mese</item>
+        <item quantity="many">Periodo di prova gratuito di %1$d mesi</item>
+    </plurals>
+    <plurals name="crunchylists_add_to_crunchylist_items">
+        <item quantity="other">%1$d Elementi</item>
+        <item quantity="one">%d Elemento</item>
+        <item quantity="many">%1$d Elementi</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">%d giorni fa</item>
+        <item quantity="one">%d giorno fa</item>
+        <item quantity="many">%d giorni fa</item>
+    </plurals>
+    <plurals name="downloads_selected_plural">
+        <item quantity="other">%d elementi selezionati</item>
+        <item quantity="one">%d elemento selezionato</item>
+        <item quantity="many">%d elementi selezionati</item>
+    </plurals>
+    <plurals name="duration_left_format">
+        <item quantity="other">%1$s rimanenti</item>
+        <item quantity="one">%1$s rimanente</item>
+        <item quantity="many">%1$s rimanenti</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Avanti di %d secondi</item>
+        <item quantity="one">Avanti di %d secondo</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Indietro di %d secondi</item>
+        <item quantity="one">Indietro di %d secondo</item>
+    </plurals>
+    <plurals name="history_items_removed">
+        <item quantity="other">%s elementi rimossi dalla cronologia</item>
+        <item quantity="one">%s elemento rimosso dalla cronologia</item>
+        <item quantity="many">%s elementi rimossi dalla cronologia</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d ore fa</item>
+        <item quantity="one">%d ora fa</item>
+        <item quantity="many">%d ore fa</item>
+    </plurals>
+    <plurals name="mins_ago">
+        <item quantity="other">%d minuti fa</item>
+        <item quantity="one">%d minuto fa</item>
+        <item quantity="many">%d minuti fa</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nuove notifiche</item>
+        <item quantity="one">%d nuova notifica</item>
+    </plurals>
+    <plurals name="resend_otp_countdown_seconds">
+        <item quantity="other">Invia di nuovo tra %d secondi</item>
+        <item quantity="one">Invia di nuovo tra %d secondo</item>
+        <item quantity="many">Invia di nuovo tra %d secondi</item>
+    </plurals>
+    <plurals name="season_metadata_episodes">
+        <item quantity="other">%d Episodi</item>
+        <item quantity="one">%d Episodio</item>
+        <item quantity="many">%d Episodi</item>
+    </plurals>
+    <plurals name="season_metadata_seasons">
+        <item quantity="other">%1$d Stagioni</item>
+        <item quantity="one">%d Stagione</item>
+        <item quantity="many">%1$d Stagioni</item>
+    </plurals>
+    <plurals name="show_rating_average_rating_count">
+        <item quantity="other">%1$s valutazioni</item>
+        <item quantity="one">%1$s valutazione</item>
+        <item quantity="many">%1$s valutazioni</item>
+    </plurals>
+    <plurals name="show_rating_dialog_v2_already_rated">
+        <item quantity="other">Hai dato una valutazione di %1$d stelle</item>
+        <item quantity="one">Hai dato una valutazione di %1$d stella</item>
+        <item quantity="many">Hai dato una valutazione di %1$d stelle</item>
+    </plurals>
+    <plurals name="syncing_toolbar_completed_episodes">
+        <item quantity="other">%s Episodi</item>
+        <item quantity="one">%s Episodio</item>
+        <item quantity="many">%s Episodi</item>
+    </plurals>
+    <plurals name="syncing_toolbar_completed_videos">
+        <item quantity="other">%s Video</item>
+        <item quantity="one">%s Video</item>
+        <item quantity="many">%s Video</item>
+    </plurals>
+</resources>

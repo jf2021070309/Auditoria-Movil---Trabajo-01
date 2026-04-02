@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="11dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/rating_star" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_rating_star_filled"/>
+    <TextView android:layout_gravity="center" android:id="@+id/rating_star_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="8dp" style="@style/Subheader2LatoSemibold"/>
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/rating_progress" android:layout_width="0dp" android:layout_height="6dp" android:layout_weight="1" android:scaleY="2" android:layout_marginStart="24dp" android:layout_marginEnd="16dp" android:progressBackgroundTint="@color/rating_progress_background_tint" android:progressBackgroundTintMode="src_over" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    <TextView android:layout_gravity="start|center_vertical" android:id="@+id/rating_percentage" android:layout_width="41dp" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/Subheader2LatoSemibold"/>
+</LinearLayout>

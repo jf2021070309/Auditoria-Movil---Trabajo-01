@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="EmptyLayoutImageStyle" parent="">
+        <item name="image_visibility">visible</item>
+    </style>
+</resources>

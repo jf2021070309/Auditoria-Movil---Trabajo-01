@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ContentTheme" parent="@style/CxTheme">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="preferenceTheme">@style/PlayerPreferenceTheme</item>
+    </style>
+    <style name="DialogTheme" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textColorLink">@color/text_color_link</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Glance.AppWidget.Theme" parent="@android:style/Theme.DeviceDefault.DayNight">
+    </style>
+    <style name="SearchResultCxTheme" parent="@style/CxTheme">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/cr_black_pearl</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="TextAppearance.Bold" parent="">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+    <style name="TextAppearance.Medium" parent="">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="TextAppearance.Normal" parent="">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="ToolbarMenuDialogTheme" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textColorLink">@color/text_color_link</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <style name="TransparentStatusBar" parent="@style/CxTheme">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

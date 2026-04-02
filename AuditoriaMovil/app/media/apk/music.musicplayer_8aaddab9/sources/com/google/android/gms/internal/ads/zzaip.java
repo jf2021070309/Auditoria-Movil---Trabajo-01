@@ -1,0 +1,83 @@
+package com.google.android.gms.internal.ads;
+
+import android.net.Uri;
+/* loaded from: classes.dex */
+public final class zzaip {
+    public static final zzadw<zzaip> zzp;
+    private static final zzagk zzr;
+    public Object zzb = zza;
+    public zzagk zzc = zzr;
+    public long zzd;
+    public long zze;
+    public long zzf;
+    public boolean zzg;
+    public boolean zzh;
+    @Deprecated
+    public boolean zzi;
+    public zzagh zzj;
+    public boolean zzk;
+    public long zzl;
+    public long zzm;
+    public int zzn;
+    public int zzo;
+    public static final Object zza = new Object();
+    private static final Object zzq = new Object();
+
+    static {
+        zzagb zzagbVar = new zzagb();
+        zzagbVar.zza("com.google.android.exoplayer2.Timeline");
+        zzagbVar.zzb(Uri.EMPTY);
+        zzr = zzagbVar.zzc();
+        zzp = zzaio.zza;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null && zzaip.class.equals(obj.getClass())) {
+            zzaip zzaipVar = (zzaip) obj;
+            if (zzamq.zzc(this.zzb, zzaipVar.zzb) && zzamq.zzc(this.zzc, zzaipVar.zzc) && zzamq.zzc(null, null) && zzamq.zzc(this.zzj, zzaipVar.zzj) && this.zzd == zzaipVar.zzd && this.zze == zzaipVar.zze && this.zzf == zzaipVar.zzf && this.zzg == zzaipVar.zzg && this.zzh == zzaipVar.zzh && this.zzk == zzaipVar.zzk && this.zzm == zzaipVar.zzm && this.zzn == zzaipVar.zzn && this.zzo == zzaipVar.zzo) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        int hashCode = (this.zzc.hashCode() + ((this.zzb.hashCode() + 217) * 31)) * 961;
+        zzagh zzaghVar = this.zzj;
+        int hashCode2 = zzaghVar == null ? 0 : zzaghVar.hashCode();
+        long j2 = this.zzd;
+        long j3 = this.zze;
+        long j4 = this.zzf;
+        boolean z = this.zzg;
+        boolean z2 = this.zzh;
+        boolean z3 = this.zzk;
+        long j5 = this.zzm;
+        return (((((((((((((((((((hashCode + hashCode2) * 31) + ((int) (j2 ^ (j2 >>> 32)))) * 31) + ((int) ((j3 >>> 32) ^ j3))) * 31) + ((int) ((j4 >>> 32) ^ j4))) * 31) + (z ? 1 : 0)) * 31) + (z2 ? 1 : 0)) * 31) + (z3 ? 1 : 0)) * 961) + ((int) ((j5 >>> 32) ^ j5))) * 31) + this.zzn) * 31) + this.zzo) * 31;
+    }
+
+    public final zzaip zza(Object obj, zzagk zzagkVar, Object obj2, long j2, long j3, long j4, boolean z, boolean z2, zzagh zzaghVar, long j5, long j6, int i2, int i3, long j7) {
+        this.zzb = obj;
+        this.zzc = zzagkVar != null ? zzagkVar : zzr;
+        this.zzd = -9223372036854775807L;
+        this.zze = -9223372036854775807L;
+        this.zzf = -9223372036854775807L;
+        this.zzg = z;
+        this.zzh = z2;
+        this.zzi = zzaghVar != null;
+        this.zzj = zzaghVar;
+        this.zzl = 0L;
+        this.zzm = j6;
+        this.zzn = 0;
+        this.zzo = 0;
+        this.zzk = false;
+        return this;
+    }
+
+    public final boolean zzb() {
+        zzakt.zzd(this.zzi == (this.zzj != null));
+        return this.zzj != null;
+    }
+}

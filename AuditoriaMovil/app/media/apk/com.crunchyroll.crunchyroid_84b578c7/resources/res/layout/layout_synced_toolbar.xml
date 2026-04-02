@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/cr_black_pearl" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/show_page_synced_toolbar_horizontal_margin" android:layout_marginEnd="@dimen/show_page_synced_toolbar_horizontal_margin">
+        <TextView android:textColor="@color/color_white" android:ellipsize="end" android:id="@+id/synced_label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginBottom="13dp" android:lines="1" android:includeFontPadding="false" android:layout_weight="1" android:layout_marginEnd="16dp" style="@style/Subheader2LatoSemibold"/>
+        <TextView android:textColor="@color/cr_silver_chalice" android:id="@+id/synced_videos_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/BodyLatoSemibold"/>
+        <ImageView android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_diamond" app:tint="@color/cr_silver_chalice"/>
+        <TextView android:textColor="@color/cr_silver_chalice" android:id="@+id/synced_videos_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/BodyLatoSemibold"/>
+    </LinearLayout>
+    <View android:background="@color/cr_black_pearl" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

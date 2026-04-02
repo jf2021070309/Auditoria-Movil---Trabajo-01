@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/video_player_preference_padding_horizontal" android:paddingEnd="@dimen/video_player_preference_padding_horizontal">
+    <TextView android:textColor="@color/color_white" android:gravity="center_vertical" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="73" android:layout_marginEnd="10dp" style="@style/Subheader2LatoSemibold"/>
+    <FrameLayout android:layout_gravity="center" android:layout_width="73dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="8dp">
+        <TextView android:textColor="@color/cr_silver" android:ellipsize="end" android:layout_gravity="end" android:id="@+id/value_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:textDirection="locale" style="@style/SmallLatoMedium"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

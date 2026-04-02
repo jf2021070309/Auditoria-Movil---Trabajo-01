@@ -1,0 +1,25 @@
+package com.google.android.gms.internal.ads;
+
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+/* compiled from: com.google.android.gms:play-services-ads@@20.5.0 */
+/* loaded from: classes2.dex */
+public interface zzde {
+    public static final ByteBuffer zza = ByteBuffer.allocateDirect(0).order(ByteOrder.nativeOrder());
+
+    zzdc zza(zzdc zzdcVar) throws zzdd;
+
+    boolean zzb();
+
+    void zzc(ByteBuffer byteBuffer);
+
+    void zzd();
+
+    ByteBuffer zze();
+
+    boolean zzf();
+
+    void zzg();
+
+    void zzh();
+}

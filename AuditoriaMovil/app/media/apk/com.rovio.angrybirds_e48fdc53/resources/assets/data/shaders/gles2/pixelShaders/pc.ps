@@ -1,0 +1,9 @@
+#include "../commons/uniforms.sh"
+
+varying	lowp vec4 V_VertexColor;
+
+void main()
+{
+	lowp vec4 diff = V_VertexColor;
+	gl_FragColor = vec4( diff.rgb * diff.a, diff.a );	// Premultiplied alpha
+}

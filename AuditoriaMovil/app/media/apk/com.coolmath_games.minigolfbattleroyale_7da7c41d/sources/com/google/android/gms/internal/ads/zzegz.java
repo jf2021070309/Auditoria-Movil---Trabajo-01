@@ -1,0 +1,22 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import java.util.concurrent.Executor;
+/* compiled from: com.google.android.gms:play-services-ads@@20.5.0 */
+/* loaded from: classes2.dex */
+public final class zzegz implements zzgla<zzegy> {
+    private final zzgln<Context> zza;
+    private final zzgln<zzdlb> zzb;
+    private final zzgln<Executor> zzc;
+
+    public zzegz(zzgln<Context> zzglnVar, zzgln<zzdlb> zzglnVar2, zzgln<Executor> zzglnVar3) {
+        this.zza = zzglnVar;
+        this.zzb = zzglnVar2;
+        this.zzc = zzglnVar3;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgln
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzegy(this.zza.zzb(), this.zzb.zzb(), this.zzc.zzb());
+    }
+}

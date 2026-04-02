@@ -1,0 +1,100 @@
+<linker>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioClip" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.TrailRenderer" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.SkinnedMeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.Cubemap" preserve="all" />
+    <type fullname="UnityEngine.RenderSettings" preserve="all" />
+    <type fullname="UnityEngine.Light" preserve="all" />
+    <type fullname="UnityEngine.LightmapSettings" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
+    <type fullname="UnityEngine.LightProbes" preserve="all" />
+    <type fullname="UnityEngine.LightingSettings" preserve="all" />
+  </assembly>
+  <assembly fullname="Game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="MiniGolfRoyale.Game.VFX.VFXPowerParticleColor" preserve="all" />
+    <type fullname="IslandLobyy" preserve="all" />
+    <type fullname="TransitionIslandController" preserve="all" />
+    <type fullname="FTUE0_Arrow" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Ball.ChangeBallLayer" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.LoadTheme" preserve="all" />
+    <type fullname="LevelPrefabData" preserve="all" />
+    <type fullname="HoleBeamLight" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Hole.HoleController" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Ball.ChangeHolePhysics" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Hole.HoleMagnect" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Ball.PoleTriggerEnter" preserve="all" />
+    <type fullname="SetCameraAim" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.ContraptionData" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.SetLastContraptionTouched" preserve="all" />
+    <type fullname="MiniGolfRoyale.Audio.AudioContraptionBackgroundDistanceState" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.MovingObject" preserve="all" />
+    <type fullname="FTUECameraTuto" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Camera.AutoApplyTransparency" preserve="all" />
+    <type fullname="MiniGolfRoyale.Audio.AudioContraptionBackgroundDistance" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.ChangePhysical" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.WindMill" preserve="all" />
+    <type fullname="Pole" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.KickBall" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.SlowDownArea" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.AnimatedMovingObject" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.WindZone" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.SpeedUp" preserve="all" />
+    <type fullname="FollowSnownBall" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.ResetZone" preserve="all" />
+    <type fullname="SnowBall" preserve="all" />
+    <type fullname="PhysicsDebug" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.HoleContraption" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.SquashZone" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.MovingBridge" preserve="all" />
+    <type fullname="MiniGolfRoyale.Game.Level.Contraptions.FallingObjects" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEditor.MonoScript" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Rigidbody" preserve="all" />
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+    <type fullname="UnityEngine.PhysicMaterial" preserve="all" />
+    <type fullname="UnityEngine.SphereCollider" preserve="all" />
+    <type fullname="UnityEngine.MeshCollider" preserve="all" />
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+  </assembly>
+  <assembly fullname="BakeryRuntimeAssembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="ftLightmapsStorage" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ProBuilder.ProBuilderMesh" preserve="all" />
+  </assembly>
+</linker>

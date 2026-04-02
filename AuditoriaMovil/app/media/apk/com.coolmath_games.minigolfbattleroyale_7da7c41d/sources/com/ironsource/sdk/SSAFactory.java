@@ -1,0 +1,15 @@
+package com.ironsource.sdk;
+
+import android.app.Activity;
+import android.content.Context;
+@Deprecated
+/* loaded from: classes2.dex */
+public class SSAFactory {
+    public static f getPublisherInstance(Activity activity) {
+        return com.ironsource.sdk.d.b.a((Context) activity);
+    }
+
+    public static f getPublisherTestInstance(Activity activity, int i) {
+        return com.ironsource.sdk.d.b.a(activity, i);
+    }
+}

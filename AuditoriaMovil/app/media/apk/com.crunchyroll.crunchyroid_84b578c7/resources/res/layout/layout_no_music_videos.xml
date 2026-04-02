@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="160dp" android:src="@drawable/artist_no_music_videos"/>
+    <TextView android:textColor="@color/white" android:layout_width="@dimen/artist_explore_library_cta_width" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/artist_no_videos_title" android:includeFontPadding="false" android:textAlignment="center" style="@style/EmptyLayoutHeaderStyle"/>
+    <TextView android:textColor="@color/cr_silver" android:layout_width="@dimen/artist_explore_library_cta_width" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/artist_no_videos_subtitle" android:includeFontPadding="false" android:textAlignment="center" style="@style/BodyLatoMedium"/>
+    <TextView android:textColor="@color/cr_black_pearl" android:id="@+id/explore_library_cta" android:layout_width="@dimen/artist_explore_library_cta_width" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/artist_no_videos_explore_cta" android:includeFontPadding="true" android:textAllCaps="true" style="@style/PrimaryButton"/>
+</LinearLayout>

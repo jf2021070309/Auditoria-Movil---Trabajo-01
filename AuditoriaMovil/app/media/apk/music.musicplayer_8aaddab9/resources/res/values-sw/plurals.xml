@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">Arifa %d mpya</item>
+        <item quantity="other">Arifa %d mpya</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Imesalia dakika %d</item>
+        <item quantity="other">Zimesalia dakika %d</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">Albamu 1</item>
+        <item quantity="other">&quot;Albamu &quot;&quot;%d&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">Wimbo %d mpya umepatikana</item>
+        <item quantity="other">Nyimbo %d mpya zimepatikana</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;Wimbo &quot;&quot;%d&quot;</item>
+        <item quantity="other">&quot;Nyimbo &quot;&quot;%d&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;Wimbo &quot;&quot;%2$d&quot;&quot; kati ya &quot;&quot;%1$d&quot;</item>
+        <item quantity="other">&quot;Nyimbo &quot;&quot;%2$d&quot;&quot; kati ya &quot;&quot;%1$d&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">Imefuta wimbo 1.</item>
+        <item quantity="other">Imefuta nyimbo &quot;&quot;%d&quot;&quot;.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">Imeongeza wimbo 1 kwenye orodha ya kucheza.</item>
+        <item quantity="other">Imeongeza nyimbo &quot;&quot;%d&quot;&quot; kwenye orodha ya kucheza.</item>
+    </plurals>
+</resources>

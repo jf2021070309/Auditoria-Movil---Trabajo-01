@@ -1,0 +1,33 @@
+package com.amazon.aps.iva.ca;
+
+import android.graphics.PointF;
+/* compiled from: IntegerKeyframeAnimation.java */
+/* loaded from: classes.dex */
+public final class f extends g<Integer> {
+    @Override // com.amazon.aps.iva.ca.a
+    public final Object g(com.amazon.aps.iva.na.a aVar, float f) {
+        return Integer.valueOf(l(aVar, f));
+    }
+
+    public final int l(com.amazon.aps.iva.na.a<Integer> aVar, float f) {
+        Integer num;
+        if (aVar.b != null && aVar.c != null) {
+            com.amazon.aps.iva.na.c<A> cVar = this.e;
+            Integer num2 = aVar.b;
+            if (cVar != 0 && (num = (Integer) cVar.b(aVar.g, aVar.h.floatValue(), num2, aVar.c, f, e(), this.d)) != null) {
+                return num.intValue();
+            }
+            if (aVar.k == 784923401) {
+                aVar.k = num2.intValue();
+            }
+            int i = aVar.k;
+            if (aVar.l == 784923401) {
+                aVar.l = aVar.c.intValue();
+            }
+            int i2 = aVar.l;
+            PointF pointF = com.amazon.aps.iva.ma.f.a;
+            return (int) ((f * (i2 - i)) + i);
+        }
+        throw new IllegalStateException("Missing values for keyframe.");
+    }
+}

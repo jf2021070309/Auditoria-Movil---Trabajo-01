@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.truex.adrenderer.web.TruexWebView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/web_choicecard" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true"/>

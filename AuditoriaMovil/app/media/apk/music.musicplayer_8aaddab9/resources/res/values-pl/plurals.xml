@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nowe powiadomienie</item>
+        <item quantity="few">%d nowe powiadomienia</item>
+        <item quantity="many">%d nowych powiadomień</item>
+        <item quantity="other">%d nowego powiadomienia</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Została %d minuta</item>
+        <item quantity="few">Zostały %d minuty</item>
+        <item quantity="many">Zostało %d minut</item>
+        <item quantity="other">Zostało %d minut</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">1 album</item>
+        <item quantity="few">&quot;%d&quot;&quot; albumy&quot;</item>
+        <item quantity="many">&quot;%d&quot;&quot; albumów&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; albumu&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">Znaleziono %d nową piosenkę</item>
+        <item quantity="few">Znaleziono %d nowe utwory</item>
+        <item quantity="many">Znaleziono %d nowych piosenek</item>
+        <item quantity="other">Znaleziono %d nowych piosenek</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; utwór&quot;</item>
+        <item quantity="few">&quot;%d&quot;&quot; utwory&quot;</item>
+        <item quantity="many">&quot;%d&quot;&quot; utworów&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; utworu&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; z &quot;&quot;%1$d&quot;&quot; utworu&quot;</item>
+        <item quantity="few">&quot;%2$d&quot;&quot; z &quot;&quot;%1$d&quot;&quot; utworów&quot;</item>
+        <item quantity="many">&quot;%2$d&quot;&quot; z &quot;&quot;%1$d&quot;&quot; utworów&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; z &quot;&quot;%1$d&quot;&quot; utworu&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">Usunięto 1 utwór.</item>
+        <item quantity="few">Usunięto &quot;&quot;%d&quot;&quot; utwory.</item>
+        <item quantity="many">Usunięto &quot;&quot;%d&quot;&quot; utworów.</item>
+        <item quantity="other">Usunięto &quot;&quot;%d&quot;&quot; utworu.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">Dodano jeden utwór do playlisty.</item>
+        <item quantity="few">Dodano &quot;&quot;%d&quot;&quot; utwory do playlisty.</item>
+        <item quantity="many">Dodano &quot;&quot;%d&quot;&quot; utworów do playlisty.</item>
+        <item quantity="other">Dodano &quot;&quot;%d&quot;&quot; utworu do playlisty.</item>
+    </plurals>
+</resources>

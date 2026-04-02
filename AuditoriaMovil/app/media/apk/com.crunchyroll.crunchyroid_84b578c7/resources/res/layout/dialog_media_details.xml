@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/media_details_background" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="336dp">
+    <ScrollView android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/media_details_horizontal_margin" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.ellation.widgets.CollapsibleTextView android:textColor="@color/cr_silver" android:id="@+id/media_details_description" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginEnd="@dimen/media_details_horizontal_margin" app:actionText="@string/watch_page_summary_description_read_more" app:actionTextColor="@color/primary" app:actionTextFont="@font/lato_heavy" app:actionTextSize="14sp" app:ellipsis="@string/watch_page_summary_description_read_more_ellipsis" app:linesWhenCollapsed="5" style="@style/Subheader2LatoSemibold"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/media_details_fields_container" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/collapsible_app_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ellation.widgets.collapsibletoolbar.CollapsibleToolbarLayout android:id="@+id/collapsible_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:collapsedTitleGravity="start" app:collapsedTitleTextAppearance="@style/HeaderLato" app:expandedTitleGravity="bottom" app:expandedTitleMargin="16dp" app:expandedTitleTextAppearance="@style/Headline3Lato" app:layout_scrollFlags="snap|exitUntilCollapsed|scroll" app:maxLines="1000" app:toolbarId="@+id/toolbar">
+            <View android:background="@color/media_details_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/media_details_background" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" android:layout_marginEnd="16dp" app:layout_collapseMode="pin" app:navigationIcon="@drawable/ic_cross" style="@style/ToolbarWithNavigationIconStyle"/>
+        </com.ellation.widgets.collapsibletoolbar.CollapsibleToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

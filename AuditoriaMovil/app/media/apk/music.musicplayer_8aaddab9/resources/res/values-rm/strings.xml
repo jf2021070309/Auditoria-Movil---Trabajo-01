@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close">Serrar</string>
+    <string name="create_playlist_create_text_prompt">Num da la playlist</string>
+    <string name="mediasearch">Tschertgar %s cun agid da:</string>
+    <string name="new_playlist_name_template">Nova playlist %d</string>
+    <string name="rename_playlist_same_prompt">Renumnar %s en</string>
+    <string name="ringtone_set">%s è vegnì definì sco tun da scalin.</string>
+</resources>

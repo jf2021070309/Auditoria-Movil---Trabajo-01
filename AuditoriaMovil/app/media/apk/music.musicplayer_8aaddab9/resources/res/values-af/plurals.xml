@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nuwe kennisgewing</item>
+        <item quantity="other">%d nuwe kennisgewings</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d minuut oor</item>
+        <item quantity="other">%d minute oor</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d album</item>
+        <item quantity="other">&quot;%d&quot;&quot; albums&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d nuwe liedjie gevind</item>
+        <item quantity="other">%d nuwe liedjies gevind</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; liedjie&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; liedjies&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; van &quot;&quot;%1$d&quot;&quot; liedjie&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; van &quot;&quot;%1$d&quot;&quot; liedjies&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">%d liedjie is uitgevee.</item>
+        <item quantity="other">&quot;%d&quot;&quot; liedjies is uitgevee.&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">%d liedjie is by snitlys gevoeg.</item>
+        <item quantity="other">&quot;%d&quot;&quot; liedjies is by snitlys gevoeg.&quot;</item>
+    </plurals>
+</resources>

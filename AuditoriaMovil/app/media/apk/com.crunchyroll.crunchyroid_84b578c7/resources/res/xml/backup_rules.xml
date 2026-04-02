@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include id="sharedpref" layout_width="." layout_height="clientSideEncryption"/>
+    <exclude id="sharedpref" layout_width="appConfig.xml"/>
+    <exclude id="sharedpref" layout_width="dev_tools.xml"/>
+    <exclude id="sharedpref" layout_width="rt_store_secure.xml"/>
+</full-backup-content>

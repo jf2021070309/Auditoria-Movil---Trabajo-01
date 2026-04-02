@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_centralized_text"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/errors_layout" android:layout_below="@+id/centralized_toolbar">
+        <ScrollView android:id="@+id/report_problem_scroll_container" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/billing_title_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="42dp" android:layout_marginEnd="42dp">
+                    <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_crown" android:layout_marginEnd="8dp"/>
+                    <TextView android:textColor="@color/cr_honey_gold" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/billing_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/billing_signing_header_title" style="@style/BodyLatoSemibold"/>
+                </LinearLayout>
+                <TextView android:textColor="@color/silver" android:layout_gravity="center_horizontal" android:id="@+id/session_expired_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="@string/sign_in_session_expired" style="@style/BodyLatoSemibold"/>
+                <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.85"/>
+                <ImageView android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/cr_logo" android:contentDescription="@string/logo_description"/>
+                <include android:id="@+id/sign_up_content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/sign_in_sign_up_container_margin_top" layout="@layout/layout_sign_up"/>
+                <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1.15"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+    <include android:id="@+id/progress_overlay" layout="@layout/progress_layout_solid_background"/>
+    <include android:id="@+id/errors_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/layout_errors"/>
+</RelativeLayout>

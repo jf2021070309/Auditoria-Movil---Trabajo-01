@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.shimmer.ShimmerFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/WideCardShimmerAnimationStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/cr_black_pearl" android:layout_width="120dp" android:layout_height="14dp" android:layout_marginTop="@dimen/watch_screen_loading_margin_top" android:layout_marginStart="@dimen/watch_screen_loading_margin_horizontal"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="@dimen/watch_screen_loading_margin_horizontal" android:layout_marginEnd="@dimen/watch_screen_loading_margin_horizontal">
+                <View android:id="@+id/content_title" android:background="@color/cr_black_pearl" android:layout_width="220dp" android:layout_height="20dp" android:layout_marginTop="2dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/action_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+                    <View android:background="@drawable/drawable_loading_circle_shape" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginEnd="20dp"/>
+                    <View android:background="@drawable/drawable_loading_circle_shape" android:layout_width="24dp" android:layout_height="24dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/episode_rating" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/content_title">
+                    <View android:background="@drawable/drawable_loading_circle_shape" android:layout_width="24dp" android:layout_height="24dp"/>
+                    <View android:background="@color/cr_black_pearl" android:layout_width="24dp" android:layout_height="12dp" android:layout_marginStart="6dp"/>
+                    <View android:background="@drawable/drawable_loading_circle_shape" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginStart="@dimen/watch_screen_loading_rating_spacing"/>
+                    <View android:background="@color/cr_black_pearl" android:layout_width="24dp" android:layout_height="12dp" android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View android:background="@color/cr_black_pearl" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="18dp" android:layout_marginStart="@dimen/watch_screen_loading_margin_horizontal" android:layout_marginEnd="@dimen/watch_screen_loading_margin_horizontal"/>
+            <View android:background="@color/cr_black_pearl" android:layout_width="match_parent" android:layout_height="14dp" android:layout_marginTop="4dp" android:layout_marginStart="@dimen/watch_screen_loading_margin_horizontal" android:layout_marginEnd="@dimen/watch_screen_loading_margin_horizontal"/>
+            <View android:background="@color/cr_black_pearl" android:layout_width="180dp" android:layout_height="14dp" android:layout_marginTop="4dp" android:layout_marginStart="@dimen/watch_screen_loading_margin_horizontal" android:layout_marginEnd="@dimen/watch_screen_loading_margin_horizontal"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/loading_comments_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+                <View android:background="@color/cr_black_pearl" android:layout_width="0dp" android:layout_height="1dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <View android:id="@+id/comments_icon" android:background="@drawable/drawable_loading_circle_shape" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_marginStart="@dimen/watch_screen_loading_up_next_margin_horizontal" android:layout_marginEnd="@dimen/watch_screen_loading_margin_horizontal" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <View android:background="@color/cr_black_pearl" android:layout_width="80dp" android:layout_height="14dp" android:layout_marginStart="6dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/comments_icon" app:layout_constraintTop_toTopOf="0"/>
+                <View android:background="@color/cr_black_pearl" android:layout_width="0dp" android:layout_height="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View android:background="@color/cr_black_pearl" android:layout_width="120dp" android:layout_height="14dp" android:layout_marginTop="28dp" android:layout_marginStart="@dimen/watch_screen_loading_up_next_margin_horizontal"/>
+            <View android:background="@color/cr_black_pearl" android:layout_width="@dimen/watch_screen_loading_up_next_episode_card_width" android:layout_height="108dp" android:layout_marginTop="14dp" android:layout_marginStart="@dimen/watch_screen_loading_up_next_margin_horizontal" android:layout_marginEnd="@dimen/watch_screen_loading_up_next_margin_horizontal"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</FrameLayout>

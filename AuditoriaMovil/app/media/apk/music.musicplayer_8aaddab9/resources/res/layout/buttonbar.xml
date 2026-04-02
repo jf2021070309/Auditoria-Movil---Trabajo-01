@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabWidget xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/buttonbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:tabStripEnabled="false">
+    <LinearLayout android:orientation="vertical" android:id="@+id/artisttab" android:background="@drawable/buttonbarbackground" android:paddingTop="7dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="64dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center_horizontal" android:paddingBottom="2dp" android:layout_width="32dp" android:layout_height="32dp" app:srcCompat="@drawable/ic_tab_artists"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/tab_indicator_text" android:gravity="center" android:id="@+id/artistTabTxt" android:focusable="true" android:layout_width="match_parent" android:layout_height="0dp" android:maxLines="2" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/songtab" android:background="@drawable/buttonbarbackground" android:paddingTop="7dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="64dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center_horizontal" android:paddingBottom="2dp" android:layout_width="32dp" android:layout_height="32dp" app:srcCompat="@drawable/ic_tab_songs"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/tab_indicator_text" android:gravity="center" android:id="@+id/songTabTxt" android:focusable="true" android:layout_width="match_parent" android:layout_height="0dp" android:maxLines="2" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/albumtab" android:background="@drawable/buttonbarbackground" android:paddingTop="7dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="64dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center_horizontal" android:paddingBottom="2dp" android:layout_width="32dp" android:layout_height="32dp" app:srcCompat="@drawable/ic_tab_albums"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/tab_indicator_text" android:gravity="center" android:id="@+id/albumTabTxt" android:focusable="true" android:layout_width="match_parent" android:layout_height="0dp" android:maxLines="2" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/playlisttab" android:background="@drawable/buttonbarbackground" android:paddingTop="7dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="64dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center_horizontal" android:paddingBottom="2dp" android:layout_width="32dp" android:layout_height="32dp" app:srcCompat="@drawable/ic_tab_playlists"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/tab_indicator_text" android:gravity="center" android:id="@+id/playlistTabTxt" android:focusable="true" android:layout_width="match_parent" android:layout_height="0dp" android:maxLines="2" android:layout_weight="1"/>
+    </LinearLayout>
+</TabWidget>

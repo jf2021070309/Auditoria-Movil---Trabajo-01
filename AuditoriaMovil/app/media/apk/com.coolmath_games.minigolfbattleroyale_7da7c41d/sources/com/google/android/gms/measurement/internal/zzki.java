@@ -1,0 +1,20 @@
+package com.google.android.gms.measurement.internal;
+
+import java.util.List;
+import java.util.Map;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: com.google.android.gms:play-services-measurement@@19.0.0 */
+/* loaded from: classes2.dex */
+public final class zzki implements zzep {
+    final /* synthetic */ zzkn zza;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public zzki(zzkn zzknVar) {
+        this.zza = zzknVar;
+    }
+
+    @Override // com.google.android.gms.measurement.internal.zzep
+    public final void zza(String str, int i, Throwable th, byte[] bArr, Map<String, List<String>> map) {
+        this.zza.zzE(str, i, th, bArr, map);
+    }
+}

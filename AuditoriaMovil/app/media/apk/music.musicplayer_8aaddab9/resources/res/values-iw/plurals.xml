@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">התראה חדשה אחת (%d)</item>
+        <item quantity="two">%d התראות חדשות</item>
+        <item quantity="many">%d התראות חדשות</item>
+        <item quantity="other">%d התראות חדשות</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d דקה לסיום</item>
+        <item quantity="two">נותרו %d דקות</item>
+        <item quantity="many">נותרו %d דקות</item>
+        <item quantity="other">נותרו %d דקות</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">אלבום אחד</item>
+        <item quantity="two">%d אלבומים</item>
+        <item quantity="many">%d אלבומים</item>
+        <item quantity="other">%d אלבומים</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d שיר חדש נמצא</item>
+        <item quantity="two">נמצאו %d שירים חדשים</item>
+        <item quantity="many">%d שירים חדשים נמצאו</item>
+        <item quantity="other">נמצאו %d שירים חדשים</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">שיר %d</item>
+        <item quantity="two">%d שירים</item>
+        <item quantity="many">%d שירים</item>
+        <item quantity="other">%d שירים</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; מתוך שיר &quot;&quot;%1$d&quot;</item>
+        <item quantity="two">&quot;%2$d&quot;&quot; מתוך &quot;&quot;%1$d&quot;&quot; שירים&quot;</item>
+        <item quantity="many">&quot;%2$d&quot;&quot; מתוך &quot;&quot;%1$d&quot;&quot; שירים&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; מתוך &quot;&quot;%1$d&quot;&quot; שירים&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">שיר אחד נמחק.</item>
+        <item quantity="two">%d שירים נמחקו.</item>
+        <item quantity="many">%d שירים נמחקו.</item>
+        <item quantity="other">%d שירים נמחקו.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">שיר אחד נוסף לפלייליסט.</item>
+        <item quantity="two">%d שירים נוספו לפלייליסט.</item>
+        <item quantity="many">%d שירים נוספו לפלייליסט.</item>
+        <item quantity="other">%d שירים נוספו לפלייליסט.</item>
+    </plurals>
+</resources>

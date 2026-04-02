@@ -1,0 +1,16 @@
+package com.fyber.inneractive.sdk.player.c;
+
+import java.io.IOException;
+/* loaded from: classes.dex */
+public class l extends IOException {
+    public l() {
+    }
+
+    public l(String str) {
+        super(str);
+    }
+
+    public l(String str, Throwable th) {
+        super(str, th);
+    }
+}

@@ -1,0 +1,23 @@
+#include "../commons/defines.sh"
+#include "../commons/uniforms.sh"
+#include "../commons/varyings.sh"
+
+uniform mediump vec4 SPOTLIGHT_POSITION;
+
+void main()
+{
+	lowp vec4 color;
+	mediump vec2 dist = SPOTLIGHT_POSITION.xy - V_Screenpos.xy;
+	mediump float len = length(dist);
+	
+	if (len > 0.2)
+	{
+		color.a = 0.0;
+	}
+	else
+	{
+		color = vec4(1.0, 1.0, 1.0, 0.03);
+	}
+
+	gl_FragColor = color;
+}

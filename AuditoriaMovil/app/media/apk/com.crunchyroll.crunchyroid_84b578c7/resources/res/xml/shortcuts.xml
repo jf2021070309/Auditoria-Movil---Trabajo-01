@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/ic_shortcut_watchlist" android:shortcutId="watchlist" android:shortcutShortLabel="@string/shortcut_label_watchlist">
+        <intent android:targetPackage="com.crunchyroll.crunchyroid" android:action="android.intent.action.VIEW" android:data="crunchyroll://watchlist?utm_medium=android&amp;utm_source=appshortcut&amp;utm_campaign=watchlist" android:targetClass="com.ellation.crunchyroll.presentation.startup.StartupActivity"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_shortcut_search" android:shortcutId="search" android:shortcutShortLabel="@string/shortcut_label_search">
+        <intent android:targetPackage="com.crunchyroll.crunchyroid" android:action="android.intent.action.VIEW" android:data="crunchyroll://search?utm_medium=android&amp;utm_source=appshortcut&amp;utm_campaign=search" android:targetClass="com.ellation.crunchyroll.presentation.startup.StartupActivity"/>
+    </shortcut>
+</shortcuts>

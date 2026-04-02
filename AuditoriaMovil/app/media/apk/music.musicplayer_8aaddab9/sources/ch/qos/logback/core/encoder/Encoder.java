@@ -1,0 +1,12 @@
+package ch.qos.logback.core.encoder;
+
+import ch.qos.logback.core.spi.ContextAware;
+import ch.qos.logback.core.spi.LifeCycle;
+/* loaded from: classes.dex */
+public interface Encoder<E> extends ContextAware, LifeCycle {
+    byte[] encode(E e2);
+
+    byte[] footerBytes();
+
+    byte[] headerBytes();
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d izaziso ezintsha</item>
+        <item quantity="other">%d izaziso ezintsha</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d iminithi esele</item>
+        <item quantity="other">Kusele imizuzu engu-%d</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">&quot;%d&quot;&quot; ama-albhamu&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; ama-albhamu&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d ingoma entsha etholakele</item>
+        <item quantity="other">%d amaculo amasha atholakele</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; izingoma&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; izingoma&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; ezingoma ezingu-&quot;&quot;%1$d&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; ezingoma ezingu-&quot;&quot;%1$d&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">&quot;%d&quot;&quot; izingoma zisusiwe.&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; izingoma zisusiwe.&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">&quot;%d&quot;&quot; izingoma zingeziwe ohlwini lwadlalwayo.&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; izingoma zingeziwe ohlwini lwadlalwayo.&quot;</item>
+    </plurals>
+</resources>

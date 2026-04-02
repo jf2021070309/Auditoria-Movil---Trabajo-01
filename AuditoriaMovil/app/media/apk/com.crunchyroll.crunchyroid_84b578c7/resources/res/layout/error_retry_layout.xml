@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/error" android:background="@color/black" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/error_image" android:layout_width="160dp" android:layout_height="146dp" android:layout_marginBottom="24dp" android:src="@drawable/retry_error_image"/>
+    <TextView android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/error_retry_dang" style="@style/Subheader1LatoSemibold"/>
+    <TextView android:textColor="@color/cr_silver" android:gravity="center" android:id="@+id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/error_could_not_connect" style="@style/BodyLatoMedium"/>
+    <TextView android:id="@+id/retry_text" style="@style/RetryButtonStyle"/>
+</LinearLayout>

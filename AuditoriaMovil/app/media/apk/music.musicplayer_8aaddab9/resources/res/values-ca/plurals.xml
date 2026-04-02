@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificació nova</item>
+        <item quantity="other">%d notificacions noves</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Queda %d minut</item>
+        <item quantity="other">Queden %d minuts</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">1 àlbum</item>
+        <item quantity="other">&quot;%d&quot;&quot; àlbums&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">S&apos;ha trobat %d cançó nova</item>
+        <item quantity="other">S&apos;han trobat %d cançons noves</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; cançó&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; cançons&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; cançó (&quot;&quot;%1$d&quot;&quot; en total)&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; cançons (&quot;&quot;%1$d&quot;&quot; en total)&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">S&apos;ha suprimit 1 cançó.</item>
+        <item quantity="other">S&apos;han suprimit &quot;&quot;%d&quot;&quot; cançons.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">S&apos;ha afegit 1 cançó a la llista de reproducció.</item>
+        <item quantity="other">S&apos;han afegit &quot;&quot;%d&quot;&quot; cançons a la llista de reproducció.</item>
+    </plurals>
+</resources>

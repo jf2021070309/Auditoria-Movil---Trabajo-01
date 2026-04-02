@@ -1,0 +1,51 @@
+package com.google.android.gms.cast.tv;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
+import java.util.ArrayList;
+/* compiled from: com.google.android.gms:play-services-cast-tv@@21.0.0 */
+/* loaded from: classes2.dex */
+public final class zzo implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int validateObjectHeader = SafeParcelReader.validateObjectHeader(parcel);
+        int i = 0;
+        boolean z = false;
+        String str = null;
+        ArrayList<String> arrayList = null;
+        String str2 = null;
+        while (parcel.dataPosition() < validateObjectHeader) {
+            int readHeader = SafeParcelReader.readHeader(parcel);
+            int fieldId = SafeParcelReader.getFieldId(readHeader);
+            if (fieldId != 1) {
+                if (fieldId != 2) {
+                    if (fieldId != 3) {
+                        if (fieldId != 4) {
+                            if (fieldId != 5) {
+                                SafeParcelReader.skipUnknownField(parcel, readHeader);
+                            } else {
+                                z = SafeParcelReader.readBoolean(parcel, readHeader);
+                            }
+                        } else {
+                            str2 = SafeParcelReader.createString(parcel, readHeader);
+                        }
+                    } else {
+                        arrayList = SafeParcelReader.createStringList(parcel, readHeader);
+                    }
+                } else {
+                    str = SafeParcelReader.createString(parcel, readHeader);
+                }
+            } else {
+                i = SafeParcelReader.readInt(parcel, readHeader);
+            }
+        }
+        SafeParcelReader.ensureAtEnd(parcel, validateObjectHeader);
+        return new CastReceiverOptions(i, str, arrayList, str2, z);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i) {
+        return new CastReceiverOptions[i];
+    }
+}

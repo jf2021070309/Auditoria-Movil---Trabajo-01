@@ -1,0 +1,17 @@
+package com.ss.android.socialbase.downloader.impls;
+
+import com.ss.android.socialbase.downloader.downloader.IChunkAdjustCalculator;
+import com.ss.android.socialbase.downloader.network.NetworkQuality;
+/* loaded from: classes3.dex */
+public class DefaultChunkAdjustCalculator implements IChunkAdjustCalculator {
+    @Override // com.ss.android.socialbase.downloader.downloader.IChunkAdjustCalculator
+    public int calculateChunkCount(int i, NetworkQuality networkQuality) {
+        if (networkQuality.ordinal() <= NetworkQuality.MODERATE.ordinal()) {
+            return 1;
+        }
+        if (networkQuality == NetworkQuality.GOOD) {
+            return i - 1;
+        }
+        return i;
+    }
+}

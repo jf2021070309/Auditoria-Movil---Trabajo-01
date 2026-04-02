@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape>
+    <solid n1:color="#fffafafa"/>
+    <corners n1:topLeftRadius="@dimen/com_facebook_auth_dialog_corner_radius" n1:topRightRadius="@dimen/com_facebook_auth_dialog_corner_radius" n1:bottomLeftRadius="0dp" n1:bottomRightRadius="0dp"/>
+</shape>

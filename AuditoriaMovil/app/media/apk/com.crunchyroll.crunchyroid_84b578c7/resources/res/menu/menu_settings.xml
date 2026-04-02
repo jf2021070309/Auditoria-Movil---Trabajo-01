@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/menu_settings_group">
+        <item android:id="@+id/menu_item_media_route" android:title="@string/cast_button" app:actionProviderClass="com.ellation.crunchyroll.cast.CustomMediaRouteActionProvider" app:showAsAction="ifRoom"/>
+        <item android:icon="@drawable/ic_search" android:id="@+id/menu_item_search" android:title="@string/search" app:showAsAction="ifRoom"/>
+    </group>
+</menu>

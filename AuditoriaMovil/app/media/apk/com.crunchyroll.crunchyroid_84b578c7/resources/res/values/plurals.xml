@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="about_month_ago">
+        <item quantity="other">about %d months ago</item>
+        <item quantity="one">about %d month ago</item>
+    </plurals>
+    <plurals name="artist_details_concerts_count">
+        <item quantity="other">%d Concerts</item>
+        <item quantity="one">%d Concert</item>
+    </plurals>
+    <plurals name="artist_details_music_videos_count">
+        <item quantity="other">%d Music Videos</item>
+        <item quantity="one">%d Music Video</item>
+    </plurals>
+    <plurals name="billing_notification_card_days_left">
+        <item quantity="other">the next %d days</item>
+        <item quantity="one">the next day</item>
+    </plurals>
+    <plurals name="billing_notification_card_days_left_styled">
+        <item quantity="other">%d days</item>
+        <item quantity="one">day</item>
+    </plurals>
+    <plurals name="billing_notification_card_hours_left">
+        <item quantity="other">the next %d hours</item>
+        <item quantity="one">the hour</item>
+    </plurals>
+    <plurals name="billing_notification_card_hours_left_styled">
+        <item quantity="other">%d hours</item>
+        <item quantity="one">hour</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_left">
+        <item quantity="other">the next %d months</item>
+        <item quantity="one">the next %d month</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_left_styled">
+        <item quantity="other">the next %d months</item>
+        <item quantity="one">the next %d month</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_with_days_left">
+        <item quantity="other">the next %1$d months and %2$s</item>
+        <item quantity="one">the next %1$d month and %2$s</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_with_days_left_styled">
+        <item quantity="other">the next %1$d months and %2$s</item>
+        <item quantity="one">the next %1$d month and %2$s</item>
+    </plurals>
+    <plurals name="billing_notification_card_x_days_left">
+        <item quantity="other">%d days</item>
+        <item quantity="one">%d day</item>
+    </plurals>
+    <plurals name="billing_notification_days_left">
+        <item quantity="other">%d days</item>
+        <item quantity="one">day</item>
+    </plurals>
+    <plurals name="billing_notification_hours_left">
+        <item quantity="other">the next %d hours</item>
+        <item quantity="one">the hour</item>
+    </plurals>
+    <plurals name="billing_notification_hours_left_colored">
+        <item quantity="other">%d hours</item>
+        <item quantity="one">hour</item>
+    </plurals>
+    <plurals name="com_jcminarro_philology_quantity_string">
+        <item quantity="other">other</item>
+        <item quantity="zero">zero</item>
+        <item quantity="one">one</item>
+        <item quantity="two">two</item>
+        <item quantity="few">few</item>
+        <item quantity="many">many</item>
+    </plurals>
+    <plurals name="commenting_item_comment_replies_button_with_replies_count">
+        <item quantity="other">Show %1$d replies</item>
+        <item quantity="one">Show %1$d reply</item>
+    </plurals>
+    <plurals name="completed_episodes">
+        <item quantity="other">%d Episodes</item>
+        <item quantity="one">%d Episode</item>
+    </plurals>
+    <plurals name="completed_videos">
+        <item quantity="other">%d Videos</item>
+        <item quantity="one">%d Video</item>
+    </plurals>
+    <plurals name="cr_plus_upsell_menu_days_duration">
+        <item quantity="other">%1$d days free trial</item>
+        <item quantity="one">%1$d day free trial</item>
+    </plurals>
+    <plurals name="cr_plus_upsell_menu_months_duration">
+        <item quantity="other">%1$d months free trial</item>
+        <item quantity="one">%1$d month free trial</item>
+    </plurals>
+    <plurals name="crunchylists_add_to_crunchylist_items">
+        <item quantity="other">%1$d Items</item>
+        <item quantity="one">%d Item</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">%d days ago</item>
+        <item quantity="one">%d day ago</item>
+    </plurals>
+    <plurals name="downloads_removed_success">
+        <item quantity="other">The items were successfully removed</item>
+        <item quantity="one">The item was successfully removed</item>
+    </plurals>
+    <plurals name="downloads_selected_plural">
+        <item quantity="other">%d items selected</item>
+        <item quantity="one">%d item selected</item>
+    </plurals>
+    <plurals name="duration_left_format">
+        <item quantity="other">%1$s left</item>
+        <item quantity="one">%1$s left</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="history_items_removed">
+        <item quantity="other">%s items removed from history</item>
+        <item quantity="one">%s item removed from history</item>
+    </plurals>
+    <plurals name="history_items_selected_plural">
+        <item quantity="other">%d items selected</item>
+        <item quantity="one">%d item selected</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d hours ago</item>
+        <item quantity="one">%d hour ago</item>
+    </plurals>
+    <plurals name="mins_ago">
+        <item quantity="other">%d mins ago</item>
+        <item quantity="one">%d min ago</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="resend_otp_countdown_seconds">
+        <item quantity="other">Resend in %d seconds</item>
+        <item quantity="one">Resend in %d second</item>
+    </plurals>
+    <plurals name="season_metadata_episodes">
+        <item quantity="other">%d Episodes</item>
+        <item quantity="one">%d Episode</item>
+    </plurals>
+    <plurals name="season_metadata_seasons">
+        <item quantity="other">%1$d Seasons</item>
+        <item quantity="one">%d Season</item>
+    </plurals>
+    <plurals name="show_rating_average_rating_count">
+        <item quantity="other">%1$s ratings</item>
+        <item quantity="one">%1$s rating</item>
+    </plurals>
+    <plurals name="show_rating_dialog_v2_already_rated">
+        <item quantity="other">You&apos;ve rated this %1$d stars</item>
+        <item quantity="one">You&apos;ve rated this %1$d star</item>
+    </plurals>
+    <plurals name="switch_profile_manage_profiles">
+        <item quantity="other">Manage profiles</item>
+        <item quantity="one">Manage profile</item>
+    </plurals>
+    <plurals name="syncing_toolbar_completed_episodes">
+        <item quantity="other">%s Episodes</item>
+        <item quantity="one">%s Episode</item>
+    </plurals>
+    <plurals name="syncing_toolbar_completed_videos">
+        <item quantity="other">%s Videos</item>
+        <item quantity="one">%s Video</item>
+    </plurals>
+    <plurals name="upsell_tier_extended_free_trial_offer_label">
+        <item quantity="other">%1$s free</item>
+        <item quantity="one">first %1$s free</item>
+    </plurals>
+    <plurals name="upsell_tier_price_subtitle_period_days">
+        <item quantity="other">%d days</item>
+        <item quantity="one">day</item>
+    </plurals>
+    <plurals name="upsell_tier_price_subtitle_period_months">
+        <item quantity="other">%d months</item>
+        <item quantity="one">month</item>
+    </plurals>
+    <plurals name="upsell_tier_price_subtitle_period_years">
+        <item quantity="other">%d years</item>
+        <item quantity="one">year</item>
+    </plurals>
+    <plurals name="upsell_tier_promo_offer_label">
+        <item quantity="other">%1$s promo</item>
+        <item quantity="one">first %1$s promo</item>
+    </plurals>
+</resources>

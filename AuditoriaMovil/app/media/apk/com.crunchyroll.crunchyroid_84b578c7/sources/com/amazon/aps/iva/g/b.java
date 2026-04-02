@@ -1,0 +1,8 @@
+package com.amazon.aps.iva.g;
+
+import android.content.Context;
+/* compiled from: OnContextAvailableListener.kt */
+/* loaded from: classes.dex */
+public interface b {
+    void a(Context context);
+}

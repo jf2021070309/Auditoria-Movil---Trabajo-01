@@ -1,0 +1,36 @@
+package com.google.zxing.client.result;
+
+import com.google.zxing.Result;
+/* loaded from: classes4.dex */
+public final class WifiResultParser extends ResultParser {
+    @Override // com.google.zxing.client.result.ResultParser
+    public WifiParsedResult parse(Result result) {
+        String substring;
+        String matchSinglePrefixedField;
+        String str;
+        boolean z;
+        String massagedText = ResultParser.getMassagedText(result);
+        if (!massagedText.startsWith("WIFI:") || (matchSinglePrefixedField = ResultParser.matchSinglePrefixedField("S:", (substring = massagedText.substring(5)), ';', false)) == null || matchSinglePrefixedField.isEmpty()) {
+            return null;
+        }
+        String matchSinglePrefixedField2 = ResultParser.matchSinglePrefixedField("P:", substring, ';', false);
+        String matchSinglePrefixedField3 = ResultParser.matchSinglePrefixedField("T:", substring, ';', false);
+        if (matchSinglePrefixedField3 == null) {
+            matchSinglePrefixedField3 = "nopass";
+        }
+        String str2 = matchSinglePrefixedField3;
+        String matchSinglePrefixedField4 = ResultParser.matchSinglePrefixedField("PH2:", substring, ';', false);
+        String matchSinglePrefixedField5 = ResultParser.matchSinglePrefixedField("H:", substring, ';', false);
+        if (matchSinglePrefixedField5 == null) {
+            str = matchSinglePrefixedField4;
+        } else if (matchSinglePrefixedField4 != null || "true".equalsIgnoreCase(matchSinglePrefixedField5) || "false".equalsIgnoreCase(matchSinglePrefixedField5)) {
+            str = matchSinglePrefixedField4;
+            z = Boolean.parseBoolean(matchSinglePrefixedField5);
+            return new WifiParsedResult(str2, matchSinglePrefixedField, matchSinglePrefixedField2, z, ResultParser.matchSinglePrefixedField("I:", substring, ';', false), ResultParser.matchSinglePrefixedField("A:", substring, ';', false), ResultParser.matchSinglePrefixedField("E:", substring, ';', false), str);
+        } else {
+            str = matchSinglePrefixedField5;
+        }
+        z = false;
+        return new WifiParsedResult(str2, matchSinglePrefixedField, matchSinglePrefixedField2, z, ResultParser.matchSinglePrefixedField("I:", substring, ';', false), ResultParser.matchSinglePrefixedField("A:", substring, ';', false), ResultParser.matchSinglePrefixedField("E:", substring, ';', false), str);
+    }
+}

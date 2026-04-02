@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="about_month_ago">
+        <item quantity="other">लगभग %d महीनो पहले</item>
+        <item quantity="one">लगभग %d महीनो पहले</item>
+    </plurals>
+    <plurals name="artist_details_concerts_count">
+        <item quantity="other">%d संगीत कार्यक्रम</item>
+        <item quantity="one">%d संगीत कार्यक्रम</item>
+    </plurals>
+    <plurals name="artist_details_music_videos_count">
+        <item quantity="other">%d संगीत वीडियो</item>
+        <item quantity="one">%d संगीत वीडियो</item>
+    </plurals>
+    <plurals name="billing_notification_card_days_left">
+        <item quantity="other">अगले %d दिनों</item>
+        <item quantity="one">अगले दिन</item>
+    </plurals>
+    <plurals name="billing_notification_card_days_left_styled">
+        <item quantity="other">%d दिन</item>
+        <item quantity="one">दिन</item>
+    </plurals>
+    <plurals name="billing_notification_card_hours_left">
+        <item quantity="other">अगले %d घंटे</item>
+        <item quantity="one">घंटा</item>
+    </plurals>
+    <plurals name="billing_notification_card_hours_left_styled">
+        <item quantity="other">%d घंटे</item>
+        <item quantity="one">घंटा</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_left">
+        <item quantity="other">अगले %d महीने</item>
+        <item quantity="one">अगला %d महीना</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_left_styled">
+        <item quantity="other">अगले %d महीने</item>
+        <item quantity="one">अगला %d महीना</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_with_days_left">
+        <item quantity="other">अगले %1$d महीने और %2$s</item>
+        <item quantity="one">अगला %1$d महीना और %2$s</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_with_days_left_styled">
+        <item quantity="other">अगले %1$d महीने और %2$s</item>
+        <item quantity="one">अगला %1$d महीना और %2$s</item>
+    </plurals>
+    <plurals name="billing_notification_card_x_days_left">
+        <item quantity="other">%d दिन</item>
+        <item quantity="one">%d दिन</item>
+    </plurals>
+    <plurals name="billing_notification_days_left">
+        <item quantity="other">%d दिन</item>
+        <item quantity="one">दिन</item>
+    </plurals>
+    <plurals name="billing_notification_hours_left">
+        <item quantity="other">अगले %d घंटे</item>
+        <item quantity="one">घंटा</item>
+    </plurals>
+    <plurals name="billing_notification_hours_left_colored">
+        <item quantity="other">%d घंटे</item>
+        <item quantity="one">घंटा</item>
+    </plurals>
+    <plurals name="commenting_item_comment_replies_button_with_replies_count">
+        <item quantity="other">जवाब %1$d दिखाएं</item>
+        <item quantity="one">जवाब %1$dदिखाएँ </item>
+    </plurals>
+    <plurals name="completed_episodes">
+        <item quantity="other">%d एपिसोड्स</item>
+        <item quantity="one">%d एपिसोड</item>
+    </plurals>
+    <plurals name="completed_videos">
+        <item quantity="other">%d वीडियो</item>
+        <item quantity="one">%d वीडियो</item>
+    </plurals>
+    <plurals name="cr_plus_upsell_menu_days_duration">
+        <item quantity="other">%1$d दिन नि:शुल्क परीक्षण</item>
+        <item quantity="one">%1$d दिन नि: शुल्क सेवा </item>
+    </plurals>
+    <plurals name="cr_plus_upsell_menu_months_duration">
+        <item quantity="other">%1$d महीने नि:शुल्क परीक्षण</item>
+        <item quantity="one">%1$d महीने नि: शुल्क सेवा</item>
+    </plurals>
+    <plurals name="crunchylists_add_to_crunchylist_items">
+        <item quantity="other">%1$dऔर#160;सामान</item>
+        <item quantity="one">%d सामान</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">%d दिनों पहले</item>
+        <item quantity="one">%d दिन पहले</item>
+    </plurals>
+    <plurals name="downloads_selected_plural">
+        <item quantity="other">%d आइटम्स चयनित</item>
+        <item quantity="one">%d आइटम चयनित</item>
+    </plurals>
+    <plurals name="duration_left_format">
+        <item quantity="other">%1$sबचे</item>
+        <item quantity="one">%1$sबचे</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+        <item quantity="one">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">वीडियो को %d सेकंड पीछे ले जाएं</item>
+        <item quantity="one">वीडियो को %d सेकंड पीछे ले जाएं</item>
+    </plurals>
+    <plurals name="history_items_removed">
+        <item quantity="other">%sवस्तुएं इतिहास से हटाई गई </item>
+        <item quantity="one">%s इतिहास से हटाए गए आइटम</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">%d घंंटों पहले</item>
+        <item quantity="one">%d घंटे पहले</item>
+    </plurals>
+    <plurals name="mins_ago">
+        <item quantity="other">%d मिनट पहले</item>
+        <item quantity="one">%d मिनट पहले</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d नई सूचनाएं</item>
+        <item quantity="one">%d नई सूचनाएं</item>
+    </plurals>
+    <plurals name="resend_otp_countdown_seconds">
+        <item quantity="other">%d सेकंड में फिर से भेजें</item>
+        <item quantity="one">%d सेकंड में फिर से भेजें</item>
+    </plurals>
+    <plurals name="season_metadata_episodes">
+        <item quantity="other">%d एपिसोड्स</item>
+        <item quantity="one">%d एपिसोड</item>
+    </plurals>
+    <plurals name="season_metadata_seasons">
+        <item quantity="other">%1$dऔर#160;सीज़न</item>
+        <item quantity="one">%dऔर#160;सीज़न</item>
+    </plurals>
+    <plurals name="show_rating_average_rating_count">
+        <item quantity="other">%1$s मूल्यांकन</item>
+        <item quantity="one">%1$s रेटिंग</item>
+    </plurals>
+    <plurals name="show_rating_dialog_v2_already_rated">
+        <item quantity="other">आपने इसे %1$d सितारों का मूल्यांकन दीया हैं</item>
+        <item quantity="one">आपने इसे %1$d सितारे रेट किए हैं</item>
+    </plurals>
+    <plurals name="syncing_toolbar_completed_episodes">
+        <item quantity="other">%s एपिसोड्स</item>
+        <item quantity="one">%s एपिसोड</item>
+    </plurals>
+    <plurals name="syncing_toolbar_completed_videos">
+        <item quantity="other">%s वीडियो</item>
+        <item quantity="one">%s वीडियो</item>
+    </plurals>
+</resources>

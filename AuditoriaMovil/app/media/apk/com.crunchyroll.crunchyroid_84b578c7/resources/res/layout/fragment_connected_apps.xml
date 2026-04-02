@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/connected_apps_container" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/connected_apps_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <FrameLayout android:id="@+id/connected_apps_progress" android:background="@color/transparent_progress_overlay" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/progress_layout"/>
+    </FrameLayout>
+</RelativeLayout>

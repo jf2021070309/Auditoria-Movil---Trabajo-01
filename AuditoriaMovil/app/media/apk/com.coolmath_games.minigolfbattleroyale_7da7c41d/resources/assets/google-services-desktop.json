@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "779791541915",
+    "project_id": "mini-golf-battle-royale",
+    "storage_bucket": "mini-golf-battle-royale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779791541915:android:224eae575b2eea615e083e",
+        "android_client_info": {
+          "package_name": "com.oktagongames.minigolfroyale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779791541915-3rl6916r4hrntbmecpjaob83eq4m2jpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJat-tBnjMPQFepcENN5Cc7TpY0m34A-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779791541915-3rl6916r4hrntbmecpjaob83eq4m2jpq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "779791541915-lotv4818uqrtsi0d9s8cgh5lq75l2c0m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.oktagongames.minigolfroyale"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

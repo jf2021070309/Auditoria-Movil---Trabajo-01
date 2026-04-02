@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">အကြောင်းကြားချက်အသစ် %d ခု</item>
+        <item quantity="other">အကြောင်းကြားချက်အသစ် %d ခု</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="other">%d မိနစ်လက်ဝဲ</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="other">%d အယ်လ်ဘမ်</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="other">သီချင်းအသစ် %d ခုကိုတွေ့ရှိခဲ့သည်</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="other">%dသီချင်း</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="other">သီချင်း %1$d ပုဒ်အနက်မှ %2$d</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="other">သီချင်း %d ခုဖျက်သိမ်းလိုက်သည်။</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="other">သီချင်း %d ခုကိုသီချင်းစာရင်းတွင်ထည့်သည်။</item>
+    </plurals>
+</resources>

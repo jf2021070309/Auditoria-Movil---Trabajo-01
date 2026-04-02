@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ellation.localization.preference.TranslatableSwitchPreferenceCompat android:layout="@layout/player_preference_switch_item_layout" android:title="@string/autoplay" android:key="@string/key_auto_play" android:defaultValue="true"/>
+    <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/player_preference_item_layout" android:title="@string/audio" android:key="@string/key_audio"/>
+    <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/player_preference_item_layout" android:title="@string/subtitles" android:key="@string/key_subtitles"/>
+    <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/player_preference_item_layout" android:title="@string/quality" android:key="@string/key_quality"/>
+    <com.ellation.crunchyroll.settings.SelectableTitlePreference android:icon="@drawable/ic_navigation_next_gray" android:layout="@layout/player_preference_without_value_item_layout" android:title="@string/report_a_problem" android:key="@string/key_report_a_problem"/>
+</androidx.preference.PreferenceScreen>

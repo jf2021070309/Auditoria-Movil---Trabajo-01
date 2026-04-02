@@ -1,0 +1,11 @@
+package com.bytedance.msdk.api.v2.ad.reward;
+
+import com.bytedance.msdk.api.AdError;
+/* loaded from: classes.dex */
+public interface GMRewardedAdLoadCallback {
+    void onRewardVideoAdLoad();
+
+    void onRewardVideoCached();
+
+    void onRewardVideoLoadFail(AdError adError);
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:id="@+id/crunchylists_content_container" android:layout_width="@dimen/crunchylists_dialog_width" android:layout_height="@dimen/crunchylists_dialog_height"/>

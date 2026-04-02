@@ -1,0 +1,50 @@
+package com.google.android.gms.internal.pal;
+
+import com.google.firebase.analytics.FirebaseAnalytics;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* compiled from: com.google.android.gms:play-services-pal@@20.0.1 */
+/* loaded from: classes3.dex */
+public final class zzje extends zziz {
+    static final zziz zza = new zzje(new Object[0], 0);
+    final transient Object[] zzb;
+    private final transient int zzc;
+
+    public zzje(Object[] objArr, int i) {
+        this.zzb = objArr;
+        this.zzc = i;
+    }
+
+    @Override // java.util.List
+    public final Object get(int i) {
+        zzip.zza(i, this.zzc, FirebaseAnalytics.Param.INDEX);
+        Object obj = this.zzb[i];
+        obj.getClass();
+        return obj;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.zzc;
+    }
+
+    @Override // com.google.android.gms.internal.pal.zziz, com.google.android.gms.internal.pal.zziw
+    public final int zza(Object[] objArr, int i) {
+        System.arraycopy(this.zzb, 0, objArr, 0, this.zzc);
+        return this.zzc;
+    }
+
+    @Override // com.google.android.gms.internal.pal.zziw
+    public final int zzb() {
+        return this.zzc;
+    }
+
+    @Override // com.google.android.gms.internal.pal.zziw
+    public final int zzc() {
+        return 0;
+    }
+
+    @Override // com.google.android.gms.internal.pal.zziw
+    public final Object[] zze() {
+        return this.zzb;
+    }
+}

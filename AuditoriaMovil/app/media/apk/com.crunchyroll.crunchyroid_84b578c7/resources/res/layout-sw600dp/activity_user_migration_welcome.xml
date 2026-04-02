@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/cr_silver_chalice" android:id="@+id/migration_step_text" android:paddingBottom="21dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/welcome_step_text_margin_top" android:text="@string/migration_step_2_of_2" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/BodyLatoSemibold"/>
+    <com.ellation.toolbar.ToolbarDivider android:id="@+id/migration_toolbar_divider" android:background="@color/cr_black_pearl" android:visibility="invisible" android:layout_width="0dp" android:layout_height="1dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/migration_step_text"/>
+    <ScrollView android:id="@+id/migration_scroll_view" android:layout_width="0dp" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/migration_toolbar_divider">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/layout_fn_free_no_cr_user_container" android:visibility="gone" layout="@layout/layout_fn_free_no_cr_user"/>
+            <include android:id="@+id/layout_fn_premium_no_cr_user_container" android:visibility="gone" layout="@layout/layout_fn_premium_no_cr_user"/>
+            <include android:id="@+id/layout_welcome_with_migration_options" android:visibility="gone" layout="@layout/layout_welcome_migration_options"/>
+            <TextView android:layout_gravity="center_horizontal" android:id="@+id/migration_bottom_cta_button" android:layout_width="340dp" android:layout_height="48dp" android:layout_marginBottom="28dp" android:text="@string/migration_go_to_crunchyroll" android:textAllCaps="true" style="@style/CtaButton"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/progress_overlay" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/layout_overlay_user_migration_progress"/>
+    <include android:id="@+id/migration_welcome_error_fullscreen" android:visibility="gone" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/error_retry_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

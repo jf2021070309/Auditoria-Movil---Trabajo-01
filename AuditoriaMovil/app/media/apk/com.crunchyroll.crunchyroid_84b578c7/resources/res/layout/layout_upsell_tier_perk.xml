@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+    <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tier_perk_image_selector"/>
+    <TextView android:textColor="@drawable/tier_perk_text_color_selector" android:id="@+id/tier_perk_description" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="8dp" style="@style/BodyLatoMedium"/>
+</LinearLayout>

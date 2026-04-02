@@ -1,0 +1,8 @@
+package com.fyber.inneractive.sdk.b;
+
+import android.app.Activity;
+import com.fyber.inneractive.sdk.external.InneractiveAdSpot;
+/* loaded from: classes.dex */
+public abstract class a {
+    public abstract void a(Activity activity, InneractiveAdSpot inneractiveAdSpot, String str);
+}

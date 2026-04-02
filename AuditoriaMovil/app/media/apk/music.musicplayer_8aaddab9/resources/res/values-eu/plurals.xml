@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d jakinarazpen berri</item>
+        <item quantity="other">%d jakinarazpen berri</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">Minutu %d falta da</item>
+        <item quantity="other">%d minutu falta dira</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d album</item>
+        <item quantity="other">%d album</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d abesti berriak aurkitu</item>
+        <item quantity="other">%d abesti berri aurkitu dira</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">%d abesti</item>
+        <item quantity="other">%d abesti</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">%1$d abestietatik %2$d</item>
+        <item quantity="other">%1$d abestietatik %2$d</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">Abesti bat ezabatu da.</item>
+        <item quantity="other">%d abesti ezabatu ziren.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">Abesti bat gehitu da erreprodukzio zerrendan.</item>
+        <item quantity="other">Erreprodukzio zerrendan %d abesti gehitu dira.</item>
+    </plurals>
+</resources>

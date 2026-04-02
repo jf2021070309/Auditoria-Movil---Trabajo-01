@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_pressed="true" n1:drawable="@drawable/rovio_id_ms_button_arrow_forward_bottom_right_down"/>
+    <item n1:drawable="@drawable/rovio_id_ms_button_arrow_forward_bottom_right"/>
+</selector>

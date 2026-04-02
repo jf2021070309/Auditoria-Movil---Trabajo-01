@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="188dp" android:width="500dp" android:viewportWidth="500" android:viewportHeight="240">
+    <path android:fillColor="#fff47820" android:pathData="M0,0h500v240H0z" android:fillType="evenOdd"/>
+    <group>
+        <clip-path android:pathData="M0,0h500v240H0z"/>
+        <path android:fillColor="@drawable/res_0x7f08002b_upsell_banner_background__0" android:pathData="M0,0h500v240H0z" android:fillType="evenOdd"/>
+    </group>
+    <group>
+        <clip-path android:pathData="M0,0h500v240H0z"/>
+        <path android:fillColor="#fff7a11a" android:pathData="M41,114m-100,0a100,100 0,1 1,200 0a100,100 0,1 1,-200 0" android:strokeAlpha="0.49" android:fillAlpha="0.49" android:fillType="evenOdd"/>
+        <path android:fillColor="#fff7a61a" android:pathData="M478.5,70.5m-85.5,0a85.5,85.5 0,1 1,171 0a85.5,85.5 0,1 1,-171 0" android:strokeAlpha="0.816" android:fillAlpha="0.816" android:fillType="evenOdd"/>
+        <path android:fillColor="#fff79f1b" android:pathData="M429.5,198.5m-85.5,0a85.5,85.5 0,1 1,171 0a85.5,85.5 0,1 1,-171 0" android:strokeAlpha="0.561" android:fillAlpha="0.561" android:fillType="evenOdd"/>
+    </group>
+</vector>

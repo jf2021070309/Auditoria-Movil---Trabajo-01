@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="nnn_minutes_left">
+        <item quantity="other">%d menit lagi</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="other">&quot;%d&quot;&quot; album&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="other">%d musik baru ditemukan</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="other">&quot;%d&quot;&quot; lagu&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="other">&quot;%2$d&quot;&quot; dari &quot;&quot;%1$d&quot;&quot; lagu&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="other">&quot;%d&quot;&quot; lagu dihapus.&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="other">&quot;%d&quot;&quot; lagu ditambahkan ke playlist.&quot;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">නව දැනුම්දීම් %dක්</item>
+        <item quantity="other">නව දැනුම්දීම් %dක්</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">මිනිත්තු %d ක් ඉතිරිව ඇත</item>
+        <item quantity="other">මිනිත්තු %d ක් ඉතිරිව ඇත</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d ඇල්බමය</item>
+        <item quantity="other">ඇල්බම %d ක්</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">නව ගීත %d ක් හමු විය</item>
+        <item quantity="other">නව ගීත %d ක් හමු විය</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">%d ගීතය</item>
+        <item quantity="other">ගීත %d ක්</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">ගීත %1$d න් %2$d ක්</item>
+        <item quantity="other">ගීත %1$d න් %2$d ක්</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">ගීත %d ක් මකා දමන ලදි.</item>
+        <item quantity="other">ගීත %d ක් මකා දමන ලදි.</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">ගීත %d බාධාවක් ද නැත එකතු.</item>
+        <item quantity="other">ගීත %d ක් ධාවන ලැයිස්තුවට එකතු කර ඇත.</item>
+    </plurals>
+</resources>

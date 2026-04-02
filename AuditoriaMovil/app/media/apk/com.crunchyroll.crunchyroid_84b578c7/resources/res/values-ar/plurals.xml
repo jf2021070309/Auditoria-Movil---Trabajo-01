@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="about_month_ago">
+        <item quantity="other">منذ حوالي %d اشهر</item>
+        <item quantity="zero">منذ حوالي %d شهر</item>
+        <item quantity="one">منذ حوالي %d شهر</item>
+        <item quantity="two">منذ حوالي %d اشهر</item>
+        <item quantity="few">منذ حوالي %d اشهر</item>
+        <item quantity="many">منذ حوالي %d اشهر</item>
+    </plurals>
+    <plurals name="artist_details_concerts_count">
+        <item quantity="other">%d حفلة</item>
+        <item quantity="zero">%d حفل</item>
+        <item quantity="one">%d حفل</item>
+        <item quantity="two">%d حفلتان</item>
+        <item quantity="few">%d حفلات</item>
+        <item quantity="many">%d حفلة</item>
+    </plurals>
+    <plurals name="artist_details_music_videos_count">
+        <item quantity="other">%d فيديو موسيقي</item>
+        <item quantity="zero">%d فيديو موسيقي</item>
+        <item quantity="one">%d فيديو موسيقي</item>
+        <item quantity="two">%d فيديوهان موسيقيان</item>
+        <item quantity="few">%d فيديوهات موسيقية</item>
+        <item quantity="many">%d فيديو موسيقي</item>
+    </plurals>
+    <plurals name="billing_notification_card_days_left">
+        <item quantity="other">%d أيام التالية</item>
+        <item quantity="zero">%d أيام التالية</item>
+        <item quantity="one">اليوم التالي</item>
+        <item quantity="two">%d أيام التالية</item>
+        <item quantity="few">%d أيام التالية</item>
+        <item quantity="many">%d أيام التالية</item>
+    </plurals>
+    <plurals name="billing_notification_card_days_left_styled">
+        <item quantity="other">%d أيام</item>
+        <item quantity="zero">%d يوم</item>
+        <item quantity="one">يوم</item>
+        <item quantity="two">%d أيام</item>
+        <item quantity="few">%d أيام</item>
+        <item quantity="many">%d أيام</item>
+    </plurals>
+    <plurals name="billing_notification_card_hours_left">
+        <item quantity="other">%d ساعات التالية.</item>
+        <item quantity="zero">%d ساعة.</item>
+        <item quantity="one">ساعة واحدة.</item>
+        <item quantity="two">%d ساعات التالية.</item>
+        <item quantity="few">%d ساعات التالية.</item>
+        <item quantity="many">%d ساعات التالية.</item>
+    </plurals>
+    <plurals name="billing_notification_card_hours_left_styled">
+        <item quantity="other">%d ساعات</item>
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="one">ساعة واحدة</item>
+        <item quantity="two">%d ساعات</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعات</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_left">
+        <item quantity="other">%d شهور التالية</item>
+        <item quantity="zero">%d شهر التالية</item>
+        <item quantity="one">%d شهر التالية</item>
+        <item quantity="two">%d شهور التالية</item>
+        <item quantity="few">%d شهور التالية</item>
+        <item quantity="many">%d شهور التالية</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_left_styled">
+        <item quantity="other">%d شهور التالية</item>
+        <item quantity="zero">%d شهر التالية</item>
+        <item quantity="one">%d شهر التالية</item>
+        <item quantity="two">%d شهور التالية</item>
+        <item quantity="few">%d شهور التالية</item>
+        <item quantity="many">%d شهور التالية</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_with_days_left">
+        <item quantity="other">%1$d شهور و %2$s التالية</item>
+        <item quantity="zero">%1$d شهر و %2$s التالية</item>
+        <item quantity="one">%1$d شهر و %2$s التالية</item>
+        <item quantity="two">%1$d شهور و %2$s التالية</item>
+        <item quantity="few">%1$d شهور و %2$s التالية</item>
+        <item quantity="many">%1$d شهور و %2$s التالية</item>
+    </plurals>
+    <plurals name="billing_notification_card_months_with_days_left_styled">
+        <item quantity="other">%1$d شهور و %2$s التالية</item>
+        <item quantity="zero">%1$d شهر و %2$s التالية</item>
+        <item quantity="one">%1$d شهر و %2$s التالية</item>
+        <item quantity="two">%1$d شهور و %2$s التالية</item>
+        <item quantity="few">%1$d شهور و %2$s التالية</item>
+        <item quantity="many">%1$d شهور و %2$s التالية</item>
+    </plurals>
+    <plurals name="billing_notification_card_x_days_left">
+        <item quantity="other">%d ايام</item>
+        <item quantity="zero">%d يوم</item>
+        <item quantity="one">%d يوم</item>
+        <item quantity="two">%d ايام</item>
+        <item quantity="few">%d ايام</item>
+        <item quantity="many">%d ايام</item>
+    </plurals>
+    <plurals name="billing_notification_days_left">
+        <item quantity="other">%d أيام</item>
+        <item quantity="zero">%d أيام</item>
+        <item quantity="one">يوم</item>
+        <item quantity="two">%d أيام</item>
+        <item quantity="few">%d أيام</item>
+        <item quantity="many">%d أيام</item>
+    </plurals>
+    <plurals name="billing_notification_hours_left">
+        <item quantity="other">%d ساعات التالية</item>
+        <item quantity="zero">%d ساعة التالية</item>
+        <item quantity="one">ساعة واحدة.</item>
+        <item quantity="two">%d ساعات التالية</item>
+        <item quantity="few">%d ساعات التالية</item>
+        <item quantity="many">%d ساعات التالية</item>
+    </plurals>
+    <plurals name="billing_notification_hours_left_colored">
+        <item quantity="other">%d ساعات</item>
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="one">ساعة</item>
+        <item quantity="two">%d ساعات</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعات</item>
+    </plurals>
+    <plurals name="commenting_item_comment_replies_button_with_replies_count">
+        <item quantity="other">إظهار %1$dتعليق</item>
+        <item quantity="zero">إظهار %1$d تعليق</item>
+        <item quantity="one">إظهار %1$d تعليق</item>
+        <item quantity="two">إظهار %1$d تعليقات</item>
+        <item quantity="few">إظهار %1$d تعليقات</item>
+        <item quantity="many">إظهار %1$d تعليق</item>
+    </plurals>
+    <plurals name="completed_episodes">
+        <item quantity="other">%d حلقات</item>
+        <item quantity="zero">%d حلقة</item>
+        <item quantity="one">%d حلقة</item>
+        <item quantity="two">%d حلقة</item>
+        <item quantity="few">%d حلقات</item>
+        <item quantity="many">%d حلقات</item>
+    </plurals>
+    <plurals name="completed_videos">
+        <item quantity="other">%d فيديوهات</item>
+        <item quantity="zero">%d فيديو</item>
+        <item quantity="one">%d فيديو</item>
+        <item quantity="two">%d فيديو</item>
+        <item quantity="few">%d فيديوهات</item>
+        <item quantity="many">%d فيديو</item>
+    </plurals>
+    <plurals name="cr_plus_upsell_menu_days_duration">
+        <item quantity="other">%1$dيومًا كتجربة مجانية</item>
+        <item quantity="zero">%1$d يوم كتجربة مجانية</item>
+        <item quantity="one">%1$d يوم كتجربة مجانية</item>
+        <item quantity="two">%1$d يوم كتجربة مجانية</item>
+        <item quantity="few">%1$dأيّام تجربة مجانية</item>
+        <item quantity="many">%1$dيومًا كتجربة مجانية</item>
+    </plurals>
+    <plurals name="cr_plus_upsell_menu_months_duration">
+        <item quantity="other">%1$dشهرًا كتجربة مجانية</item>
+        <item quantity="zero">%1$dشهرًا كتجربة مجانية</item>
+        <item quantity="one">%1$d شهر كتجربة مجانية</item>
+        <item quantity="two">%1$d شهران كتجربة مجانية</item>
+        <item quantity="few">%1$dأشهر كتجربة مجانية</item>
+        <item quantity="many">%1$dشهرًا كتجربة مجانية</item>
+    </plurals>
+    <plurals name="crunchylists_add_to_crunchylist_items">
+        <item quantity="other">%1$d عناصر</item>
+        <item quantity="zero">%1$d عنصر</item>
+        <item quantity="one">%d عنصر</item>
+        <item quantity="two">%1$d عناصر</item>
+        <item quantity="few">%1$d عناصر</item>
+        <item quantity="many">%1$d عناصر</item>
+    </plurals>
+    <plurals name="days_ago">
+        <item quantity="other">منذ %d ايام</item>
+        <item quantity="zero">منذ %d يوم</item>
+        <item quantity="one">منذ %d يوم</item>
+        <item quantity="two">منذ %d ايام</item>
+        <item quantity="few">منذ %d ايام</item>
+        <item quantity="many">منذ %d ايام</item>
+    </plurals>
+    <plurals name="downloads_selected_plural">
+        <item quantity="other">%d أداة مختارة</item>
+        <item quantity="zero">%d أداة مختارة</item>
+        <item quantity="one">%d أداة مختارة</item>
+        <item quantity="two">%d أداة مختارة</item>
+        <item quantity="few">%d أدوات مختارة</item>
+        <item quantity="many">%d أداة مختارة</item>
+    </plurals>
+    <plurals name="duration_left_format">
+        <item quantity="other">بقيت %1$s</item>
+        <item quantity="zero">بقيت %1$s</item>
+        <item quantity="one">بقيت %1$s</item>
+        <item quantity="two">بقيت %1$s</item>
+        <item quantity="few">بقيت %1$s</item>
+        <item quantity="many">بقيت %1$s</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="history_items_removed">
+        <item quantity="other">%s حذفت من سجل المشاهدة</item>
+        <item quantity="zero">%s حذف من سجل المشاهدة</item>
+        <item quantity="one">%s حذف من سجل المشاهدة</item>
+        <item quantity="two">%s حذفت من سجل المشاهدة</item>
+        <item quantity="few">%s حذفت من سجل المشاهدة</item>
+        <item quantity="many">%s حذفت من سجل المشاهدة</item>
+    </plurals>
+    <plurals name="hours_ago">
+        <item quantity="other">منذ %d ساعات</item>
+        <item quantity="zero">منذ %d ساعة</item>
+        <item quantity="one">منذ %d ساعة</item>
+        <item quantity="two">منذ %d ساعات</item>
+        <item quantity="few">منذ %d ساعات</item>
+        <item quantity="many">منذ %d ساعات</item>
+    </plurals>
+    <plurals name="mins_ago">
+        <item quantity="other">منذ %d دقائق</item>
+        <item quantity="zero">منذ %d دقيقة</item>
+        <item quantity="one">%d دقيقة مضت</item>
+        <item quantity="two">منذ %d دقائق</item>
+        <item quantity="few">منذ %d دقائق</item>
+        <item quantity="many">منذ %d دقائق</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d إشعار جديد</item>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+    </plurals>
+    <plurals name="resend_otp_countdown_seconds">
+        <item quantity="other">أعد الإرسال خلال %d ثانية</item>
+        <item quantity="zero">أعد الإرسال خلال %d ثانية</item>
+        <item quantity="one">أعد الإرسال خلال %d ثانية</item>
+        <item quantity="two">أعد الإرسال خلال %d ثانيتين</item>
+        <item quantity="few">أعد الإرسال خلال %d ثوانٍ</item>
+        <item quantity="many">أعد الإرسال خلال %d ثانية</item>
+    </plurals>
+    <plurals name="season_metadata_episodes">
+        <item quantity="other">%d Episodes</item>
+        <item quantity="zero">%d Episodes</item>
+        <item quantity="one">%d Episode</item>
+        <item quantity="two">%d Episode</item>
+        <item quantity="few">%d Episode</item>
+        <item quantity="many">%d Episode</item>
+    </plurals>
+    <plurals name="season_metadata_seasons">
+        <item quantity="other">%1$d مواسم</item>
+        <item quantity="zero">%1$d موسم</item>
+        <item quantity="one">%d مواسم</item>
+        <item quantity="two">موسم %1$d </item>
+        <item quantity="few">موسم %1$d </item>
+        <item quantity="many">موسم %1$d </item>
+    </plurals>
+    <plurals name="show_rating_average_rating_count">
+        <item quantity="other">%1$s تقييمًا</item>
+        <item quantity="zero">%1$s تقييمًا</item>
+        <item quantity="one">%1$s تقييمًا</item>
+        <item quantity="two">%1$s تقييمات</item>
+        <item quantity="few">%1$s تقييمات</item>
+        <item quantity="many">%1$s تقييمًا</item>
+    </plurals>
+    <plurals name="show_rating_dialog_v2_already_rated">
+        <item quantity="other">قيّمت هذا %1$d نجمة</item>
+        <item quantity="zero">قيّمت هذا %1$d نجمة</item>
+        <item quantity="one">قيّمت هذا %1$d نجمة</item>
+        <item quantity="two">قيّمت هذا %1$d نجوم</item>
+        <item quantity="few">قيّمت هذا %1$d نجوم</item>
+        <item quantity="many">قيّمت هذا %1$d نجمة</item>
+    </plurals>
+    <plurals name="syncing_toolbar_completed_episodes">
+        <item quantity="other">%s حلقة</item>
+        <item quantity="zero">%s حلقة</item>
+        <item quantity="one">%s حلقة</item>
+        <item quantity="two">%s حلقتان</item>
+        <item quantity="few">%s حلقات</item>
+        <item quantity="many">%s حلقة</item>
+    </plurals>
+    <plurals name="syncing_toolbar_completed_videos">
+        <item quantity="other">%s فيديو</item>
+        <item quantity="zero">%s فيديو</item>
+        <item quantity="one">%s فيديو</item>
+        <item quantity="two">%s فيديو</item>
+        <item quantity="few">%s فيديوهات</item>
+        <item quantity="many">%s فيديو</item>
+    </plurals>
+</resources>

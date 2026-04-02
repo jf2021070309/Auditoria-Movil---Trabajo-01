@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.ellation.crunchyroll.presentation.download.button.DownloadButton android:id="@+id/download_button" android:padding="8dp" android:clickable="false" android:layout_width="@dimen/download_button_size" android:layout_height="@dimen/download_button_size" android:foreground="@drawable/ic_download_state" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+</FrameLayout>

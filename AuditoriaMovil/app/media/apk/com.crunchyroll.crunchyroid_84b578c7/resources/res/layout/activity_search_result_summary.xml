@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ellation.widgets.searchtoolbar.SearchToolbarLayout android:id="@+id/toolbar" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/SearchToolbarStyle"/>
+    <RelativeLayout android:id="@+id/search_container" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/errors_layout" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ellation.crunchyroll.presentation.search.recent.RecentSearchesLayout android:id="@+id/recent_searches_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <include android:id="@+id/errors_layout" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" layout="@layout/layout_errors"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d minutt igjen</item>
+        <item quantity="other">%d minutter igjen</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d album</item>
+        <item quantity="other">&quot;%d&quot;&quot; album&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d ny sang funnet</item>
+        <item quantity="other">Fant %d nye sanger</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; sang&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; sanger&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot; av &quot;&quot;%1$d&quot;&quot; sanger&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot; av &quot;&quot;%1$d&quot;&quot; sanger&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">%d sang er slettet.</item>
+        <item quantity="other">&quot;%d&quot;&quot; sanger er slettet.&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">%d sang er lagt til i spillelisten.</item>
+        <item quantity="other">&quot;%d&quot;&quot; sanger er lagt til i spillelisten.&quot;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comments_replies_toolbar" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/layout_comment_replies_toolbar"/>
+    <com.ellation.widgets.CrunchyrollSwipeRefreshLayout android:id="@+id/comment_replies_swipe_to_refresh" android:layout_width="0dp" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@+id/comment_input_container" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/comments_replies_toolbar" app:progressBackgroundColor="@color/cr_black_pearl" app:progressColor="@color/primary">
+        <FrameLayout android:id="@+id/comment_replies_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/comment_replies_recycler_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:background="@drawable/comments_shadow" android:layout_width="match_parent" android:layout_height="8dp" android:scaleY="-1"/>
+            <View android:layout_gravity="bottom" android:background="@drawable/comments_shadow" android:layout_width="match_parent" android:layout_height="8dp"/>
+        </FrameLayout>
+    </com.ellation.widgets.CrunchyrollSwipeRefreshLayout>
+    <FrameLayout android:id="@+id/comment_replies_progress" android:background="@color/black_opacity_70" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/comment_input_container" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/comments_replies_toolbar">
+        <include layout="@layout/progress_layout"/>
+    </FrameLayout>
+    <include android:id="@+id/comment_input_container" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" layout="@layout/layout_post_reply"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

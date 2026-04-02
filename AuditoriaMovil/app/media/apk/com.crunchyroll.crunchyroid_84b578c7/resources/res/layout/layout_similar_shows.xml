@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/color_white" android:gravity="center_horizontal" android:id="@+id/popular_shows_fallback_description" android:paddingTop="24dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/similar_empty_message" android:paddingStart="@dimen/similar_message_padding" android:paddingEnd="@dimen/similar_message_padding" style="@style/Subheader2LatoSemibold"/>
+        <com.ellation.crunchyroll.presentation.content.panel.PanelFeedRecyclerView android:id="@+id/panel_feed_recycler" android:padding="@dimen/similar_list_padding" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/similar_shows_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?attr/tabErrorContainerHeight" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/similar_message_padding" android:layout_marginEnd="@dimen/similar_message_padding">
+        <TextView android:textColor="@color/color_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/similar_error_message" style="@style/Subheader2LatoSemibold"/>
+        <TextView android:id="@+id/show_page_similar_retry" android:layout_marginTop="@dimen/similar_retry_margin_top" style="@style/RetryButtonStyle"/>
+    </LinearLayout>
+</RelativeLayout>

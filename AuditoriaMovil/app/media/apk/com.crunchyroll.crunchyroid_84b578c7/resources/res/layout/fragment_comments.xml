@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/comments_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/layout_comments_toolbar"/>
+    <com.ellation.widgets.CrunchyrollSwipeRefreshLayout android:id="@+id/comments_swipe_to_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/comment_input_container" android:layout_below="@+id/comments_account_pending_banner" app:progressBackgroundColor="@color/cr_black_pearl" app:progressColor="@color/primary">
+        <FrameLayout android:id="@+id/comments_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/comments_recycler_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:background="@drawable/comments_shadow" android:layout_width="match_parent" android:layout_height="8dp" android:scaleY="-1"/>
+            <View android:layout_gravity="bottom" android:background="@drawable/comments_shadow" android:layout_width="match_parent" android:layout_height="8dp"/>
+        </FrameLayout>
+    </com.ellation.widgets.CrunchyrollSwipeRefreshLayout>
+    <com.ellation.crunchyroll.commenting.comments.pendingstate.banner.PendingStateBannerLayout android:id="@+id/comments_account_pending_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/comments_toolbar"/>
+    <FrameLayout android:id="@+id/comments_progress" android:background="@color/black_opacity_70" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/comment_input_container" android:layout_below="@+id/comments_account_pending_banner">
+        <include layout="@layout/progress_layout"/>
+    </FrameLayout>
+    <include android:id="@+id/comment_input_container" layout="@layout/layout_post_comment"/>
+</RelativeLayout>

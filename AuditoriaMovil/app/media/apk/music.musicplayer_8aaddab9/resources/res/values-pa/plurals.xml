@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ਨਵੀਂ ਸੂਚਨਾ</item>
+        <item quantity="other">%d ਨਵੀਆਂ ਸੂਚਨਾਵਾਂ</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d ਮਿੰਟ ਬਾਕੀ ਹੈ</item>
+        <item quantity="other">%d ਮਿੰਟ ਬਾਕੀ ਹਨ</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">%d ਐਲਬਮ</item>
+        <item quantity="other">%d ਐਲਬਮ</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d ਨਵਾਂ ਗਾਣਾ ਮਿਲਿਆ</item>
+        <item quantity="other">%d ਨਵੇਂ ਗਾਣੇ ਮਿਲੇ ਹਨ</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">%d ਗਾਣਾ</item>
+        <item quantity="other">%d ਗਾਣੇ</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">%2$d ਦੇ %1$d ਗਾਣੇ</item>
+        <item quantity="other">%2$d ਦੇ %1$d ਗਾਣੇ</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">%d ਗਾਣਾ ਮਿਟਾ ਦਿੱਤਾ ਗਿਆ ਸੀ.</item>
+        <item quantity="other">%d ਗਾਣੇ ਮਿਟਾ ਦਿੱਤੇ ਗਏ।</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">%d ਗਾਣਾ ਪਲੇਲਿਸਟ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ.</item>
+        <item quantity="other">%d ਗਾਣੇ ਪਲੇਲਿਸਟ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤੇ ਗਏ.</item>
+    </plurals>
+</resources>

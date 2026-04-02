@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/assets_recycler" android:paddingLeft="@dimen/watch_screen_assets_padding_horizontal" android:paddingRight="@dimen/watch_screen_assets_padding_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+    <com.crunchyroll.watchscreen.screen.assets.allassetsbutton.AllAssetsButton android:id="@+id/all_assets_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="10dp" android:layout_below="@+id/assets_recycler" android:layout_centerHorizontal="true" style="@style/WatchScreenAllAssetsButton"/>
+    <FrameLayout android:id="@+id/error_layout" android:paddingTop="@dimen/watch_screen_assets_error_margin_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d uusi ilmoitus</item>
+        <item quantity="other">%d uutta ilmoitusta</item>
+    </plurals>
+    <plurals name="nnn_minutes_left">
+        <item quantity="one">%d minuutti jäljellä</item>
+        <item quantity="other">%d minuuttia jäljellä</item>
+    </plurals>
+    <plurals name="nnnalbums">
+        <item quantity="one">Yksi albumi</item>
+        <item quantity="other">&quot;%d&quot;&quot; albumia&quot;</item>
+    </plurals>
+    <plurals name="nnnnewsongs">
+        <item quantity="one">%d uusi kappale löydetty</item>
+        <item quantity="other">%d uutta kappaletta löydetty</item>
+    </plurals>
+    <plurals name="nnnsongs">
+        <item quantity="one">&quot;%d&quot;&quot; kappale&quot;</item>
+        <item quantity="other">&quot;%d&quot;&quot; kappaletta&quot;</item>
+    </plurals>
+    <plurals name="nnnsongscomp">
+        <item quantity="one">&quot;%2$d&quot;&quot;/&quot;&quot;%1$d&quot;&quot; kappaleesta&quot;</item>
+        <item quantity="other">&quot;%2$d&quot;&quot;/&quot;&quot;%1$d&quot;&quot; kappaleesta&quot;</item>
+    </plurals>
+    <plurals name="nnntracksdeleted">
+        <item quantity="one">Yksi kappale poistettu</item>
+        <item quantity="other">&quot;%d&quot;&quot; kappaletta poistettu&quot;</item>
+    </plurals>
+    <plurals name="nnntrackstoplaylist">
+        <item quantity="one">Yksi kappale lisätty soittolistaan</item>
+        <item quantity="other">&quot;%d&quot;&quot; kappaletta lisätty soittolistaan&quot;</item>
+    </plurals>
+</resources>

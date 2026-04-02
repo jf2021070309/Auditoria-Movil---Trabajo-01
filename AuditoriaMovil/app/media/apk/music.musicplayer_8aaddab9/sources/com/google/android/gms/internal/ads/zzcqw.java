@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.ads;
+/* loaded from: classes.dex */
+public final class zzcqw {
+    private final zzcqv zza;
+
+    public zzcqw(zzcqv zzcqvVar) {
+        this.zza = zzcqvVar;
+    }
+
+    public static final com.google.android.gms.ads.internal.zza zza() {
+        return new com.google.android.gms.ads.internal.zza(new zzckm(), new zzcit(), new zzcdt(new zzcdu(), null), new zzazf(), new zzbzv(), new zzbkm(), null);
+    }
+}

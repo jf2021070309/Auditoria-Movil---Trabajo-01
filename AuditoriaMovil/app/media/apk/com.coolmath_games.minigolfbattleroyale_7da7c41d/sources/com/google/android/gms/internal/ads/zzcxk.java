@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Map;
+/* compiled from: com.google.android.gms:play-services-ads@@20.5.0 */
+/* loaded from: classes2.dex */
+public final class zzcxk<AdT> implements zzgla<zzcxi<AdT>> {
+    private final zzgln<Map<String, zzeec<AdT>>> zza;
+
+    public zzcxk(zzgln<Map<String, zzeec<AdT>>> zzglnVar) {
+        this.zza = zzglnVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgln
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzcxi(((zzgle) this.zza).zzb());
+    }
+}

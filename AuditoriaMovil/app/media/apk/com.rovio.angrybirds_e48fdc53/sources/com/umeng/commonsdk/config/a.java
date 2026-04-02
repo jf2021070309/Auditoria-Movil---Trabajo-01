@@ -1,0 +1,37 @@
+package com.umeng.commonsdk.config;
+/* compiled from: BitUtils.java */
+/* loaded from: classes3.dex */
+public class a {
+    public static boolean a(int i, int i2) {
+        if (i2 < 0 || i2 > 31 || (i & (1 << i2)) == 0) {
+            return false;
+        }
+        return true;
+    }
+
+    public static int b(int i, int i2) {
+        return i | (1 << i2);
+    }
+
+    public static int c(int i, int i2) {
+        return i & (~(1 << i2));
+    }
+
+    public static boolean a(long j, int i) {
+        return i >= 0 && i <= 63 && (j & (1 << i)) != 0;
+    }
+
+    public static long b(long j, int i) {
+        if (i < 0 || i > 63) {
+            return j;
+        }
+        return j | (1 << i);
+    }
+
+    public static long c(long j, int i) {
+        if (i < 0 || i > 63) {
+            return j;
+        }
+        return j & (~(1 << i));
+    }
+}

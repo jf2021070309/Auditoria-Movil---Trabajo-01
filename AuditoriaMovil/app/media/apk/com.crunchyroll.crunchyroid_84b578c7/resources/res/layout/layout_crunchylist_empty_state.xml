@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/black" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <ImageView android:layout_width="160dp" android:layout_height="160dp" android:src="@drawable/crunchylist_empty_list"/>
+    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/crunchylist_is_empty" style="@style/Subheader1LatoSemibold"/>
+    <TextView android:textColor="@color/silver" android:gravity="center" android:layout_width="328dp" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/crunchylist_add_series_to_this_crunchylist" style="@style/BodyLatoMedium"/>
+    <Button android:id="@+id/empty_crunchylist_search_button" android:layout_width="328dp" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:minWidth="@dimen/wrap_content" android:text="@string/crunchylist_search_for_anime" style="@style/PrimaryButton"/>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/empty_crunchylist_popular_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/crunchylist_need_help" style="@style/BodyLatoMedium"/>
+</LinearLayout>

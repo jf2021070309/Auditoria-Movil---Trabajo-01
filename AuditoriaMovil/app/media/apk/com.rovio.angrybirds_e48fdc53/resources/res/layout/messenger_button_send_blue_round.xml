@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:n1="http://schemas.android.com/apk/res/android" n1:id="@+id/messenger_send_button" n1:background="@drawable/messenger_button_blue_bg_round" n1:layout_width="58dp" n1:layout_height="59dp"/>

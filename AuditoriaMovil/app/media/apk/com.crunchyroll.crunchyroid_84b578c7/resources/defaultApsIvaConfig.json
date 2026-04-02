@@ -1,0 +1,22 @@
+{
+  "amazonSimidContainerHtml": "https://use1.simidcontainer.prod.interactive.advertising.amazon.dev/",
+  "amazonSimidContainerJsInterfaceName": "AdClipSimidPlayer",
+  "metricLoggerHttpUrl": "https://metrics.interactive.stv.publishers.advertising.amazon.dev/apsf8logging",
+  "featureFlags": {
+    "enableCTA":
+    {
+      "start": 100,
+      "max": 100
+    },
+    "enableIVA":
+    {
+      "start": 100,
+      "max": 100
+    }
+  },
+  "metricSamplingRates": {
+    "info": 1,
+    "error": 1,
+    "fatal": 1
+  }
+}

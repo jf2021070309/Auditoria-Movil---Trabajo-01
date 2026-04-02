@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="add_to_crunchylist_item_background">@color/cr_woodsmoke_opacity_50</color>
+    <color name="color_season_list_background">@color/cr_black_pearl</color>
+    <color name="crunchylists_gradient">@color/cr_black_pearl</color>
+    <color name="crunchylists_window_background">@color/cr_black_pearl</color>
+    <color name="media_details_background">@color/cr_black_pearl</color>
+    <color name="player_settings_report_problem_button_color">@color/cr_dialog_background</color>
+    <color name="rating_progress_background_tint">@color/cr_woodsmoke</color>
+    <color name="ratings_dialog_background">@color/cr_black_pearl</color>
+    <color name="ratings_dialog_loading_state_background">@color/cr_black_pearl_70</color>
+    <color name="toolbar_menu_background">@color/cr_dialog_background</color>
+</resources>
